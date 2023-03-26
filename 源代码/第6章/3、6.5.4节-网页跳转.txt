@@ -1,0 +1,24 @@
+#打开博学谷主页
+driver.get("https://www.boxuegu.com/")
+#在导航栏中打开“问答库”栏目
+driver.find_element_by_id("ask_href").click()
+#打开“软件测试”栏目
+driver.find_element_by_link_text(u"软件测试").click()
+#保存需要查找的信息“测试计划编写的六要素”到findItem
+findItem=driver.find_element_by_link_text(u"测试计划编写的六要素？")
+#将滚动条移动事件结果保存到moveBar
+moveBar=driver.execute_script("arguments[0].scrollIntoView();",findItem)
+'''
+查找信息可能在当前打开页面未显示区域或者不在当前打开页面需要进行查找、翻页等操作
+'''
+while moveBar:#以滚动条返回状态作为条件
+#判断是否在当前页面查找到查找的信息，找到则退出
+    if findItem == moveBar:
+        break
+#如果没有则进行翻页，继续进行查找，找到则退出
+    else:
+        driver.find_element_by_link_text("2").click()
+        if findItem == moveBar:
+           break
+#打开需要查找的信息
+driver.find_element_by_link_text(u"测试计划编写的六要素？").click()

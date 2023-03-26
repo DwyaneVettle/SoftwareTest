@@ -1,0 +1,11 @@
+#导入Web测试驱动库
+from selenium import webdriver
+#导入交互操作ActionChains（鼠标悬停、滚动条、拖放等操作）
+from selenium.webdriver.common.action_chains import ActionChains
+#选择需要测试的浏览器
+driver = webdriver.Firefox()
+#driver = webdriver.Chrome('C:\\Users\\chromedriver.exe')
+等待加载超时时间
+driver.implicitly_wait(30)
+#打开博学谷主页
+driver.get("https://www.boxuegu.com/")

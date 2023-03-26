@@ -1,0 +1,39 @@
+from appium import webdriver	#导入python脚本语言appium包
+from time import sleep			#导入休眠时间函数
+
+#定义测试程序启动信息
+desired_caps = {}
+desired_caps['platformName'] = 'Android'
+desired_caps['platformVersion'] = '5.1.1'
+desired_caps['deviceName'] = 'HUAWEI'
+desired_caps['appPackage'] = 'cn.itcast.mobliesafe'
+desired_caps['appActivity']=    
+'cn.itcast.mobliesafe.chapter01.SplashActivity'
+driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+#手机杀毒功能测试
+# 等待程序进入主界面
+sleep(10)#保证测试界面与脚本获取元素界面同步
+#点击手机杀毒功能按钮
+driver.find_element_by_xpath('/hierarchy/android.widget.FrameLayout/andro                                                                                                   
+id.widget.LinearLayout.android.widget.FrameLayoutandroid.widget.LinearLay
+out/android.widget.RelativeLayout/android.widget.GridView/android.widget.
+LinearLayout[4]/android.widget.TextView').click()    
+#全盘扫描
+driver.find_element_by_id('cn.itcast.mobliesafe:id/rl_allscanvirus').clic
+k()
+#等待扫描完成
+while True:
+#获取扫描进度
+rate=driver.find_element_by_id('cn.itcast.mobliesafe:id/tv_scanprocess').
+text
+    if(rate=="100%"):
+        break
+sleep(2)         #为了人眼能看见切换，实际测试中可以不要
+#点击完成按钮
+driver.find_element_by_id('cn.itcast.mobliesafe:id/btn_canclescan').
+click()
+#点击返回上一级
+driver.find_element_by_id('cn.itcast.mobliesafe:id/imgv_leftbtn').click()
+sleep(3)         #为了人眼能看见切换，实际测试中可以不要
+#关闭浏览器
+driver.quit() 

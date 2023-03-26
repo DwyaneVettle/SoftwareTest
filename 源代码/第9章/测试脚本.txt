@@ -1,0 +1,98 @@
+from selenium import webdriver
+import unittest
+import time
+class testWeb(unittest.TestCase):
+#测试初始化阶段
+  def setUp(self):
+        self.driver = webdriver.Firefox()
+        self.driver.implicitly_wait(30)
+        self.base_url = "http://www.test.com/"
+        self.verificationErrors = []
+        self.accept_next_alert = True
+#测试执行过过程
+  def testCase(self):
+        top = "var q=document.documentElement.scrollTop=0"
+        driver = self.driver
+        driver.get("http://www.test.com/")
+        driver.find_element_by_css_selector("body>div.main>div>
+div:nth-child(2) > div.main-each-R > a").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and
+normalize-space(.)='（共5题，每题4分）
+'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and
+normalize-space(.)='错'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and
+normalize-space(.)='错'])[2]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='错'])[3]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='错'])[4]/following::label[1]").click()
+#测试单选题        
+        driver.execute_script(top)
+        driver.find_element_by_link_text(u"单选题").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='（共5题，每题6分）
+'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and
+normalize-space(.)='D. 软件版本
+'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='D. 两者都不是
+'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='D. 
+<%    %>'])[1]/following::label[1]").click()
+#测试多选题
+        driver.execute_script("arguments[0].scrollIntoView();",
+driver.find_element_by_xpath("(.//*[normalize-space(text())
+and normalize-space(.)='D. break'])
+[1]/following::label[1]"))
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='B. 局部变量'])
+[1]/following::label[1]").click()
+        driver.execute_script(top)
+        driver.find_element_by_link_text(u"多选题").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='（共5题，每题6分）'])
+[2]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='D.'])[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='D. 以上答案都不正确'])
+[1]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and  
+normalize-space(.)='D. 以上答案都不正确'])
+[2]/following::label[1]").click()
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='D. 全等 ==='])[1]/following::label[1]")
+        driver.execute_script("arguments[0].scrollIntoView();",
+driver.find_element_by_xpath("(.//*[normalize-space(text())
+and normalize-space(.)='C.include'])
+[1]/following::label[1]"))
+        driver.find_element_by_xpath("(.//*[normalize-space(text())and 
+normalize-space(.)='C.include'])
+[1]/following::label[1]").click()
+#测试填空题
+        driver.execute_script(top)
+        driver.find_element_by_link_text(u"填空题").click()
+        driver.find_element_by_name("fill[1]").click()
+        driver.find_element_by_name("fill[1]").send_keys("1")
+        driver.find_element_by_name("fill[2]").click()
+        driver.find_element_by_name("fill[2]").send_keys("1")
+        driver.execute_script("arguments[0].scrollIntoView();", 
+driver.find_element_by_xpath(u"(.//*[normalize-space(text())
+and normalize-space(.)='请输入答案：'])
+[2]/following::input[1]"))
+        driver.find_element_by_xpath(u"(.//*[normalize-space(text())and 
+normalize-space(.)='请输入答案：'])
+[2]/following::input[1]").click()
+        time.sleep(3)
+        driver.execute_script("arguments[0].scrollIntoView();",
+driver.find_element_by_link_text(u"返回首页"))
+        driver.find_element_by_link_text(u"返回首页").click()
+#测试完成后释放资源
+    def tearDown(self):
+        self.assertEqual([], self.verificationErrors)
+#执行测试
+if __name__ == "__main__":
+    unittest.main()

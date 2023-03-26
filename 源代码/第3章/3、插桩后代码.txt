@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define  LINE() fprintf(__POINT__,"%3d",__LINE__)
+FILE *__POINT__;
+int main()
+{
+	if((__POINT__=fopen("test.txt","w"))==NULL)
+		fprintf(stderr,"不能打开test.txt文件"); 
+	int i,mid,a[3];
+	for(LINE(),i=0;i<3;LINE(),i++)
+		LINE(),scanf("%d",&a[i]);
+	LINE(),mid=a[2];
+	if(LINE(),a[1]<a[2])
+	{
+		if(LINE(),a[0]<a[1])
+			LINE(),mid=a[1];
+		else if(LINE(),a[0]<a[2])
+			LINE(),mid=a[1]; 
+	}
+	else
+	{
+		if(LINE(),a[0]>a[1])
+			LINE(),mid=a[1];
+		else if(LINE(),a[0]>a[2])
+			LINE(),mid=a[0];
+	}
+	LINE(),printf("中间值是：%d\n",mid);
+	LINE(),fclose(__POINT__);
+	return 0;
+}
