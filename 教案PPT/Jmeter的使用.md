@@ -455,4 +455,64 @@ key：21f3d56edc75e82afaede5d8bbc2f6b1
 
 ![image-20230326201056374](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303262011527.png)
 
-test.lemonban.com/futureloan/mvc/api/member/login
+
+
+
+
+## 7.Jmeter录制web脚本
+
+​	想要完成脚本录制，我们需要完成如下两步：
+
+- 设置Jmeter相关参数
+
+  - 创建一个线程：**测试计划---添加线程组**
+  - **测试计划---添加非测试单元---HTTP代理服务器**。要注意设置好端口和对应分组，方便后期收集脚本。
+    - 此处的分组我们要匹配上面添加的线程组，端口要是本地没有被占用的线程组。
+  
+  ![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272016307.png)
+  
+  
+
+- 设置浏览器
+
+  - 打开控制面板---点击Internet选项---连接---局域网设置---点击高级---HTTP地址设置为`127.0.0.1`，端口设置为`8888`.（也可在浏览器设置--系统--打开代理设置设置）
+
+  ![image-20230327203116495](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272031600.png)
+
+![image-20230327205825397](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272058564.png)
+
+- 点击HTTP代理服务器的`运行`按钮，再点击整数确定按钮
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272047478.png)
+
+![image-20230327204453806](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272044172.png)
+
+![](C:/Users/HP/Desktop/脚本成功录制.png)
+
+
+
+
+
+### 7.1.登录脚本录制实战
+
+登录网站：http://cfgjt.cn:8981/devt-web
+
+账号：admin
+
+密码：11111111
+
+- 创建代理：**测试计划---线程组---添加非测试元件---HTTP代理服务器**，设置如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272102404.png" alt="image-20230327210257234" style="zoom:50%;" />
+
+- 打开浏览器，设置代理服务器为`127.0.0.1`，端口为`8888`:
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272103377.png" alt="image-20230327210347267" style="zoom:50%;" />
+
+- 开启录制脚本，并在浏览器请求网站http://cfgjt.cn:8981/devt-web进行登录：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272105921.png" alt="image-20230327210501823" style="zoom:50%;" />
+
+- 停止录制，生成录制结果
+
+![image-20230327211323934](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272113029.png)
