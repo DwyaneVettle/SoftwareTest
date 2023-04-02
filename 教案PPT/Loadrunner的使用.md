@@ -94,4 +94,76 @@ Loadrunner的官方下载地址为：https://www.microfocus.com/en-us/products/L
 
 ![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304012142691.png)
 
-### 
+- 在/root目录下使用命令`mkdir root`创建root目录，并上传以上文件：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021047568.png" alt="image-20230402104723450" style="zoom:50%;" />
+
+- 解压该文件，并进入目录，赋予文件权限：
+
+```shell
+unzip lg_linux_x64.zip
+cd lg_linux_x64
+chmod 755 *
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021054823.png" alt="image-20230402105432747" style="zoom:50%;" />
+
+- 执行安装程序，进行安装：
+
+```shell
+sh installer.sh
+```
+
+**注意：**如出现以下情况，说明依赖不完整，我们需要修改yum源配置，然后下载依赖：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021055391.png" alt="image-20230402105530315" style="zoom:50%;" />
+
+```shell
+# 备份本地yum源
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak  
+
+# 下载yum源配置文件到本地
+wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+
+# 清空并更新缓存
+yum clean all && yum makecache
+
+# 安装依赖
+yum install glibc.i686 libstdc++.i686 ncurses-libs.i686 keyutils-libs.i686 glib2.i686 libnsl.i686 libidn.i686 -y
+
+# 如出现多库版本问题，可执行如下命令，然后再执行上面的安装
+yum update --setopt=protected_multilib=false 依赖名（如glib2）-y 
+
+# 再次安装
+sh installer.sh
+```
+
+如出现密钥问题，可以参考：https://blog.csdn.net/qq_41817050/article/details/120135877
+
+安装过程中，直接按`Enter`确认就行了，都选择默认的，只有安装证书时选择（2），不安装。
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021321432.png" alt="image-20230402132130329" style="zoom:50%;" />
+
+- 验证`54345`端口：
+
+```shell
+netstat -anp | grep 54345
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021324650.png" alt="image-20230402132435594" style="zoom:50%;" />
+
+
+
+- 启动命令：
+
+```shell
+cd /opt/MF/MF_LoadGenerator/
+ls
+```
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021327955.png)
+
+
+
+## 3.脚本录制
+
