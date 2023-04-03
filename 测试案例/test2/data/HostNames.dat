@@ -1,0 +1,4 @@
+[hosts]
+clientservices.googleapis.com=
+weather-api.extfans.com=
+update.googleapis.com=

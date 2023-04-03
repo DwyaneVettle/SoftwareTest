@@ -2,6 +2,8 @@
 
 
 
+**选项公网测试地址：http://cfgjt.cn:8981/devt-web    用户名admin，密码11111111**
+
 ## 1.Loadrunner介绍
 
 ​	LoadRunner，是一种预测[系统行为](https://baike.baidu.com/item/系统行为/22463503?fromModule=lemma_inlink)和性能的[负载](https://baike.baidu.com/item/负载?fromModule=lemma_inlink)测试工具。通过模拟上千万用户实施并发负载及实时性能监测的方式来确认和查找问题，LoadRunner能够对整个企业架构进行[测试](https://baike.baidu.com/item/测试/112688?fromModule=lemma_inlink)。企业使用LoadRunner能最大限度地缩短测试时间，优化性能和加速应用系统的发布周期。
@@ -167,3 +169,109 @@ ls
 
 ## 3.脚本录制
 
+​	脚本录制就是将可视化操作转换为脚本代码，并利用脚本代码进行重复性操作，这种方式能简化测试人员的操作，大大降低工作量和难度。
+
+​	脚本录制的方式分为以下几种：
+
+- 直接录制：只支持Microsoft Edge
+- 本地代理录制：支持各大浏览器
+- 离线流量录制：几乎支持所有浏览器
+- 手动代理录制：几乎支持所有浏览器
+- 第三方代理：采用fidller进行辅助录制
+
+**创建解决方案：**
+
+- 创建脚本解决方案的方式为：**File---Create a new Script---选择方案类型---命名---create**
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031433867.png" style="zoom:50%;" />
+
+
+
+### 3.1.直接录制
+
+​	如上创建一个test01的解决方案，点击上方菜单栏的录制按钮：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031458392.png)
+
+
+
+**录制动作(Record into action)选项释义：**
+
+- **vuser_init:**只执行一次，如登录操作
+- **action:**循环执行
+- **vuser_end:**结束时执行，如退出操作
+
+**录制选项(Record)释义：**
+
+- **Web Brower:**web浏览器录制方式
+- **Windows Application:**windows应用程序录制
+- **Remote Application via LoadRunner Proxy:**远程代理录制
+- **Captured Traffic File Analysis:**离线流量分析
+
+最终内容，点击Start Recording直接录制：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031519233.png" alt="image-20230403151933137" style="zoom:50%;" />
+
+打开浏览器后，生成了脚本，进行了收集：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031533934.png" alt="image-20230403153333784" style="zoom:50%;" />
+
+**注意：**有大部分可能进入Edge没法登录，此次脚本录制不成功。
+
+
+
+### 3.2.本地代理录制
+
+​	由于应用程序的兼容性问题，我们案例以谷歌浏览器作为测试浏览器进行本地代理录制。
+
+- 新建一个脚本，命名为test2，脚本类型为web-HTTP/HTML：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031602711.png" alt="image-20230403160244577" style="zoom:50%;" />
+
+- 点击录制脚本按钮，输入内容如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031610407.png" alt="image-20230403161021317" style="zoom:50%;" />
+
+- 点击本页左下角“Recording Options”选项设置，在HTTP Properties---Advanced中勾选以下选项：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031615314.png" style="zoom:50%;" />
+
+- 点击录制，进入页面，输入用户名admin和密码11111111登录，登录进行后将动作由`vuser_init`切换到`action`，然后输入关键字`文本`搜索，然后再输入`文本1`搜索：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032055277.png" style="zoom:50%;" />
+
+- 点击停止按钮，停止录制。看到工作台，`vuser_init`和`action`都生成了脚本：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032100181.png)
+
+
+
+### 3.3.离线流量录制
+
+流线流量录制适用于大部分浏览器。
+
+- 打开网站`http://cfgjt.cn:8981/devt-web`，在登录前打开F12，找到`Network`，然后登录，并搜索文本：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032121568.png" alt="image-20230403212133348" style="zoom:50%;" />
+
+- 在网络中生成的数据中鼠标右键，选择“以HAR格式保存所有内容”：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032122248.png" alt="image-20230403212257136" style="zoom:50%;" />
+
+- 打开LoadRunner，创建`test3`的脚本，并将光标放到`action`中，指把脚本放在里面：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032123083.png" alt="image-20230403212352837" style="zoom: 33%;" />
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032126595.png)
+
+
+
+- 点击录制按钮，将动作改为`action`，将Record改为离线脚本录制，离线文件路径为刚刚保存的HAR文件，取消`127.0.0.1`前面的勾，并在`Recording Options`中取消之前选中的代理录制设置，具体设置如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032130591.png" alt="image-20230403213045376" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032131704.png" style="zoom:33%;" />
+
+- 点击开始录制，生成录制脚本：
+
+![image-20230403213201738](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032132967.png)

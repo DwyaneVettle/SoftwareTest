@@ -1,0 +1,91 @@
+[API Trapper      (39a4:3974)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[API Trapper      (173c: 5e4)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[API Trapper      (311c:3bec)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[API Trapper      (1b0c:3be0)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[Network Analyzer (1b0c:1bcc)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1b0c:1bcc)] Load Network Traffic Analyzers:
+[Network Analyzer (1b0c:1bcc)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (1b0c:1bcc)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (1b0c:1bcc)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (1b0c:1bcc)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (1b0c:1bcc)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (1b0c:1bcc)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (1b0c:1bcc)]     Analyzer Module: local_server (value=)
+[Network Analyzer (1b0c:1bcc)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1b0c: 950)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 2620:1EC:C11:0:0:0:0:239: - 443  (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (1b0c:2c30)]   (Sid:  1) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES256-GCM-SHA384)
+[API Trapper      (325c:3174)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\108.0.1462.54\identity_helper.exe
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 60.166.74.167:8981   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[API Trapper      (38d4:2068)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[API Trapper      (22e8:10d8)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Error    (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10060)
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 40.90.184.73:443   (Service=)  (Sid=  3)  PROXIED!
+[Net An. Error    (1b0c:2c30)] SSLAccept(ssl_id = 2408534620512 = 00000230C7D9B960) Failed, ctx = 00000230C8110030, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    (1b0c:2c30)]   (Sid:  1) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Web Request      (1b0c: 950)] "GET /devt-web"   
+[Network Analyzer (1b0c: 950)]   (Sid:  2) Client -> Server @ : 443 bytes (Service=HTTP)
+[Network Analyzer (1b0c: 950)]   (Sid:  2) Server -> Client : 374 bytes  (Service=HTTP)
+[Network Analyzer (1b0c:18f8)]   (Sid:  1) Connection Terminated (by Client)
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 2620:1EC:C11:0:0:0:0:239: - 443  (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 2620:1EC:C11:0:0:0:0:239: - 443  (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (1b0c:3fd8)]   (Sid:  4) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES256-GCM-SHA384)
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 2620:1EC:4F:1:0:0:0:49: - 443  (Service=)  (Sid=  6)  PROXIED!
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:3fe4)]   (Sid:  5) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES256-GCM-SHA384)
+[Net An. Error    (1b0c:3c28)] SSL_connect(ssl_id = 2408538646480 = 00000230C81727D0) Failed, ctx = 00000230C7D95380, err = "SSLv3/TLS write client hello", err code = 5, err msg = "error:00000005:lib(0):func(0):DH lib
+"
+[Net An. Error    (1b0c:3c28)]   (Sid:  6) SSL handshake with remote server Failed!
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10060)
+[API Trapper      (3cb0:3fd4)] Recording in 64-bit mode: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+[Net An. Error    (1b0c:3f90)] SSL_connect(ssl_id = 2408458155968 = 00000230C34AF7C0) Failed, ctx = 00000230C7D5DF50, err = "SSLv3/TLS write client hello", err code = 5, err msg = "error:00000005:lib(0):func(0):DH lib
+"
+[Net An. Error    (1b0c:3f90)]   (Sid:  3) SSL handshake with remote server Failed!
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Error    (1b0c:1bcc)] Request Connection: Remote Server @ 142.251.42.234:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10060)
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 180.163.151.162:443   (Service=)  (Sid=  7)  PROXIED!
+[Network Analyzer (1b0c:2f4c)]   (Sid:  7) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.3, ciphers:TLS_AES_256_GCM_SHA384)
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 202.89.233.101:443   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:3700)]   (Sid:  8) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES256-GCM-SHA384)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Error    (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Error    (1b0c:3fd8)] SSLAccept(ssl_id = 2408534619808 = 00000230C7D9B6A0) Failed, ctx = 00000230C8110030, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    (1b0c:3fd8)]   (Sid:  4) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (1b0c:18f8)]   (Sid:  4) Connection Terminated (by Client)
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 2620:1EC:C11:0:0:0:0:239: - 443  (Service=)  (Sid=  9)  PROXIED!
+[Net An. Error    (1b0c:3fe4)] SSLAccept(ssl_id = 2408538640448 = 00000230C8171040) Failed, ctx = 00000230C8110030, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    (1b0c:3fe4)]   (Sid:  5) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (1b0c:18f8)]   (Sid:  5) Connection Terminated (by Client)
+[Network Analyzer (1b0c:1bcc)] Request Connection: Remote Server @ 2620:1EC:C11:0:0:0:0:239: - 443  (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c:3dc0)]   (Sid:  9) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES256-GCM-SHA384)
+[Network Analyzer (1b0c:3434)]   (Sid: 10) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES256-GCM-SHA384)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Warning  (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Error    (1b0c:1bcc)] Request Connection: Remote Server @ 172.217.163.42:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10060)
+[Net An. Error    (1b0c:2f4c)] SSLAccept(ssl_id = 2408538853904 = 00000230C81A5210) Failed, ctx = 00000230C34F7480, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    (1b0c:3700)] SSLAccept(ssl_id = 2408538962688 = 00000230C81BFB00) Failed, ctx = 00000230C7D9CE30, err = "TLSv1.3 early data", err code = 5, err msg= "error:00000005:lib(0):func(0):DH lib
+" 
+[Net An. Error    (1b0c:2f4c)]   (Sid:  7) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Net An. Error    (1b0c:3700)]   (Sid:  8) Negotiate Client -> Proxy SSL Handshake Failed!!!
+[Network Analyzer (1b0c:1bcc)] Address lookup for ZTR = 192.168.101.1
+[Network Analyzer (1b0c: 950)]   (Sid:  7) Connection Terminated (by Client)
+[Network Analyzer (1b0c: 950)]   (Sid:  8) Connection Terminated (by Client)
+[User action                 ] Pausing...  

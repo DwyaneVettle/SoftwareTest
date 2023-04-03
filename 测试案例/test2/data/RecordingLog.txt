@@ -1,0 +1,12 @@
+[API Trapper      (253c: fb8)] Recording in 32-bit mode: D:\Software\LoadRunner\Bin\HP.LR.ProxyRecorderStarter.exe
+[Network Analyzer ( ac0:14b4)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( ac0:14b4)] Load Network Traffic Analyzers:
+[Network Analyzer ( ac0:14b4)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer ( ac0:14b4)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer ( ac0:14b4)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer ( ac0:14b4)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer ( ac0:14b4)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer ( ac0:14b4)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer ( ac0:14b4)]     Analyzer Module: local_server (value=)
+[Network Analyzer ( ac0:14b4)] ------------------------------------------------------------------------------------------
+[Proxy Recording  ( ac0:14b4)] Started proxy on port 8888 listening IP 192.168.101.1, 127.0.0.1, in synchronous mode
