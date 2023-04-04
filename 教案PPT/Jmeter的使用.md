@@ -455,9 +455,51 @@ key：21f3d56edc75e82afaede5d8bbc2f6b1
 
 ![image-20230326201056374](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303262011527.png)
 
+### 6.7.压测百度实例
+
+接口地址：http://www.baidu.com/s?ie=utf-8&wd=jmeter性能测试-百度搜索测试实例
+
+请求参数
+
+ie：编码方式，默认为utf-8 
+wd: 搜索词
+
+- 添加一个线程组：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304042218952.png" alt="image-20230404221849766" style="zoom:50%;" />
+
+- 添加一个HTTP取样器，并添加如下数据：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304042223575.png" style="zoom:50%;" />
+
+- 添加察看结果树，并修改相应格式为HTML Source Formatted：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304042224705.png)
 
 
 
+- 添加聚合报告，将线程组线程数改为10：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304042226472.png)
+
+运行分析结果：
+
+![image-20230404222719118](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304042227216.png)
+
+聚合报告参数详解：
+
+1. Label：每个 JMeter 的 element（例如 HTTP Request）都有一个 Name 属性，这里显示的就是 Name 属性的值 
+2. #Samples：请求数——表示这次测试中一共发出了多少个请求，如果模拟10个用户，每个用户迭代10次，那么这里显示100 
+3. Average：平均响应时间——默认情况下是单个 Request 的平均响应时间，当使用了 Transaction Controller 时，以Transaction 为单位显示平均响应时间 
+4. Median：中位数，也就是 50％ 用户的响应时间 
+5. 90% Line：90％ 用户的响应时间 
+6. Min：最小响应时间 
+7. Max：最大响应时间 
+8. Error%：错误率——错误请求数/请求总数 
+9. Throughput：吞吐量——默认情况下表示每秒完成的请求数（Request per Second），当使用了 Transaction Controller 时，也可以表示类似 LoadRunner 的 Transaction per Second 数 
+10. KB/Sec：每秒从服务器端接收到的数据量，相当于LoadRunner中的Throughput/Sec
+
+一般而言，性能测试中我们需要重点关注的数据有： #Samples 请求数，Average 平均响应时间，Min 最小响应时间，Max 最大响应时间，Error% 错误率及Throughput 吞吐量。
 
 ## 7.Jmeter录制web脚本
 
@@ -487,7 +529,7 @@ key：21f3d56edc75e82afaede5d8bbc2f6b1
 
 ![image-20230327204453806](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202303272044172.png)
 
-![](C:/Users/HP/Desktop/脚本成功录制.png)
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304041158282.png)
 
 
 
