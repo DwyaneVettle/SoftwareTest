@@ -10,6 +10,8 @@ week02
 week05:
 采用jmeter进行接口测试（https://www.juhe.cn/docs/index/otherid/1中的新闻头条和天气预报）  做get和post请求的两种方式，在察看结果树体现
 
+week06
+安装postman
 
 
 
