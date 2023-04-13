@@ -1,0 +1,11 @@
+[t50]
+FileName1=t50_httpCompImg.jfif
+URL1=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1681111810870
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_49.xml
+RequestHeaderFile=t50_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t50_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

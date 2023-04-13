@@ -1,0 +1,9 @@
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:44 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI; Path=/
+

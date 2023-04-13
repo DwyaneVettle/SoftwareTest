@@ -1,0 +1,11 @@
+[t36]
+FileName1=t36_httpCompImg.jfif
+URL1=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1681111730334
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_35.xml
+RequestHeaderFile=t36_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t36_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

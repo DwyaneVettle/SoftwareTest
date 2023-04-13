@@ -1,0 +1,11 @@
+[t15]
+FileName1=t15_logout.svg
+URL1=http://cfgjt.cn:8981/devt-web/assets/outline/logout.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_14.xml
+RequestHeaderFile=t15_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t15_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

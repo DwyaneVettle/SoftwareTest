@@ -1,0 +1,13 @@
+POST http://cfgjt.cn:8981/devt-service/colorplan/planinfo.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 14
+

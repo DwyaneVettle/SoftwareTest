@@ -1,0 +1,11 @@
+[t44]
+FileName1=t44_httpCompImg.jfif
+URL1=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=183&fileName=no.png&timestamp=1681111810870
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_43.xml
+RequestHeaderFile=t44_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t44_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

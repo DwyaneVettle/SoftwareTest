@@ -275,3 +275,100 @@ ls
 - 点击开始录制，生成录制脚本：
 
 ![image-20230403213201738](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304032132967.png)
+
+
+
+### 3.4.远程代理录制
+
+- 添加一个脚本，点击录制按钮，录制方式采用远程代理录制：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101453763.png" style="zoom:33%;" />
+
+- 录制开始，控制台有启动录制的IP和端口：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101454174.png" alt="image-20230410145439063" style="zoom:33%;" />
+
+- 打开浏览器，进入http://cfgjt.cn:8981/devt-web的登录页，然后设置代理IP为刚刚设置的代理IP（192.168.1.102）和端口号（浏览器设置-系统-代理）：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101458806.png" alt="image-20230410145846678" style="zoom:33%;" />
+
+- 登录进网页，搜索`文本`，然后停止录制，查看生成的脚本：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101503259.png" alt="image-20230410150310107" style="zoom:33%;" />
+
+- 关闭之前的浏览器代理。
+
+
+
+### 3.5.脚本优化
+
+- **脚本结构认识：**
+  - Actions：脚本区
+  - Extra Files：头文件区
+  - Runtime Settings：运行时设置
+  - Parameters：参数设计
+  - Recording Report：录制报告
+  - Replay Summary：回放总结
+
+![image-20230410150713334](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101507388.png)
+
+- 脚本区的执行顺序由先到后是`vuser_init--Action--vuser_end`。我们可以分别在这三个中添加执行输出的测试脚本，点击回放查看，脚本如下：
+
+```shell
+lr_log_message("测试1","init")
+lr_log_message("测试2","Action")
+lr_log_message("测试3","end")
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101515957.png" style="zoom:33%;" />
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101517512.png)
+
+
+
+- 选择Actions，添加一个新的Action1:
+
+![image-20230410152423432](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101524498.png)
+
+- 录制一个脚本，录制设置为本地代理，录制信息如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101520607.png" alt="image-20230410152058497" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101521102.png" alt="image-20230410152122038" style="zoom: 50%;" />
+
+- 登录进页面后，动作改为`Action`，搜索`文本`，再更换一个`Action1`，点击`组件视图`，搜索`小红`，然后停止录制；
+- 在`Recording Report`中查看生成的报告：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101534448.png" style="zoom:50%;" />
+
+- 在`Host`中，可能有很多与我们业务不相关的主机，我们可以去掉勾选，然后点击`Regenerate`重新生成，这样就和我们当前录制脚本相关了：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101536770.png" style="zoom:50%;" />
+
+- 在右边图示的`Content Type`中过滤掉一些无用资源，只保留Json数据，然后重新生成：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101539470.png)
+
+
+
+### 3.6.录制选项优化
+
+录制选项的打开有两种方式：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101558621.png" style="zoom:50%;" />
+
+- 在录制中有两种方式可以选择：
+  - HTML-based script(默认)：把所有非资源请求录制到一个组；
+  - URL-based script：把所有资源录制到一个组，包含JS，CSS等文件。
+
+
+
+当录制选项重新设置，不需要再录制脚本，我们只需要把之前的脚本重新申请即可，点击`Record`---`Regenerate Script`---`OK`，
+
+
+
+
+
+- 脚本语言设置：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101605743.png" style="zoom:33%;" />

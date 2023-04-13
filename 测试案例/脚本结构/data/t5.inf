@@ -1,0 +1,11 @@
+[t5]
+FileName1=t5_main.2e3b714f083eb6eadafc.html
+URL1=http://cfgjt.cn:8981/devt-web/main.2e3b714f083eb6eadafc.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_5.xml
+RequestHeaderFile=t5_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t5_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

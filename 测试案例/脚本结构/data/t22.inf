@@ -1,0 +1,11 @@
+[t22]
+FileName1=t22_eye-invisible.svg
+URL1=http://cfgjt.cn:8981/devt-web/assets/outline/eye-invisible.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_21.xml
+RequestHeaderFile=t22_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t22_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

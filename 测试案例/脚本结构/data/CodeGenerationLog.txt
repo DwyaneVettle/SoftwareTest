@@ -1,0 +1,3158 @@
+****** Start Log Message ******
+Web Recorder version : 2021.0.0.430 
+Recording Mode: URL-Based script
+	Using concurrent groups
+Recording headers not in list:
+	accept
+	accept-charset
+	accept-encoding
+	accept-language
+	accept-ranges
+	age
+	allow
+	cache-control
+	content-base
+	content-disposition
+	content-encoding
+	content-language
+	content-location
+	content-md5
+	content-range
+	content-type
+	date
+	etag
+	expires
+	from
+	if-modified-since
+	if-match
+	if-none-match
+	if-range
+	if-unmodified-since
+	location
+	last-modified
+	max-forwards
+	pragma
+	public
+	range
+	retry-after
+	server
+	transfer-encoding
+	upgrade
+	user-agent
+	vary
+	via
+	warning
+	method
+	path
+	scheme
+Not excluding content types
+Do not record this content types as a resource:
+	text/xml
+	application/json
+Reset context between actions
+Protocol Type: Multi-QTWeb
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 2021.0.0.430
+
+****** Analyze segments filter initialization ******
+[Traffic Filtering] Filtering nav-edge.smartscreen.microsoft.com
+****** Request Header For Transaction With Id 3 ******
+POST https://nav-edge.smartscreen.microsoft.com/api/browser/edge/navigate/3 HTTP/1.1
+Authorization: SmartScreenHash eyJhdXRoSWQiOiIzODFkZGQxZS1lNjAwLTQyZGUtOTRlZC04YzM0YmY3M2YxNmQiLCAia2V5Ijoib3JnWk1MekFaeGczMWVmRzkwVms0dz09IiwgImhhc2giOiI3ZEUwS3NRajkzWT0ifQ==
+Content-Type: application/json; charset=utf-8
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Host: nav-edge.smartscreen.microsoft.com
+Content-Length: 1555
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 3 Ended $$$$$$
+
+****** Request Body For Transaction With Id 3 ******
+{"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54","identity":{"user":{"locale":"zh-CN"},"device":{"id":null,"customId":null,"onlineIdTicket":"t=GwAWAd9tBAAUbkDrC+qm3oy79YpqR0t44MGfO1wOZgAAEDedxHhgtQnEKnNemhAzpSPgAH2VBj15mozSSs4Zv9EE+ZVflY5QAxvP2ZKyhMT43CGc7YCuVJaJnQuAZOV6OJlwcl/Ig06dLUnnzu8mhOH5DBG30/PpahNYMh8/ocaZdozNydxLdaaRTV4m2Osxr4G5Q1oFaP7mG0z99ln6+B0WkwmBRVOq9IXbtz3d1FoMg/sXkDaUKPrRSX42A0eQec8MUQSoOk7QBIhYcn5qZSoJ3Vx9HZWC2A733Kos5RdI0VPnRagxa/ApjvnD5Z4TxFKMzCBax+pthPvZtzMWjoa5r1HJkNbL0gtaZkIzNhfqSpeSIAE=&p=","family":3,"locale":"zh-CN","osVersion":"10.0.19044.2728.vb_release","browser":{"internet_explorer":"9.11.19041.0"},"netJoinStatus":2,"enterprise":{},"cloudSku":false,"architecture":9},"caller":{"locale":"zh-CN","name":"anaheim","version":"108.0.1462.54 (Official build) "},"client":{"version":281483711545350,"data":{"topTraffic":"638004170464094982","customSynchronousLookupUris":"0","synchronousLookupUris
+$$$$$$ Request Body For Transaction With Id 3 Ended $$$$$$
+
+****** Response Header For Transaction With Id 3 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private
+Content-Length: 2738
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+X-SmartScreen-Flight-Vector: EnableNsHumorMatch,enableProxyLeniency,IsArsFmsIntegrationEnabled,IsCurfId0LoggingEnabled,isCurfTstEnabled,isNpPIOverrideBlockEnabled,npSettings2004,SendGeoMapInSettingsToNewAnaheimClient,SrcEOPEnabled,topTrafficV2Enabled,UpdateOnMissingEtagEnabled,updateSigningCert,updateSigningCertForRS3RS4
+Date: Mon, 10 Apr 2023 07:26:14 GMT
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 3 Ended $$$$$$
+
+[Traffic Filtering] Filtering ping-edge.smartscreen.microsoft.com
+****** Request Header For Transaction With Id 8 ******
+POST https://ping-edge.smartscreen.microsoft.com/api/browser/edge/actions/3 HTTP/1.1
+Authorization: SmartScreenHash eyJhdXRoSWQiOiIzODFkZGQxZS1lNjAwLTQyZGUtOTRlZC04YzM0YmY3M2YxNmQiLCAia2V5Ijoidzh3eGpnQVBWckhmQXRZTmpvL3FYUT09IiwgImhhc2giOiJzc1FPcGNZNVVlOD0ifQ==
+Content-Type: application/json; charset=utf-8
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Host: ping-edge.smartscreen.microsoft.com
+Content-Length: 1044
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 8 Ended $$$$$$
+
+****** Request Body For Transaction With Id 8 ******
+{"identity":{"user":{"locale":"zh-CN"},"device":{"id":null,"customId":null,"onlineIdTicket":"t=GwAWAd9tBAAUbkDrC+qm3oy79YpqR0t44MGfO1wOZgAAEDedxHhgtQnEKnNemhAzpSPgAH2VBj15mozSSs4Zv9EE+ZVflY5QAxvP2ZKyhMT43CGc7YCuVJaJnQuAZOV6OJlwcl/Ig06dLUnnzu8mhOH5DBG30/PpahNYMh8/ocaZdozNydxLdaaRTV4m2Osxr4G5Q1oFaP7mG0z99ln6+B0WkwmBRVOq9IXbtz3d1FoMg/sXkDaUKPrRSX42A0eQec8MUQSoOk7QBIhYcn5qZSoJ3Vx9HZWC2A733Kos5RdI0VPnRagxa/ApjvnD5Z4TxFKMzCBax+pthPvZtzMWjoa5r1HJkNbL0gtaZkIzNhfqSpeSIAE=&p=","family":3,"locale":"zh-CN","osVersion":"10.0.19044.2728.vb_release","browser":{"internet_explorer":"9.11.19041.0"},"netJoinStatus":2,"enterprise":{},"cloudSku":false,"architecture":9},"caller":{"locale":"zh-CN","name":"anaheim","version":"108.0.1462.54 (Official build) "},"client":{"version":281483711545350,"data":{"topTraffic":"638004170464094982","customSynchronousLookupUris":"0","synchronousLookupUris":"638163437874536371","customSettings":"F95BA787499AB4FA9EFFF472CE383A14","edgeSettings":"2.0-48b11410dc937a1723bf4c5ad33ecdb286d8ec69544241bc3
+$$$$$$ Request Body For Transaction With Id 8 Ended $$$$$$
+
+****** Response Header For Transaction With Id 8 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private
+Content-Length: 1973
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+X-SmartScreen-Flight-Vector: EnableNsHumorMatch,enableProxyLeniency,IsArsFmsIntegrationEnabled,IsCurfId0LoggingEnabled,isCurfTstEnabled,isNpPIOverrideBlockEnabled,npSettings2004,SendGeoMapInSettingsToNewAnaheimClient,SrcEOPEnabled,topTrafficV2Enabled,UpdateOnMissingEtagEnabled,updateSigningCert,updateSigningCertForRS3RS4
+Date: Mon, 10 Apr 2023 07:26:14 GMT
+Connection: close
+
+
+$$$$$$ Response Header For Transaction With Id 8 Ended $$$$$$
+
+****** Request Header For Transaction With Id 12 ******
+GET http://cfgjt.cn:8981/devt-web HTTP/1.1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 12 Ended $$$$$$
+
+****** Response Header For Transaction With Id 12 ******
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:15 GMT
+Content-Type: text/html
+Content-Length: 169
+Location: http://cfgjt.cn:8981/devt-web/
+Connection: keep-alive
+
+
+$$$$$$ Response Header For Transaction With Id 12 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+[Traffic Filtering] Filtering edge.microsoft.com
+****** Request Header For Transaction With Id 17 ******
+POST https://edge.microsoft.com/identity/api/v3/msa HTTP/1.1
+Content-Type: application/json
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Host: edge.microsoft.com
+Content-Length: 2433
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 17 Ended $$$$$$
+
+****** Request Body For Transaction With Id 17 ******
+{"disable_features":"4a945acb,6c715cfb,e0075c8a,322c815,e409c8c6,dee07e4,93277d03,b9047d,de7bc63a,cc3f4cbe,24226f8b,eb936fc6,c6ac7137,38bcdcac,1151508f","enable_features":"9dfb2f9e,ac1a31c6,b44b62e1,ddfd6cd3,eb6bda0a,7275d27e,21004d55,f8ac8ec,836025ad,8c56fcfe,3b92f82f,3915a3ff,209911b6,49c628a9,f040bc88,8918c4bc,ec70e985,9aec59c7,b3f580d6,523b26a8,4f2c9528,657a13f8,75ab05e9,bc76f362,e54d9e38,fa969b86,40bc7378,c35b2158,b270b118,93c1cf7b,8491fc81,503ebb,db7b4cff,f3765fb7,d0dc3263,8ea1baf,c6e89c63,45ed8495,fe8f254,ec7d8af9,87e7bcb0,3d47a1e6,782426ab,aa9752f4,cd614abf,e314f18e,3d52c6a2,a47c71da,6d39f62e,14666474,6918470a,963f18b5,dc7d21dd,473bc83f,a4c17ac,106e2e85,51d50e41,7930653d,8fb8c332,1b0905,33cc9bc8,174bb60,bd8fc42a,61431c7,6e607227,15f0c840,4ddd8169,13fe26d0,694dde77,5cfdfd1c,17178ab5,41c26479,cbcb1ad9,9cffea93,75b1b341,201d171,60806046,7b1870e,379709cf,8832ce78,a14f335e,fc1ff333,329d828e,3891021f,6286c2b2,12e2660f,5fa9897c,3b76ae01,1335445b,e67d0460,19857ae4,2478638c,9f191260,2373949a,c2a1bb24,5cfd95dc,
+$$$$$$ Request Body For Transaction With Id 17 Ended $$$$$$
+
+****** Response Header For Transaction With Id 17 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Length: 1865
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: E837FF79317C4F4BB309A7963DDF6D32 Ref B: TYAEDGE0816 Ref C: 2023-04-10T07:26:18Z
+Date: Mon, 10 Apr 2023 07:26:17 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 17 Ended $$$$$$
+
+[Traffic Filtering] Filtering www.bing.com
+****** Request Header For Transaction With Id 22 ******
+POST https://www.bing.com/api/shopping/v1/savings/rewards/rewardsUserInfo HTTP/1.1
+Content-Type: application/json
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Host: www.bing.com
+Content-Length: 43
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 22 Ended $$$$$$
+
+****** Request Body For Transaction With Id 22 ******
+{"anid":"660CEF106CD83A11D901A382FFFFFFFF"}
+$$$$$$ Request Body For Transaction With Id 22 Ended $$$$$$
+
+****** Response Header For Transaction With Id 22 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Length: 81
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+X-Cache: CONFIG_NOCACHE
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+X-MSEdge-Ref: Ref A: 126C78BE6D154A0BA03C04FFED85B699 Ref B: BJ1EDGE0618 Ref C: 2023-04-10T07:26:19Z
+Set-Cookie: _EDGE_S=F=1&SID=1AA07ED5926C614D09706C3A932F60AF; path=/; httponly; domain=bing.com,_EDGE_V=1; path=/; httponly; expires=Sat, 04-May-2024 07:26:19 GMT; domain=bing.com,MUID=16C86D38547061673E977FD7553360BB; samesite=none; path=/; secure; expires=Sat, 04-May-2024 07:26:19 GMT; domain=bing.com,MUIDB=16C86D38547061673E977FD7553360BB; path=/; httponly; expires=Sat, 04-May-2024 07:26:19 GMT
+Date: Mon, 10 Apr 2023 07:26:19 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 22 Ended $$$$$$
+
+[Traffic Filtering] Filtering edge.microsoft.com
+****** Request Header For Transaction With Id 27 ******
+GET https://edge.microsoft.com/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=108.0.1462.54&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.1.0%26installedby%3Dinternal%26uc HTTP/1.1
+EdgeFeatureFlags: {"ExtensionUseNewStoreKeys":true,"UseHttpsForDownload":true}
+Update-Interactivity: bg
+MS-CV: h3EHcOKoIT+10XoD8EDVV/
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Host: edge.microsoft.com
+
+
+$$$$$$ Request Header For Transaction With Id 27 Ended $$$$$$
+
+****** Response Header For Transaction With Id 27 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Length: 413
+Content-Type: text/xml; charset=utf-8
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 1456D2D26C9B406295166E85A406B400 Ref B: TYAEDGE0816 Ref C: 2023-04-10T07:26:19Z
+Date: Mon, 10 Apr 2023 07:26:19 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 27 Ended $$$$$$
+
+[Traffic Filtering] Filtering edge.microsoft.com
+****** Request Header For Transaction With Id 32 ******
+GET https://edge.microsoft.com/abusiveadblocking/api/v1/blocklist HTTP/1.1
+If-None-Match: "8E3877A57C6BE53B0D5EB4DA9E4177E7B0C2E128E0A234184079FFDB4FA80BDB"
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Host: edge.microsoft.com
+
+
+$$$$$$ Request Header For Transaction With Id 32 Ended $$$$$$
+
+****** Response Header For Transaction With Id 32 ******
+HTTP/1.1 304 Not Modified
+Cache-Control: public, max-age=43200
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+ETag: "8E3877A57C6BE53B0D5EB4DA9E4177E7B0C2E128E0A234184079FFDB4FA80BDB"
+Vary: Accept-Encoding
+X-Cache: TCP_HIT
+X-Mesh-Client-TTL: 72
+Strict-Transport-Security: max-age=0
+X-MSEdge-Ref: Ref A: 0D1BBAD804F44EF7BC8D1115F94B2F53 Ref B: TYAEDGE0816 Ref C: 2023-04-10T07:26:22Z
+Date: Mon, 10 Apr 2023 07:26:21 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 32 Ended $$$$$$
+
+[Traffic Filtering] Filtering static.edge.microsoftapp.net
+****** Request Header For Transaction With Id 36 ******
+GET https://static.edge.microsoftapp.net/consumer/edropstatic/manifest/v13.0.0.json?t=1681111563 HTTP/1.1
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Host: static.edge.microsoftapp.net
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 36 Ended $$$$$$
+
+****** Response Header For Transaction With Id 36 ******
+HTTP/1.1 200 OK
+Content-Length: 244
+Content-Type: application/json
+Content-MD5: y3NBw0vu3mR3ClYmvCk1uQ==
+Last-Modified: Fri, 03 Mar 2023 07:22:00 GMT
+ETag: 0x8DB1BB7FB123B5D
+X-Cache: TCP_HIT
+x-ms-request-id: eab83708-b01e-0047-3376-6b193d000000
+x-ms-version: 2009-09-19
+x-ms-lease-status: unlocked
+x-ms-blob-type: BlockBlob
+X-Azure-Ref: 0HrozZAAAAACURZShZ4cwQa072YchYKYVVFlPMDFFREdFMjQxOQBkNjNjY2I4NC0wMjAyLTQxZjgtOTlhMC1lZGRjN2EzODcwYjQ=
+Date: Mon, 10 Apr 2023 07:26:21 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 36 Ended $$$$$$
+
+****** Request Header For Transaction With Id 40 ******
+GET http://cfgjt.cn:8981/devt-web/ HTTP/1.1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 40 Ended $$$$$$
+
+****** Response Header For Transaction With Id 40 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:22 GMT
+Content-Type: text/html
+Content-Length: 2710
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-a96"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 40 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Start Log Message ******
+Set SSL version to 'AUTO'
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 40 ****** (Location Flag : tFlagInsertEnd, Location ID : 40)
+	web_url("devt-web",
+		"URL=http://cfgjt.cn:8981/devt-web",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=",
+		"Snapshot=t1.inf",
+		"Mode=HTTP",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 40 Ended $$$$$$
+
+[Traffic Filtering] Filtering update.googleapis.com
+****** Request Header For Transaction With Id 45 ******
+POST https://update.googleapis.com/service/update2/json?cup2key=12:W9-B97jUADHy4_u3F-CHfR5p4TJhct3e3m6xxVmKeQU&cup2hreq=e0f0c374309b7b685721a1a3b6814efc61e875a85df203c9dc178d15b2178e79 HTTP/1.1
+X-Goog-Update-AppId: nhdogjmejiglipccpnnnanhbledajbpd
+X-Goog-Update-Interactivity: bg
+X-Goog-Update-Updater: chromiumcrx-108.0.1462.54
+Content-Type: application/json
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Host: update.googleapis.com
+Content-Length: 974
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 45 Ended $$$$$$
+
+****** Request Body For Transaction With Id 45 ******
+{"request":{"@os":"win","@updater":"chromiumcrx","acceptformat":"crx3","app":[{"appid":"nhdogjmejiglipccpnnnanhbledajbpd","cohort":"rrf@0.58","enabled":true,"installdate":5835,"installedby":"internal","lang":"zh-CN","packages":{"package":[{"fp":"2.6.4.5"}]},"ping":{"ping_freshness":"{9bf2ab76-e4e6-4571-99ef-12ebf819c09f}","rd":5943},"targetingattributes":{"AppCohort":"rrf@0.58","AppMajorVersion":"108","AppRollout":0.58,"AppVersion":"108.0.1462.54","IsInternalUser":false,"Priority":false},"updatecheck":{},"version":"6.4.5"}],"arch":"x64","dedup":"cr","domainjoined":false,"hw":{"avx":1,"physmemory":10,"sse":1,"sse2":1,"sse3":1,"sse41":1,"sse42":1,"ssse3":1},"ismachine":1,"nacl_arch":"x86-64","os":{"arch":"x86_64","platform":"Windows","sku":"desktop","version":"10.0.19044.2728"},"prodversion":"108.0.1462.54","protocol":"3.1","requestid":"{74cc70c8-ad0b-4818-a8b3-012ea127fa42}","sessionid":"{df4b62c8-ce07-4ae2-b336-af098a1795ca}","updaterversion":"108.0.1462.54"}}
+$$$$$$ Request Body For Transaction With Id 45 Ended $$$$$$
+
+****** Response Header For Transaction With Id 45 ******
+HTTP/1.1 200 OK
+Content-Security-Policy: script-src 'report-sample' 'nonce-t6zhEr-6Mxptd7UyoQxaKQ' 'unsafe-inline' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri https://csp.withgoogle.com/csp/clientupdate-aus/1
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 10 Apr 2023 07:26:26 GMT
+X-Cup-Server-Proof: 3045022100988f6077fdbf4d4405cbcebf1db2a63c31e4c63f94f735373da53ead65a31bbd02205bb5357d509fe8d587b4108e7b26ac648e5e708eab611415dbaee1b5bbe2d12f:e0f0c374309b7b685721a1a3b6814efc61e875a85df203c9dc178d15b2178e79
+ETag: W/"3045022100988f6077fdbf4d4405cbcebf1db2a63c31e4c63f94f735373da53ead65a31bbd02205bb5357d509fe8d587b4108e7b26ac648e5e708eab611415dbaee1b5bbe2d12f:e0f0c374309b7b685721a1a3b6814efc61e875a85df203c9dc178d15b2178e79"
+Content-Type: application/json; charset=utf-8
+X-Daynum: 5943
+X-Daystart: 1586
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+$$$$$$ Response Header For Transaction With Id 45 Ended $$$$$$
+
+****** Request Header For Transaction With Id 49 ******
+GET http://cfgjt.cn:8981/devt-web/runtime.7b63b9fd40098a2e8207.js HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: */*
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 49 Ended $$$$$$
+
+****** Response Header For Transaction With Id 49 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:32 GMT
+Content-Type: application/javascript
+Content-Length: 1485
+Last-Modified: Wed, 09 Mar 2022 08:16:16 GMT
+Connection: keep-alive
+ETag: "62286250-5cd"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 49 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 49 ****** (Location Flag : tFlagInsertEnd, Location ID : 49)
+	web_url("runtime.7b63b9fd40098a2e8207.js",
+		"URL=http://cfgjt.cn:8981/devt-web/runtime.7b63b9fd40098a2e8207.js",
+		"Resource=1",
+		"RecContentType=application/javascript",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t2.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 49 Ended $$$$$$
+
+****** Request Header For Transaction With Id 53 ******
+GET http://cfgjt.cn:8981/devt-web/styles.2ea3cb3a29598ff3a901.css HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: text/css,*/*;q=0.1
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 53 Ended $$$$$$
+
+****** Response Header For Transaction With Id 53 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:32 GMT
+Content-Type: text/css
+Content-Length: 667710
+Last-Modified: Wed, 09 Mar 2022 08:16:16 GMT
+Connection: keep-alive
+ETag: "62286250-a303e"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 53 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1000040 ****** (Location Flag : tFlagInsertBefore, Location ID : 49)
+	web_concurrent_start(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 1000040 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 49)
+	web_concurrent_end(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 53 ****** (Location Flag : tFlagInsertAfter, Location ID : 49)
+	web_url("styles.2ea3cb3a29598ff3a901.css",
+		"URL=http://cfgjt.cn:8981/devt-web/styles.2ea3cb3a29598ff3a901.css",
+		"Resource=1",
+		"RecContentType=text/css",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t3.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 53 Ended $$$$$$
+
+****** Request Header For Transaction With Id 57 ******
+GET http://cfgjt.cn:8981/devt-web/polyfills.1111712f963ef64beaec.js HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: */*
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 57 Ended $$$$$$
+
+****** Response Header For Transaction With Id 57 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:39 GMT
+Content-Type: application/javascript
+Content-Length: 36586
+Last-Modified: Wed, 09 Mar 2022 08:16:16 GMT
+Connection: keep-alive
+ETag: "62286250-8eea"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 57 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 57 ****** (Location Flag : tFlagInsertAfter, Location ID : 53)
+	web_url("polyfills.1111712f963ef64beaec.js",
+		"URL=http://cfgjt.cn:8981/devt-web/polyfills.1111712f963ef64beaec.js",
+		"Resource=1",
+		"RecContentType=application/javascript",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t4.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 57 Ended $$$$$$
+
+[Traffic Filtering] Filtering www.bing.com
+****** Request Header For Transaction With Id 62 ******
+POST https://www.bing.com/api/shopping/v1/getsupporteddomains?appid=67220BD2169C2EA709984467C21494086DF8CA85 HTTP/1.1
+Content-Type: application/json
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: www.bing.com
+Content-Length: 2337
+
+
+$$$$$$ Request Header For Transaction With Id 62 Ended $$$$$$
+
+****** Request Body For Transaction With Id 62 ******
+{"clientContext":{"appname":"Edge","buildversion":"108.0.1462.54","enabledfeatures":[{"name":"msShoppingExp1","params":[]},{"name":"msShoppingExp7","params":[{"key":"msEdgeShoppingAutoShowScenariosFirstMask","value":"1"},{"key":"msEdgeShoppingAutoShowScenariosSecondMask","value":"83890176"},{"key":"variant","value":"ControlUserPref"}]},{"name":"msShoppingExp31","params":[]},{"name":"msWebAssistQuery","params":[]},{"name":"msAutofillAutoPopup","params":[]},{"name":"msEdgeShoppingPriceHistory","params":[]},{"name":"msEdgeShoppingExpressCheckout","params":[]},{"name":"msEdgeShoppingGuestDomainCoupons","params":[{"key":"duration","value":"3"}]},{"name":"msEdgeShoppingEncryptionKey","params":[]},{"name":"msEdgeShoppingRewards","params":[]},{"name":"msEdgeShoppingExpressCheckoutFillDetails","params":[]},{"name":"msEdgeShoppingRebatesSignUp","params":[{"key":"duration","value":"3"}]},{"name":"msEdgeShoppingAutoShowControlForFeature","params":[]},{"name":"msEdgeShoppingAutoShowMuteForFeature","params":[{"key":"durati
+$$$$$$ Request Body For Transaction With Id 62 Ended $$$$$$
+
+****** Response Header For Transaction With Id 62 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=172078
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-Ceto-ref: 6433ba35b677434587039ad8191bf931|2023-04-10T07:26:45.421Z
+X-Cache: CONFIG_NOCACHE
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+X-MSEdge-Ref: Ref A: 20F5B42B8FC74A0C9EF91D8B5239E1C9 Ref B: BJ1EDGE0618 Ref C: 2023-04-10T07:26:45Z
+Date: Mon, 10 Apr 2023 07:26:45 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 62 Ended $$$$$$
+
+[Traffic Filtering] Filtering www.bing.com
+****** Request Header For Transaction With Id 67 ******
+GET https://www.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0 HTTP/1.1
+X-Search-RPSToken: 
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: PPLState=1; KievRPSSecAuth=FABSBBRaTOJILtFsMkpLVWSG6AN6C/svRwNmAAAEgAAACL2DAEG/AcxtEAQwSg+S8xTqB1612j1kc/62F7tnp9d/LVemHcdsQUiuu6MTqSJUHnu6HsKchKQ+xCilAHWXrxYSSTiCUnpVYrg6cvxRqcsCOeBcMRpCJLDsCQg74yZ34E20NTzw+KQbqU4IZb4lfZDgC4lUpdt0l/cg9iuNjKhMh2G+eq4T2osyhIdyCoZTl+R+DRvXEqwoeYAYYFX7hR/AP95gqR83crrDKsoUDhzoqxs6wIQbRrIC42aZijvKaR5wGLFKq1RdJWdOXDfvDqSvx+ecxwE6jZYBoO9S7oevNfccf+RoxNggrANhUCF9tXjGlFwjo+6FwNThvIz4TngVqu/RQLzgJgs+F6xcb9XzBwK6Lyg/YboErb1xWP+EztzsNI8SFaZ3AZebE6huPCfzUeZgQOBim0OJ4HrDA/GDKfJQEHPC5f+N3IEqvwx+Fd7XpaRj2Kvtle0MAnpZbkMM+0esLN/Ma14RvfmEimlbeZ8KMFOmYmvXD4oYVEP2ag2W64kbM9UDAqdvYW09gchPULAqslfpIygbSvoXKp2ZXAEmU2qhMqTsxRxBNRZMrNn5M10tOp54uTDaia0km63+HFiXqfbMJkIFEd2GWKrOQqFbujgTgoTvXf12zAAssqN8iMZCYCxuaaZWGfX3I4Pua3ZFFegutdengUoOU7KtvfgECpXAnQZhGXmbZcnx35MyPRsUD9Vp0JzOTnM7QhMeSw31PKFUvvesdXDMSJ2PMA987pR/Ti5cLFVAhAAwIkShDBlLeEz/0npJzUrTFFx8uajppNpTjWP8jIeHOv5H8AR2lpUT5R+S3PNBZsHOVlq8lrujYRjotJNgvLReBe5HB400FQP07BIh3CMFYE3mt1MBGLGaX5aKchvvoVsNPuUsYvcdp1XP58CaJ5JwqrJ4Ait7RScJBXIdfiGleRg/U3mdUk/X49RdiGwcVxphh/3NVWgiBdTWTNMoDGPKswpCJ0u/7xX+A3cNeY4TZeblaFa+0AO34QfmzyZjOZf75krExdkXS/0JnNc1csOYYXjo7he9LhpjMGmEh82M68kW3SFrUMsbvZDn86Ld9eQInephSfmQOvnc6/lxwbihnFLOC6XqOaDNt3/Vd0YuNJx/VHLoO2LSzYk319XdoXbVufzYKr+aRhPucQRVhVtaIiK8kqzx15XxuNjtbzLdIclFCh0ntCUsf6K24vBO+uAU/D97JI8UbRzb96rphafGN3amB5BEt9iJtEnFCp573pbRd2wtieelDvMudatNqiQrH+q9wpMcvLADZ8KN2aUBJ1+9vhyalA2v/Wsv7HgAw1e6tgjwvseaNqePxlqh7jpshxaYsNiSbEtOPQlA45l8TRavX/L44Moc2KDoAbERiKSSugZOB2Xy115s5BQAfKPNemRYEj+VyKe/AEtu3y2/0Ds=; ANON=A=660CEF106CD83A11D901A382FFFFFFFF; MUIDB=0AF52F3115AC658406C221E2148264D9; SRCHD=AF=NOFORM; SRCHUID=V=2&GUID=C5982501C6A9458C9FAE6BA8FE9E90F4&dmnchg=1; MUID=0AF52F3115AC658406C221E2148264D9; ANIMIA=FRE=1; USRLOC=HS=1&ELOC=LAT=30.5722599029541|LON=104.06651306152344|N=%E6%88%90%E9%83%BD%EF%BC%8C%E5%9B%9B%E5%B7%9D%E7%9C%81|ELT=1|; SRCHUSR=DOB=20200523&T=1680744940000; _RwBf=ilt=4&ihpd=0&ispd=1&rc=12&rb=0&gb=0&rg=200&pc=9&mtu=0&rbb=0&g=0&cid=&clo=0&v=1&l=2023-04-05T07:00:00.0000000Z&lft=0001-01-01T00:00:00.0000000&aof=0&o=2&p=&c=&t=0&s=0001-01-01T00:00:00.0000000+00:00&ts=2023-04-06T01:35:42.0241878+00:00&rwred=0&wls=&lka=0&lkt=0&TH=&mte=0; SRCHHPGUSR=SRCHLANG=zh-Hans&BZA=0&BRW=N&BRH=S&CW=1233&CH=619&SW=1280&SH=720&DPR=1.5&UTC=480&DM=0&EXLTT=6&HV=1680744953&PV=10.0.0&WTS=63816341740&PRVCW=1233&PRVCH=619&SCW=1217&SCH=3407; SUID=A
+Host: www.bing.com
+
+
+$$$$$$ Request Header For Transaction With Id 67 Ended $$$$$$
+
+****** Response Header For Transaction With Id 67 ******
+HTTP/1.1 302 Found
+Cache-Control: private
+Content-Length: 184
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Location: https://cn.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0
+Vary: Accept-Encoding
+Set-Cookie: SNRHOP=TS=638167084106863525&I=1; domain=.bing.com; path=/; secure; SameSite=None,_EDGE_S=SID=13230E0538646614067F1CEA39276702; path=/; httponly; domain=bing.com
+UserAgentReductionOptOut: A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=
+X-Cache: CONFIG_NOCACHE
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+X-MSEdge-Ref: Ref A: E64F57B7C2064BBCA3D513E5F3D5C164 Ref B: BJ1EDGE0618 Ref C: 2023-04-10T07:26:45Z
+Date: Mon, 10 Apr 2023 07:26:45 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 67 Ended $$$$$$
+
+****** Request Header For Transaction With Id 71 ******
+GET http://cfgjt.cn:8981/devt-web/main.2e3b714f083eb6eadafc.js HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: */*
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 71 Ended $$$$$$
+
+****** Response Header For Transaction With Id 71 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:40 GMT
+Content-Type: application/javascript
+Content-Length: 1636429
+Last-Modified: Mon, 28 Nov 2022 01:23:44 GMT
+Connection: keep-alive
+ETag: "63840da0-18f84d"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 71 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 71 ****** (Location Flag : tFlagInsertAfter, Location ID : 57)
+	web_url("main.2e3b714f083eb6eadafc.js",
+		"URL=http://cfgjt.cn:8981/devt-web/main.2e3b714f083eb6eadafc.js",
+		"Resource=1",
+		"RecContentType=application/javascript",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t5.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 71 Ended $$$$$$
+
+[Traffic Filtering] Filtering cn.bing.com
+****** Request Header For Transaction With Id 76 ******
+GET https://cn.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0 HTTP/1.1
+X-Search-RPSToken: 
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Cookie: PPLState=1; KievRPSSecAuth=FABSBBRaTOJILtFsMkpLVWSG6AN6C/svRwNmAAAEgAAACL2DAEG/AcxtEAQwSg+S8xTqB1612j1kc/62F7tnp9d/LVemHcdsQUiuu6MTqSJUHnu6HsKchKQ+xCilAHWXrxYSSTiCUnpVYrg6cvxRqcsCOeBcMRpCJLDsCQg74yZ34E20NTzw+KQbqU4IZb4lfZDgC4lUpdt0l/cg9iuNjKhMh2G+eq4T2osyhIdyCoZTl+R+DRvXEqwoeYAYYFX7hR/AP95gqR83crrDKsoUDhzoqxs6wIQbRrIC42aZijvKaR5wGLFKq1RdJWdOXDfvDqSvx+ecxwE6jZYBoO9S7oevNfccf+RoxNggrANhUCF9tXjGlFwjo+6FwNThvIz4TngVqu/RQLzgJgs+F6xcb9XzBwK6Lyg/YboErb1xWP+EztzsNI8SFaZ3AZebE6huPCfzUeZgQOBim0OJ4HrDA/GDKfJQEHPC5f+N3IEqvwx+Fd7XpaRj2Kvtle0MAnpZbkMM+0esLN/Ma14RvfmEimlbeZ8KMFOmYmvXD4oYVEP2ag2W64kbM9UDAqdvYW09gchPULAqslfpIygbSvoXKp2ZXAEmU2qhMqTsxRxBNRZMrNn5M10tOp54uTDaia0km63+HFiXqfbMJkIFEd2GWKrOQqFbujgTgoTvXf12zAAssqN8iMZCYCxuaaZWGfX3I4Pua3ZFFegutdengUoOU7KtvfgECpXAnQZhGXmbZcnx35MyPRsUD9Vp0JzOTnM7QhMeSw31PKFUvvesdXDMSJ2PMA987pR/Ti5cLFVAhAAwIkShDBlLeEz/0npJzUrTFFx8uajppNpTjWP8jIeHOv5H8AR2lpUT5R+S3PNBZsHOVlq8lrujYRjotJNgvLReBe5HB400FQP07BIh3CMFYE3mt1MBGLGaX5aKchvvoVsNPuUsYvcdp1XP58CaJ5JwqrJ4Ait7RScJBXIdfiGleRg/U3mdUk/X49RdiGwcVxphh/3NVWgiBdTWTNMoDGPKswpCJ0u/7xX+A3cNeY4TZeblaFa+0AO34QfmzyZjOZf75krExdkXS/0JnNc1csOYYXjo7he9LhpjMGmEh82M68kW3SFrUMsbvZDn86Ld9eQInephSfmQOvnc6/lxwbihnFLOC6XqOaDNt3/Vd0YuNJx/VHLoO2LSzYk319XdoXbVufzYKr+aRhPucQRVhVtaIiK8kqzx15XxuNjtbzLdIclFCh0ntCUsf6K24vBO+uAU/D97JI8UbRzb96rphafGN3amB5BEt9iJtEnFCp573pbRd2wtieelDvMudatNqiQrH+q9wpMcvLADZ8KN2aUBJ1+9vhyalA2v/Wsv7HgAw1e6tgjwvseaNqePxlqh7jpshxaYsNiSbEtOPQlA45l8TRavX/L44Moc2KDoAbERiKSSugZOB2Xy115s5BQAfKPNemRYEj+VyKe/AEtu3y2/0Ds=; ANON=A=660CEF106CD83A11D901A382FFFFFFFF; MUIDB=0AF52F3115AC658406C221E2148264D9; SRCHD=AF=NOFORM; SRCHUID=V=2&GUID=C5982501C6A9458C9FAE6BA8FE9E90F4&dmnchg=1; MUID=0AF52F3115AC658406C221E2148264D9; ANIMIA=FRE=1; USRLOC=HS=1&ELOC=LAT=30.5722599029541|LON=104.06651306152344|N=%E6%88%90%E9%83%BD%EF%BC%8C%E5%9B%9B%E5%B7%9D%E7%9C%81|ELT=1|; SRCHUSR=DOB=20200523&T=1680744940000; _RwBf=ilt=4&ihpd=0&ispd=1&rc=12&rb=0&gb=0&rg=200&pc=9&mtu=0&rbb=0&g=0&cid=&clo=0&v=1&l=2023-04-05T07:00:00.0000000Z&lft=0001-01-01T00:00:00.0000000&aof=0&o=2&p=&c=&t=0&s=0001-01-01T00:00:00.0000000+00:00&ts=2023-04-06T01:35:42.0241878+00:00&rwred=0&wls=&lka=0&lkt=0&TH=&mte=0; SRCHHPGUSR=SRCHLANG=zh-Hans&BZA=0&BRW=N&BRH=S&CW=1233&CH=619&SW=1280&SH=720&DPR=1.5&UTC=480&DM=0&EXLTT=6&HV=1680744953&PV=10.0.0&WTS=63816341740&PRVCW=1233&PRVCH=619&SCW=1217&SCH=3407; SUID=A; SNRHOP=TS=638167084106863525&I=1; _EDGE_S=SID=13230E0538646614067F1CEA39276702
+Host: cn.bing.com
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 76 Ended $$$$$$
+
+****** Response Header For Transaction With Id 76 ******
+HTTP/1.1 400 Bad Request
+Cache-Control: private
+Content-Length: 25
+Content-Type: text/html
+Content-Encoding: gzip
+Vary: Accept-Encoding
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Set-Cookie: SNRHOP=I=&TS=; domain=.bing.com; path=/; secure; SameSite=None,MUIDB=0AF52F3115AC658406C221E2148264D9; expires=Sat, 04-May-2024 07:26:52 GMT; path=/; HttpOnly,_SS=SID=13230E0538646614067F1CEA39276702; domain=.bing.com; path=/; secure; SameSite=None,SRCHHPGUSR=SRCHLANG=zh-Hans&BZA=0&BRW=N&BRH=S&CW=1233&CH=619&SW=1280&SH=720&DPR=1.5&UTC=480&DM=0&EXLTT=6&HV=1680744953&PV=10.0.0&WTS=63816341740&PRVCW=1233&PRVCH=619&SCW=1217&SCH=3407; domain=.bing.com; expires=Thu, 10-Apr-2025 07:26:52 GMT; path=/; secure; SameSite=None
+UserAgentReductionOptOut: A7kgTC5xdZ2WIVGZEfb1hUoNuvjzOZX3VIV/BA6C18kQOOF50Q0D3oWoAm49k3BQImkujKILc7JmPysWk3CSjwUAAACMeyJvcmlnaW4iOiJodHRwczovL3d3dy5iaW5nLmNvbTo0NDMiLCJmZWF0dXJlIjoiU2VuZEZ1bGxVc2VyQWdlbnRBZnRlclJlZHVjdGlvbiIsImV4cGlyeSI6MTY4NDg4NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=
+Content-Security-Policy-Report-Only: script-src https: 'strict-dynamic' 'report-sample' 'nonce-hHoVyM29BmuCZ3MhIRuPTMvFcf6UT9EBU55U4eu+qTg='; base-uri 'self';report-to csp-endpoint
+Report-To: {"group":"csp-endpoint","max_age":86400,"endpoints":[{"url":"https://aefd.nelreports.net/api/report?cat=bingcsp"}]}
+X-Cache: CONFIG_NOCACHE
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+X-MSEdge-Ref: Ref A: 76B281ED14F74CB69109006CF8D5F2F4 Ref B: BJ1EDGE0906 Ref C: 2023-04-10T07:26:51Z
+Date: Mon, 10 Apr 2023 07:26:51 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 76 Ended $$$$$$
+
+****** Request Header For Transaction With Id 80 ******
+GET http://cfgjt.cn:8981/devt-web/scripts.521e2067e75cd94ae49c.js HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: */*
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 80 Ended $$$$$$
+
+****** Response Header For Transaction With Id 80 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:39 GMT
+Content-Type: application/javascript
+Content-Length: 3312384
+Last-Modified: Wed, 09 Mar 2022 08:16:16 GMT
+Connection: keep-alive
+ETag: "62286250-328b00"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 80 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 80 ****** (Location Flag : tFlagInsertAfter, Location ID : 71)
+	web_url("scripts.521e2067e75cd94ae49c.js",
+		"URL=http://cfgjt.cn:8981/devt-web/scripts.521e2067e75cd94ae49c.js",
+		"Resource=1",
+		"RecContentType=application/javascript",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t7.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 80 Ended $$$$$$
+
+****** Request Header For Transaction With Id 84 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/user.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 84 Ended $$$$$$
+
+****** Response Header For Transaction With Id 84 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:57 GMT
+Content-Type: image/svg+xml
+Content-Length: 744
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-2e8"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 84 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 84 ****** (Location Flag : tFlagInsertAfter, Location ID : 80)
+	web_url("user.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/user.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t8.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 84 Ended $$$$$$
+
+****** Request Header For Transaction With Id 88 ******
+GET http://cfgjt.cn:8981/devt-web/assets/vs/editor/editor.main.css HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: text/css,*/*;q=0.1
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 88 Ended $$$$$$
+
+****** Response Header For Transaction With Id 88 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:57 GMT
+Content-Type: text/css
+Content-Length: 68822
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-10cd6"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 88 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 88 ****** (Location Flag : tFlagInsertAfter, Location ID : 84)
+	web_url("editor.main.css",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/vs/editor/editor.main.css",
+		"Resource=1",
+		"RecContentType=text/css",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t9.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 88 Ended $$$$$$
+
+****** Request Header For Transaction With Id 92 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/lock.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 92 Ended $$$$$$
+
+****** Response Header For Transaction With Id 92 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:57 GMT
+Content-Type: image/svg+xml
+Content-Length: 406
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-196"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 92 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 92 ****** (Location Flag : tFlagInsertAfter, Location ID : 88)
+	web_url("lock.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/lock.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t10.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 92 Ended $$$$$$
+
+[Traffic Filtering] Filtering edge.microsoft.com
+****** Request Header For Transaction With Id 97 ******
+GET https://edge.microsoft.com/autofillservice/v1/pages/ChVDaHJvbWUvMTA4LjAuNTM1OS4xMjUSFwlMAq5umkr9rRIFDZFhlU4SBQ01hlQc?alt=proto HTTP/1.1
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: edge.microsoft.com
+
+
+$$$$$$ Request Header For Transaction With Id 97 Ended $$$$$$
+
+****** Response Header For Transaction With Id 97 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=2982100, private
+Content-Length: 32
+Content-Type: text/plain; charset=utf-8
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 0CA3C6C4ACA544D7BAA8958CA0497FBB Ref B: TYAEDGE0816 Ref C: 2023-04-10T07:26:58Z
+Date: Mon, 10 Apr 2023 07:26:58 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 97 Ended $$$$$$
+
+****** Request Header For Transaction With Id 101 ******
+GET http://cfgjt.cn:8981/devt-web/bg.46df42f1ef4c91e3508f.png HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 101 Ended $$$$$$
+
+****** Response Header For Transaction With Id 101 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:57 GMT
+Content-Type: image/png
+Content-Length: 226510
+Last-Modified: Wed, 09 Mar 2022 08:16:14 GMT
+Connection: keep-alive
+ETag: "6228624e-374ce"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 101 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 101 ****** (Location Flag : tFlagInsertAfter, Location ID : 92)
+	web_url("bg.46df42f1ef4c91e3508f.png",
+		"URL=http://cfgjt.cn:8981/devt-web/bg.46df42f1ef4c91e3508f.png",
+		"Resource=1",
+		"RecContentType=image/png",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t11.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 101 Ended $$$$$$
+
+****** Request Header For Transaction With Id 105 ******
+GET http://cfgjt.cn:8981/devt-web/favicon.ico HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 105 Ended $$$$$$
+
+****** Response Header For Transaction With Id 105 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:27:05 GMT
+Content-Type: image/x-icon
+Content-Length: 4286
+Last-Modified: Wed, 09 Mar 2022 08:16:16 GMT
+Connection: keep-alive
+ETag: "62286250-10be"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 105 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 105 ****** (Location Flag : tFlagInsertAfter, Location ID : 101)
+	web_url("favicon.ico",
+		"URL=http://cfgjt.cn:8981/devt-web/favicon.ico",
+		"Resource=1",
+		"RecContentType=image/x-icon",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t12.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 105 Ended $$$$$$
+
+[Traffic Filtering] Filtering edge.microsoft.com
+****** Request Header For Transaction With Id 110 ******
+POST https://edge.microsoft.com/componentupdater/api/v1/update?cup2key=6:VjSA99nOKqRSJ6YOPibr8ldmbeyESCBUG_eyu0xClys&cup2hreq=c6be64f119e73fcfcf4869478acf5f1e9c907603d21fc56a82cfd02c9d4c4baf HTTP/1.1
+X-Microsoft-Update-AppId: eeobbhfgfagbclfofmgbdfoicabjdbkn,kpfehajjjbbcifeehjgfgnabifknmdad,oankkpibpaokgecfckkdkgaoafllipag,ohckeflnhegojcjlcpbfpciadgikcohk,ndikpojcjlepofdkaaldkinkjbeeebkl,ojblfafjmiikbkepnnolpgbbhejhlcim,lkkdlcloifjinapabfonaibjijloebfb,mpicjakjneaggahlnmbojhjpnileolnb,mkcgfaeepibomfapiapjaceihcojnphg,plbmmhnabegcabfbcejohgjpkamkddhn,llmidpclgepbgbgoecnhcmgfhmfplfao,ahmaebgpfccdhgidjaidaoojjcijckba,omnckhpgfmaoelhddliebabpgblmmnjp,lfmeghnikdkbonehgjihjebgioakijgn,hjaimielcgmceiphgjjfddlgjklfpdei,fppmbhmldokgmleojlplaaodlkibgikh,cllppcmmlnkggcmljjfigkcigaajjmid,jbfaflocpnkhbgcijpkiafdpbjkedane
+X-Microsoft-Update-Interactivity: bg
+X-Microsoft-Update-Service-Cohort: 4267
+X-Microsoft-Update-Updater: msedge-108.0.1462.54
+Content-Type: application/json
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Host: edge.microsoft.com
+Content-Length: 9009
+
+
+$$$$$$ Request Header For Transaction With Id 110 Ended $$$$$$
+
+****** Response Header For Transaction With Id 110 ******
+HTTP/1.1 200 OK
+Cache-Control: no-store, must-revalidate, no-cache, max-age=0
+Pragma: no-cache
+Content-Length: 573
+Content-Type: application/json
+Content-Encoding: gzip
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+ETag: 3044022057D67329C63B0CA40D288F293100952DB1A85CE08ED35E4ED3889216268EED22022077EF69DA633CEE2FCE5319136D817DF81B2ED441D9FFD6EDC622A05B7E287053:c6be64f119e73fcfcf4869478acf5f1e9c907603d21fc56a82cfd02c9d4c4baf
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+x-cup-server-proof: 3044022057D67329C63B0CA40D288F293100952DB1A85CE08ED35E4ED3889216268EED22022077EF69DA633CEE2FCE5319136D817DF81B2ED441D9FFD6EDC622A05B7E287053:c6be64f119e73fcfcf4869478acf5f1e9c907603d21fc56a82cfd02c9d4c4baf
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 992ECF013C1649DD9FD9CC335D87BAE2 Ref B: TYAEDGE0816 Ref C: 2023-04-10T07:27:07Z
+Date: Mon, 10 Apr 2023 07:27:06 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 110 Ended $$$$$$
+
+****** Request Header For Transaction With Id 114 ******
+POST http://cfgjt.cn:8981/devt-service/api/login.do HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: cfgjt.cn:8981
+Content-Length: 52
+
+
+$$$$$$ Request Header For Transaction With Id 114 Ended $$$$$$
+
+****** Request Body For Transaction With Id 114 ******
+{"acctName":"admin","acctPwd":"11111111","type":"0"}
+$$$$$$ Request Body For Transaction With Id 114 Ended $$$$$$
+
+****** Response Header For Transaction With Id 114 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:44 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI; Path=/
+
+
+$$$$$$ Response Header For Transaction With Id 114 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-web/
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 114 ****** (Location Flag : tFlagInsertEnd, Location ID : 114)
+	web_custom_request("login.do",
+		"URL=http://cfgjt.cn:8981/devt-service/api/login.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t13.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"acctName\":\"admin\",\"acctPwd\":\"11111111\",\"type\":\"0\"}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 114 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 40)
+	web_add_header("Upgrade-Insecure-Requests",
+		"1");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 118 ******
+POST http://cfgjt.cn:8981/devt-service/staff/menu.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 26
+
+
+$$$$$$ Request Header For Transaction With Id 118 Ended $$$$$$
+
+****** Request Body For Transaction With Id 118 ******
+{"portalAcctName":"admin"}
+$$$$$$ Request Body For Transaction With Id 118 Ended $$$$$$
+
+****** Response Header For Transaction With Id 118 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:48 GMT
+Content-Type: application/json
+Connection: keep-alive
+
+
+$$$$$$ Response Header For Transaction With Id 118 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/api/login.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 118 ****** (Location Flag : tFlagInsertEnd, Location ID : 118)
+	web_custom_request("menu.do",
+		"URL=http://cfgjt.cn:8981/devt-service/staff/menu.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t14.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"portalAcctName\":\"admin\"}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 118 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 114)
+	web_add_auto_header("Origin",
+		"http://cfgjt.cn:8981");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 122 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/logout.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 122 Ended $$$$$$
+
+****** Response Header For Transaction With Id 122 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:49 GMT
+Content-Type: image/svg+xml
+Content-Length: 824
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-338"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 122 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/staff/menu.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 122 ****** (Location Flag : tFlagInsertEnd, Location ID : 122)
+	web_url("logout.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/logout.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t15.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 122 Ended $$$$$$
+
+****** Request Header For Transaction With Id 126 ******
+POST http://cfgjt.cn:8981/devt-service/colorplan/planinfo.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 14
+
+
+$$$$$$ Request Header For Transaction With Id 126 Ended $$$$$$
+
+****** Request Body For Transaction With Id 126 ******
+{"planId":"1"}
+$$$$$$ Request Body For Transaction With Id 126 Ended $$$$$$
+
+****** Response Header For Transaction With Id 126 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:48 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 126 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/staff/menu.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 126 ****** (Location Flag : tFlagInsertEnd, Location ID : 126)
+	web_custom_request("planinfo.do",
+		"URL=http://cfgjt.cn:8981/devt-service/colorplan/planinfo.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t16.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"planId\":\"1\"}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 126 Ended $$$$$$
+
+****** Request Header For Transaction With Id 130 ******
+GET http://cfgjt.cn:8981/devt-web/assets/fill/backward.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 130 Ended $$$$$$
+
+****** Response Header For Transaction With Id 130 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:49 GMT
+Content-Type: image/svg+xml
+Content-Length: 313
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-139"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 130 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/colorplan/planinfo.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 130 ****** (Location Flag : tFlagInsertEnd, Location ID : 130)
+	web_url("backward.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/fill/backward.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t17.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 130 Ended $$$$$$
+
+****** Request Header For Transaction With Id 134 ******
+GET http://cfgjt.cn:8981/devt-web/assets/fill/forward.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 134 Ended $$$$$$
+
+****** Response Header For Transaction With Id 134 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:49 GMT
+Content-Type: image/svg+xml
+Content-Length: 310
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-136"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 134 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/colorplan/planinfo.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1000126 ****** (Location Flag : tFlagInsertBefore, Location ID : 130)
+	web_concurrent_start(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 1000126 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 130)
+	web_concurrent_end(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 134 ****** (Location Flag : tFlagInsertAfter, Location ID : 130)
+	web_url("forward.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/fill/forward.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t18.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 134 Ended $$$$$$
+
+****** Request Header For Transaction With Id 138 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/redo.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 138 Ended $$$$$$
+
+****** Response Header For Transaction With Id 138 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:49 GMT
+Content-Type: image/svg+xml
+Content-Length: 756
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-2f4"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 138 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/colorplan/planinfo.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 138 ****** (Location Flag : tFlagInsertAfter, Location ID : 134)
+	web_url("redo.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/redo.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t19.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 138 Ended $$$$$$
+
+****** Request Header For Transaction With Id 142 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/setting.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 142 Ended $$$$$$
+
+****** Response Header For Transaction With Id 142 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:49 GMT
+Content-Type: image/svg+xml
+Content-Length: 1873
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-751"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 142 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/colorplan/planinfo.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 142 ****** (Location Flag : tFlagInsertAfter, Location ID : 138)
+	web_url("setting.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/setting.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t20.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 142 Ended $$$$$$
+
+****** Request Header For Transaction With Id 146 ******
+POST http://cfgjt.cn:8981/devt-service/comm/getWsPath.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 2
+
+
+$$$$$$ Request Header For Transaction With Id 146 Ended $$$$$$
+
+****** Request Body For Transaction With Id 146 ******
+{}
+$$$$$$ Request Body For Transaction With Id 146 Ended $$$$$$
+
+****** Response Header For Transaction With Id 146 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:49 GMT
+Content-Type: application/json
+Connection: keep-alive
+
+
+$$$$$$ Response Header For Transaction With Id 146 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/colorplan/planinfo.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 146 ****** (Location Flag : tFlagInsertEnd, Location ID : 146)
+	web_custom_request("getWsPath.do",
+		"URL=http://cfgjt.cn:8981/devt-service/comm/getWsPath.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t21.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 146 Ended $$$$$$
+
+****** Request Header For Transaction With Id 150 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/eye-invisible.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 150 Ended $$$$$$
+
+****** Response Header For Transaction With Id 150 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: image/svg+xml
+Content-Length: 895
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-37f"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 150 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/comm/getWsPath.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 150 ****** (Location Flag : tFlagInsertEnd, Location ID : 150)
+	web_url("eye-invisible.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/eye-invisible.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t22.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 150 Ended $$$$$$
+
+****** Request Header For Transaction With Id 154 ******
+POST http://cfgjt.cn:8981/devt-service/devtCompBl/list.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 32
+
+
+$$$$$$ Request Header For Transaction With Id 154 Ended $$$$$$
+
+****** Request Body For Transaction With Id 154 ******
+{"currentPage":1,"pageSize":500}
+$$$$$$ Request Body For Transaction With Id 154 Ended $$$$$$
+
+****** Response Header For Transaction With Id 154 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 154 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/comm/getWsPath.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 154 ****** (Location Flag : tFlagInsertEnd, Location ID : 154)
+	web_custom_request("list.do",
+		"URL=http://cfgjt.cn:8981/devt-service/devtCompBl/list.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t23.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"currentPage\":1,\"pageSize\":500}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 154 Ended $$$$$$
+
+****** Request Header For Transaction With Id 158 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/plus.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 158 Ended $$$$$$
+
+****** Response Header For Transaction With Id 158 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: image/svg+xml
+Content-Length: 215
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-d7"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 158 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtCompBl/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 158 ****** (Location Flag : tFlagInsertEnd, Location ID : 158)
+	web_url("plus.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/plus.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t24.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 158 Ended $$$$$$
+
+****** Request Header For Transaction With Id 162 ******
+POST http://cfgjt.cn:8981/devt-service/devtComp/list.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 55
+
+
+$$$$$$ Request Header For Transaction With Id 162 Ended $$$$$$
+
+****** Request Body For Transaction With Id 162 ******
+{"currentPage":1,"pageSize":10,"name":"","treeId":null}
+$$$$$$ Request Body For Transaction With Id 162 Ended $$$$$$
+
+****** Response Header For Transaction With Id 162 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 162 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtCompBl/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 162 ****** (Location Flag : tFlagInsertEnd, Location ID : 162)
+	web_custom_request("list.do_2",
+		"URL=http://cfgjt.cn:8981/devt-service/devtComp/list.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t25.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"currentPage\":1,\"pageSize\":10,\"name\":\"\",\"treeId\":null}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 162 Ended $$$$$$
+
+****** Request Header For Transaction With Id 166 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/shrink.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 166 Ended $$$$$$
+
+****** Response Header For Transaction With Id 166 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: image/svg+xml
+Content-Length: 468
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-1d4"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 166 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 166 ****** (Location Flag : tFlagInsertEnd, Location ID : 166)
+	web_url("shrink.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/shrink.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t26.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 166 Ended $$$$$$
+
+****** Request Header For Transaction With Id 170 ******
+GET http://cfgjt.cn:8981/devt-web/assets/outline/exclamation.svg HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 170 Ended $$$$$$
+
+****** Response Header For Transaction With Id 170 ******
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: image/svg+xml
+Content-Length: 196
+Last-Modified: Wed, 09 Mar 2022 08:16:17 GMT
+Connection: keep-alive
+ETag: "62286251-c4"
+Accept-Ranges: bytes
+
+
+$$$$$$ Response Header For Transaction With Id 170 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1000162 ****** (Location Flag : tFlagInsertBefore, Location ID : 166)
+	web_concurrent_start(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 1000162 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 166)
+	web_concurrent_end(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 170 ****** (Location Flag : tFlagInsertAfter, Location ID : 166)
+	web_url("exclamation.svg",
+		"URL=http://cfgjt.cn:8981/devt-web/assets/outline/exclamation.svg",
+		"Resource=1",
+		"RecContentType=image/svg+xml",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t27.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 170 Ended $$$$$$
+
+****** Request Header For Transaction With Id 174 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 174 Ended $$$$$$
+
+****** Response Header For Transaction With Id 174 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:50 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 174 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 174 ****** (Location Flag : tFlagInsertAfter, Location ID : 170)
+	web_url("httpCompImg.do",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t28.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 174 Ended $$$$$$
+
+****** Request Header For Transaction With Id 178 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=183&fileName=no.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 178 Ended $$$$$$
+
+****** Response Header For Transaction With Id 178 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:51 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 178 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 178 ****** (Location Flag : tFlagInsertAfter, Location ID : 174)
+	web_url("httpCompImg.do_2",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=183&fileName=no.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t29.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 178 Ended $$$$$$
+
+****** Request Header For Transaction With Id 182 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=72881&fileName=no.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 182 Ended $$$$$$
+
+****** Response Header For Transaction With Id 182 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:51 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 182 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 182 ****** (Location Flag : tFlagInsertAfter, Location ID : 178)
+	web_url("httpCompImg.do_3",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=72881&fileName=no.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t30.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 182 Ended $$$$$$
+
+****** Request Header For Transaction With Id 186 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 186 Ended $$$$$$
+
+****** Response Header For Transaction With Id 186 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:52 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 186 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 186 ****** (Location Flag : tFlagInsertAfter, Location ID : 182)
+	web_url("httpCompImg.do_4",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t31.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 186 Ended $$$$$$
+
+****** Request Header For Transaction With Id 190 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 190 Ended $$$$$$
+
+****** Response Header For Transaction With Id 190 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:52 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 190 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 190 ****** (Location Flag : tFlagInsertAfter, Location ID : 186)
+	web_url("httpCompImg.do_5",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t32.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 190 Ended $$$$$$
+
+****** Request Header For Transaction With Id 194 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 194 Ended $$$$$$
+
+****** Response Header For Transaction With Id 194 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:53 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 194 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 194 ****** (Location Flag : tFlagInsertAfter, Location ID : 190)
+	web_url("httpCompImg.do_6",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t33.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 194 Ended $$$$$$
+
+[Traffic Filtering] Filtering edge.microsoft.com
+****** Request Header For Transaction With Id 199 ******
+GET https://edge.microsoft.com/autofillservice/v1/pages/ChVDaHJvbWUvMTA4LjAuNTM1OS4xMjUSHgmZLqNFdgwFyBIFDZFhlU4SBQ2RYZVOEgUNkWGVTg==?alt=proto HTTP/1.1
+Sec-Mesh-Client-Edge-Version: 108.0.1462.54
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19044
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Host: edge.microsoft.com
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 199 Ended $$$$$$
+
+****** Response Header For Transaction With Id 199 ******
+HTTP/1.1 200 OK
+Cache-Control: max-age=2354561, private
+Content-Length: 20
+Content-Type: text/plain; charset=utf-8
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 6C3C6FB37D2E4875AEA18FF766EBCDE6 Ref B: TYAEDGE0821 Ref C: 2023-04-10T07:28:56Z
+Date: Mon, 10 Apr 2023 07:28:58 GMT
+
+
+$$$$$$ Response Header For Transaction With Id 199 Ended $$$$$$
+
+****** Request Header For Transaction With Id 203 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=624400&fileName=no.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 203 Ended $$$$$$
+
+****** Response Header For Transaction With Id 203 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:58 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 203 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 203 ****** (Location Flag : tFlagInsertAfter, Location ID : 194)
+	web_url("httpCompImg.do_7",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=624400&fileName=no.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t34.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 203 Ended $$$$$$
+
+****** Request Header For Transaction With Id 207 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=aq&fileName=no.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 207 Ended $$$$$$
+
+****** Response Header For Transaction With Id 207 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:28:59 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 207 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 207 ****** (Location Flag : tFlagInsertAfter, Location ID : 203)
+	web_url("httpCompImg.do_8",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=aq&fileName=no.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t35.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 207 Ended $$$$$$
+
+****** Request Header For Transaction With Id 211 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 211 Ended $$$$$$
+
+****** Response Header For Transaction With Id 211 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:29:00 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 211 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 211 ****** (Location Flag : tFlagInsertAfter, Location ID : 207)
+	web_url("httpCompImg.do_9",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t36.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 211 Ended $$$$$$
+
+****** Request Header For Transaction With Id 215 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=214680&fileName=no.png&timestamp=1681111730334 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 215 Ended $$$$$$
+
+****** Response Header For Transaction With Id 215 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:29:04 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 215 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 215 ****** (Location Flag : tFlagInsertAfter, Location ID : 211)
+	web_url("httpCompImg.do_10",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=214680&fileName=no.png&timestamp=1681111730334",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t37.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 215 Ended $$$$$$
+
+****** Request Header For Transaction With Id 219 ******
+POST http://cfgjt.cn:8981/devt-service/devtComp/list.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 61
+
+
+$$$$$$ Request Header For Transaction With Id 219 Ended $$$$$$
+
+****** Request Body For Transaction With Id 219 ******
+{"currentPage":1,"pageSize":10,"name":"文本","treeId":null}
+$$$$$$ Request Body For Transaction With Id 219 Ended $$$$$$
+
+****** Response Header For Transaction With Id 219 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:29:48 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 219 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 219 ****** (Location Flag : tFlagInsertEnd, Location ID : 219)
+	web_custom_request("list.do_3",
+		"URL=http://cfgjt.cn:8981/devt-service/devtComp/list.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t38.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"currentPage\":1,\"pageSize\":10,\"name\":\"文本\",\"treeId\":null}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 219 Ended $$$$$$
+
+****** Request Header For Transaction With Id 223 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1681111788927 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 223 Ended $$$$$$
+
+****** Response Header For Transaction With Id 223 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:29:50 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 223 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 223 ****** (Location Flag : tFlagInsertEnd, Location ID : 223)
+	web_url("httpCompImg.do_11",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1681111788927",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t39.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 223 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 219)
+	web_add_header("Origin",
+		"http://cfgjt.cn:8981");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 227 ******
+POST http://cfgjt.cn:8981/devt-service/devtCompBl/list.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 32
+
+
+$$$$$$ Request Header For Transaction With Id 227 Ended $$$$$$
+
+****** Request Body For Transaction With Id 227 ******
+{"currentPage":1,"pageSize":500}
+$$$$$$ Request Body For Transaction With Id 227 Ended $$$$$$
+
+****** Response Header For Transaction With Id 227 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:10 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 227 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 227 ****** (Location Flag : tFlagInsertEnd, Location ID : 227)
+	web_custom_request("list.do_4",
+		"URL=http://cfgjt.cn:8981/devt-service/devtCompBl/list.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t40.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"currentPage\":1,\"pageSize\":500}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 227 Ended $$$$$$
+
+****** Request Header For Transaction With Id 231 ******
+POST http://cfgjt.cn:8981/devt-service/devtComp/list.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 55
+
+
+$$$$$$ Request Header For Transaction With Id 231 Ended $$$$$$
+
+****** Request Body For Transaction With Id 231 ******
+{"currentPage":1,"pageSize":10,"name":"","treeId":null}
+$$$$$$ Request Body For Transaction With Id 231 Ended $$$$$$
+
+****** Response Header For Transaction With Id 231 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:10 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 231 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtCompBl/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 231 ****** (Location Flag : tFlagInsertEnd, Location ID : 231)
+	web_custom_request("list.do_5",
+		"URL=http://cfgjt.cn:8981/devt-service/devtComp/list.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t41.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"currentPage\":1,\"pageSize\":10,\"name\":\"\",\"treeId\":null}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 231 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertBefore, Location ID : 227)
+	web_add_auto_header("Origin",
+		"http://cfgjt.cn:8981");
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Request Header For Transaction With Id 235 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 235 Ended $$$$$$
+
+****** Response Header For Transaction With Id 235 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 235 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 235 ****** (Location Flag : tFlagInsertEnd, Location ID : 235)
+	web_url("httpCompImg.do_12",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t42.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 235 Ended $$$$$$
+
+****** Request Header For Transaction With Id 239 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=72881&fileName=no.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 239 Ended $$$$$$
+
+****** Response Header For Transaction With Id 239 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 239 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 1000231 ****** (Location Flag : tFlagInsertBefore, Location ID : 235)
+	web_concurrent_start(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 1000231 Ended $$$$$$
+
+****** Add Event For Transaction With Id 0 ****** (Location Flag : tFlagInsertAfter, Location ID : 235)
+	web_concurrent_end(NULL);
+
+
+$$$$$$ Add Event For Transaction With Id 0 Ended $$$$$$
+
+****** Add Event For Transaction With Id 239 ****** (Location Flag : tFlagInsertAfter, Location ID : 235)
+	web_url("httpCompImg.do_13",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=72881&fileName=no.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t43.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 239 Ended $$$$$$
+
+****** Request Header For Transaction With Id 243 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=183&fileName=no.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 243 Ended $$$$$$
+
+****** Response Header For Transaction With Id 243 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 243 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 243 ****** (Location Flag : tFlagInsertAfter, Location ID : 239)
+	web_url("httpCompImg.do_14",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=183&fileName=no.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t44.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 243 Ended $$$$$$
+
+****** Request Header For Transaction With Id 247 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 247 Ended $$$$$$
+
+****** Response Header For Transaction With Id 247 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 247 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 247 ****** (Location Flag : tFlagInsertAfter, Location ID : 243)
+	web_url("httpCompImg.do_15",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t45.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 247 Ended $$$$$$
+
+****** Request Header For Transaction With Id 251 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 251 Ended $$$$$$
+
+****** Response Header For Transaction With Id 251 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 251 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 251 ****** (Location Flag : tFlagInsertAfter, Location ID : 247)
+	web_url("httpCompImg.do_16",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t46.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 251 Ended $$$$$$
+
+****** Request Header For Transaction With Id 255 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=aq&fileName=no.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 255 Ended $$$$$$
+
+****** Response Header For Transaction With Id 255 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 255 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 255 ****** (Location Flag : tFlagInsertAfter, Location ID : 251)
+	web_url("httpCompImg.do_17",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=aq&fileName=no.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t47.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 255 Ended $$$$$$
+
+****** Request Header For Transaction With Id 259 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 259 Ended $$$$$$
+
+****** Response Header For Transaction With Id 259 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 259 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 259 ****** (Location Flag : tFlagInsertAfter, Location ID : 255)
+	web_url("httpCompImg.do_18",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t48.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 259 Ended $$$$$$
+
+****** Request Header For Transaction With Id 263 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=214680&fileName=no.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 263 Ended $$$$$$
+
+****** Response Header For Transaction With Id 263 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:12 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 263 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 263 ****** (Location Flag : tFlagInsertAfter, Location ID : 259)
+	web_url("httpCompImg.do_19",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=214680&fileName=no.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t49.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 263 Ended $$$$$$
+
+****** Request Header For Transaction With Id 267 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 267 Ended $$$$$$
+
+****** Response Header For Transaction With Id 267 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 267 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 267 ****** (Location Flag : tFlagInsertAfter, Location ID : 263)
+	web_url("httpCompImg.do_20",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t50.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 267 Ended $$$$$$
+
+****** Request Header For Transaction With Id 271 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=624400&fileName=no.png&timestamp=1681111810870 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 271 Ended $$$$$$
+
+****** Response Header For Transaction With Id 271 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:11 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 271 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 271 ****** (Location Flag : tFlagInsertAfter, Location ID : 267)
+	web_url("httpCompImg.do_21",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=624400&fileName=no.png&timestamp=1681111810870",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t51.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 271 Ended $$$$$$
+
+****** Request Header For Transaction With Id 275 ******
+POST http://cfgjt.cn:8981/devt-service/devtComp/list.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Content-Type: application/json
+Origin: http://cfgjt.cn:8981
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+Content-Length: 61
+
+
+$$$$$$ Request Header For Transaction With Id 275 Ended $$$$$$
+
+****** Request Body For Transaction With Id 275 ******
+{"currentPage":1,"pageSize":10,"name":"小红","treeId":null}
+$$$$$$ Request Body For Transaction With Id 275 Ended $$$$$$
+
+****** Response Header For Transaction With Id 275 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:17 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+
+
+$$$$$$ Response Header For Transaction With Id 275 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 275 ****** (Location Flag : tFlagInsertEnd, Location ID : 275)
+	web_custom_request("list.do_6",
+		"URL=http://cfgjt.cn:8981/devt-service/devtComp/list.do",
+		"Method=POST",
+		"Resource=0",
+		"RecContentType=application/json",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t52.inf",
+		"Mode=HTTP",
+		"EncType=application/json",
+		"Body={\"currentPage\":1,\"pageSize\":10,\"name\":\"小红\",\"treeId\":null}",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 275 Ended $$$$$$
+
+****** Request Header For Transaction With Id 279 ******
+GET http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111817597 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Referer: http://cfgjt.cn:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4Nzc5ZDZhZC0wMTAxLTQ1YmMtYjQ5NS1lNTM0MWNhZGFhOWUiLCJpYXQiOjE2ODExMTE3MjQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODExOTgxMjR9.tDgd9xgvc30SnXnvbV4zAm1YSAbU3w8frGQNmtY7tMI
+Host: cfgjt.cn:8981
+
+
+$$$$$$ Request Header For Transaction With Id 279 Ended $$$$$$
+
+****** Response Header For Transaction With Id 279 ******
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:30:17 GMT
+Content-Type: image/jpeg
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+
+
+$$$$$$ Response Header For Transaction With Id 279 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/devt-service/devtComp/list.do
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 279 ****** (Location Flag : tFlagInsertEnd, Location ID : 279)
+	web_url("httpCompImg.do_22",
+		"URL=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111817597",
+		"Resource=1",
+		"RecContentType=image/jpeg",
+		"Referer=http://cfgjt.cn:8981/devt-web/",
+		"Snapshot=t53.inf",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 279 Ended $$$$$$
+

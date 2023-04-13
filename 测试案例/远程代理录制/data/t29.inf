@@ -1,0 +1,11 @@
+[t29]
+FileName1=t29.txt
+URL1=https://data.bilibili.com/log/web?0133241681109986067https%3A%2F%2Fwww.bilibili.com%2Fvideo%2FBV17T4y167NY%2F%3Fp%3D11%26spm_id_from%3D333.1007.top_right_bar_window_history.content.click%26vd_source%3Ddecee64fc347c1311c077fecf31444c8%7C333.788.video.new.page_hang_time%7C%7C1681109986067%7C%7C%7C1280x587%7C1%7C%7B%22counting_seconds%22:7,%22b_nut_h%22:0,%22lsid%22:%2253EE64B8_18769DA59A8%22,%22buvid_fp%22:%2240f09ed9caeb2cd24147a2ca821d9c20%22,%22buvid4%22:%229E1E10E9-3797-D7D8-9104-38D68249A20A79175-022012117-HNYvTHSPdBQx2NM68Ct1tApYy976kRGSYiICOIxTSYQA%2F4HsFUMaTQ%3D%3D%22,%22bsource_origin%22:%22empty%22,%22share_source_origin%22:%22empty%22%7D%7C%7B%22seeder_web_test%22:%221%22,%22remove_back_version%22:%22SHOW%22,%22login_dialog_version%22:%22V_EVERY_PLAY_INTERNVAL%22,%22nano_white_screen%22:%22V_HIT%22,%22open_recommend_blank%22:%22SELF%22,%22storage_back_btn%22:%22HIDE%22,%22in_new_ab%22:true,%22ab_version%22:%7B%22remove_back_version%22:%22SHOW%22,%22login_dialog_version%22:%22V_EVERY_PLAY_INTERNVAL%22,%22nano_white_screen%22:%22V_HIT%22,%22open_recommend_blank%22:%22SELF%22,%22storage_back_btn%22:%22HIDE%22,%22seeder_web_test%22:%221%22%7D,%22ab_split_num%22:%7B%22remove_back_version%22:18,%22login_dialog_version%22:51,%22nano_white_screen%22:61,%22open_recommend_blank%22:73,%22storage_back_btn%22:4,%22seeder_web_test%22:0%7D,%22pageVersion%22:%22new_video%22,%22videoGoOldVersion%22:null%7D%7Chttps%3A%2F%2Fwww.bilibili.com%2F%7C103B81AF8-ACAA-B1F1-2297-131C8D931101943764infoc%7Czh-CN%7Cnull%7C1
+Total=1
+RequestHeaderFile=t29_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t29_ResponseHeader.txt
+ContentType=text/plain
+SnapshotXmlFile=snapshot_29.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

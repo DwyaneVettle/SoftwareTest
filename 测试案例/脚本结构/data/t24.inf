@@ -1,0 +1,11 @@
+[t24]
+FileName1=t24_plus.svg
+URL1=http://cfgjt.cn:8981/devt-web/assets/outline/plus.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_23.xml
+RequestHeaderFile=t24_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t24_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

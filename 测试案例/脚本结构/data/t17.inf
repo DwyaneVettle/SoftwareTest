@@ -1,0 +1,11 @@
+[t17]
+FileName1=t17_backward.svg
+URL1=http://cfgjt.cn:8981/devt-web/assets/fill/backward.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_16.xml
+RequestHeaderFile=t17_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t17_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\笔记\SoftwareTest\测试案例\脚本结构
+-ID:\Software\LoadRunner\include
+-ed:\笔记\softwaretest\测试案例\脚本结构\\logfile.log
+d:\笔记\softwaretest\测试案例\脚本结构\\combined_脚本结构.c
+d:\笔记\softwaretest\测试案例\脚本结构\\pre_cci.c

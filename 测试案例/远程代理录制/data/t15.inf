@@ -1,0 +1,11 @@
+[t15]
+FileName1=t15_total.json
+URL1=https://api.bilibili.com/x/player/online/total?aid=938858325&cid=712061287&bvid=BV17T4y167NY&ts=56036999
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_15.xml
+RequestHeaderFile=t15_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t15_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

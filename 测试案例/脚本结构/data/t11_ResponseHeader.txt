@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Mon, 10 Apr 2023 07:26:57 GMT
+Content-Type: image/png
+Content-Length: 226510
+Last-Modified: Wed, 09 Mar 2022 08:16:14 GMT
+Connection: keep-alive
+ETag: "6228624e-374ce"
+Accept-Ranges: bytes
+

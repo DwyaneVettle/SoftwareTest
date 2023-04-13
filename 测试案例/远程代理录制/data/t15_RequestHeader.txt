@@ -1,0 +1,16 @@
+GET https://api.bilibili.com/x/player/online/total?aid=938858325&cid=712061287&bvid=BV17T4y167NY&ts=56036999 HTTP/1.1
+sec-ch-ua: "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"
+Accept: application/json, text/plain, */*
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: https://www.bilibili.com
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.bilibili.com/video/BV17T4y167NY/?p=11&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=decee64fc347c1311c077fecf31444c8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Cookie: buvid3=50B3CE5D-8B7F-4731-8A74-6753DB2B7A05143091infoc; LIVE_BUVID=AUTO8316305780900062; i-wanna-go-back=-1; CURRENT_BLACKGAP=0; buvid_fp_plain=undefined; DedeUserID=673893024; DedeUserID__ckMd5=2cd2d0b84d8c5889; b_ut=5; blackside_state=0; b_nut=100; _uuid=103B81AF8-ACAA-B1F1-2297-131C8D931101943764infoc; rpdid=|(u~|)|YRkm|0J'uYY)Y|u)Rk; buvid4=9E1E10E9-3797-D7D8-9104-38D68249A20A79175-022012117-HNYvTHSPdBQx2NM68Ct1tApYy976kRGSYiICOIxTSYQA%2F4HsFUMaTQ%3D%3D; CURRENT_QUALITY=80; fingerprint=2f627cc37e9f1174e7e77d1902a3843e; buvid_fp=40f09ed9caeb2cd24147a2ca821d9c20; header_theme_version=CLOSE; home_feed_column=4; is-2022-channel=1; nostalgia_conf=-1; CURRENT_FNVAL=16; PVID=1; CURRENT_PID=51cd2190-cd27-11ed-861d-afdfa3449339; bp_video_offset_673893024=780577801968287900; b_lsid=53EE64B8_18769DA59A8; SESSDATA=56625786%2C1696660137%2C829c5%2A41; bili_jct=3e8d7e903b79c0da5fe74d138a51edb0; innersign=1; sid=olmlsg28
+Host: api.bilibili.com
+

@@ -1,0 +1,11 @@
+[t20]
+FileName1=t20_setting.svg
+URL1=http://cfgjt.cn:8981/devt-web/assets/outline/setting.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_19.xml
+RequestHeaderFile=t20_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t20_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

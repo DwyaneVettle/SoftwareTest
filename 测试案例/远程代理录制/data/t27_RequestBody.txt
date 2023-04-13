@@ -1,0 +1,5 @@
+"start_ts=1681108144&mid=673893024&aid=938858325&cid=712061287&type=3&sub_type=0&dt=2&play_type"
+"=0&realtime=283&played_time=201&real_played_time=283&refer_url=https%3A%2F%2Fwww.bilibili.com%"
+"2F&quality=80&video_duration=342&last_play_progress_time=201&max_play_progress_time=242&spmid="
+"333.788.0.0&from_spmid=333.1007.top_right_bar_window_history.content.click&csrf=3e8d7e903b79c0"
+"da5fe74d138a51edb0"

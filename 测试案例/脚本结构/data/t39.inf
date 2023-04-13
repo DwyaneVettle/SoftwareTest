@@ -1,0 +1,11 @@
+[t39]
+FileName1=t39_httpCompImg.jfif
+URL1=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1681111788927
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_38.xml
+RequestHeaderFile=t39_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t39_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

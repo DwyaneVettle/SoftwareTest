@@ -14,6 +14,10 @@ week06
 安装postman
 
 
+week07：
+安装一个CentOS的Linux环境，使用MobXterm远程连接
+
+
 
 
 

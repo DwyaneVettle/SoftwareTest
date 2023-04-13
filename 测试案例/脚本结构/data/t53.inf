@@ -1,0 +1,11 @@
+[t53]
+FileName1=t53_httpCompImg.jfif
+URL1=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1681111817597
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_52.xml
+RequestHeaderFile=t53_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t53_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,8 @@
+"{\"deviceId\":\"E5EZ72X7IBOFNK4B\",\"appkey\":\"7E6832BCE3F1438696579E541DFEBFDA\",\"appProfil"
+"e\":{\"versionName\":\"2.3.1\",\"versionCode\":\"2.3.1\",\"initTime\":1676606179517,\"sdkVersi"
+"on\":\"H5+APP+v1.0.6\",\"partner\":\"\"},\"deviceProfile\":{\"pixel\":\"1280*720*1.5\",\"langu"
+"age\":\"zh-CN\",\"timezone\":8},\"msgs\":[{\"type\":2,\"data\":{\"id\":\"E5EZ72X7IBOFNK4B16811"
+"09620360000\",\"start\":1681109620361,\"status\":2,\"duration\":0,\"pages\":[],\"events\":[{\""
+"count\":1,\"start\":1681109928317,\"id\":\"upload\",\"label\":\"gitee\",\"params\":{\"by\":\"f"
+"iles\",\"count\":1,\"duration\":2000,\"type\":\"gitee\",\"from\":\"picgo://./index.html#/main-"
+"page/upload\"}}]}}]}"
