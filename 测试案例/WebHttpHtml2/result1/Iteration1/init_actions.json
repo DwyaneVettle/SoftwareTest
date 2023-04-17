@@ -1,0 +1,14 @@
+[
+    {
+        "actionName": "vuser_init",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: login.do",
+                "infFile": "t1.inf",
+                "time": 1681722751210
+            }
+        ],
+        "transactions": []
+    }
+]

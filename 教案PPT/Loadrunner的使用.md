@@ -372,3 +372,210 @@ lr_log_message("测试3","end")
 - 脚本语言设置：
 
 <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304101605743.png" style="zoom:33%;" />
+
+
+
+## 4.脚本编写
+
+### 4.1.脚本参数化
+
+​	在实际的测试业务中，参数可能有很多，我们可以使用一个统一的变量替换这些参数，这些参数可以是文件或表格的形式，相当于在jmeter中`cvs`的参数格式。
+
+​	这些参数可以增强代码的可读性，降低维护难度，减少错误的发生。比如在测试过程中主机、端口、查询条件等都是很少修改的量，可以使用参数代替。
+
+​	在LR中有很多内置的参数，合理的采用会提升测试的效率。
+
+#### 4.1.1.LoadGN
+
+​	全称为 LoadGeneratorName，该参数是以压力机名称为基础，可按不同格式生成:
+
+```shell
+//定义一个 LoadGeneratorName 参数
+char* NewParam=lr_eval_string("{NewParam}");
+lr_log_message("参数 1,压力机参数名：%s",NewParam);
+```
+
+- 创建一个测试脚本，在Action.c中放入以上脚本，我们定义了一个参数名叫`NewParam`
+
+![image-20230417143823666](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171438814.png)
+
+- 在`Parameters`中新增参数`NewParam`，具体步骤如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171441271.png" style="zoom: 33%;" />
+
+- 点击运行，打印参数值:
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171443441.png" style="zoom:33%;" />
+
+
+
+#### 4.1.2.VuserID
+
+​	该参数是以虚拟用户的序号为基础，可按不同格式生成。它相当于是当前用户所占用的一个线程：
+
+- 创建一个VuserID，选择不通格式，步骤如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171448524.png" style="zoom:33%;" />
+
+- 点击运行，看到打印出来的序号：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171449246.png" style="zoom:33%;" />
+
+#### 4.1.3.表格参数化
+
+​	表格参数是以表格行数据为基础生成的参数，和jmeter相同，可以支持记事本和cvs等文件格式导入。
+
+- 定义一个表格数据参数：
+
+```shell
+lr_log_message("参数 2,表格参数：%s",lr_eval_string("{table_param}"));
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171504547.png" style="zoom: 33%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171505422.png" alt="image-20230417150534352" style="zoom:50%;" />
+
+​	需要注意的是，我们在设置表格式数据时，取值数据和更新规则可以有如下设置方式：
+
+- 取下一行数据方法有三种：
+  - 1. 顺序：按照参数化的顺序一个一个的来取 
+    2.  随机：参数化中的数据，每次随机的从中选取数据 
+    3. 唯一：为每个虚拟用户分配一个唯一的一条数据
+
+- 更新值的规则： 
+
+  - 1. 每一次迭代时更新 
+    2. 运行场景中只更新一次
+
+  设置方式如下：
+
+  <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171511188.png" style="zoom:33%;" />
+
+- 添加脚本，更改迭代次数，点击运行：
+
+```shell
+lr_log_message("参数 2,表格参数：%s",lr_eval_string("{table_param}"));
+```
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171517715.png)
+
+看到结果，迭代了5次，且按顺序运行：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171518190.png" alt="image-20230417151810114" style="zoom: 50%;" />
+
+可以按不同取下一行和更新值的方式来测试。
+
+#### 4.1.4.文件参数化
+
+​	文件参数化和表格参数化的用法一样，只是将参数类型改为文件即可，此处不再赘述。
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171534173.png" style="zoom:33%;" />
+
+#### 4.1.5.迭代编号
+
+​	迭代编号参数是以运行逻辑的替代次数为基础，可按不同格式生成。
+
+- 新建一个参数，参数类型选择为迭代编号：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171541916.png" style="zoom:33%;" />
+
+```shell
+lr_log_message("参数 3,迭代编号参数：%s",lr_eval_string("{iteration}"));
+```
+
+- 点击运行，迭代了5次，因为在`Runtime Settings`中设置了迭代5次：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171548676.png" style="zoom:33%;" />
+
+#### 4.1.6.日期参数
+
+​	日期参数可以按照固定的格式生成参数。
+
+- 创建一个参数名为`date`，选择参数格式为`Date/Time`，并选择想要生成的日期格式：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171557985.png" style="zoom:50%;" />
+
+- 添加如下脚本，点击运行：
+
+```shell
+lr_log_message("参数 1,迭代编号参数：%s",lr_eval_string("{date}"));
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171559297.png" style="zoom: 50%;" />
+
+#### 4.1.7.随机数
+
+- 创建参数`random`，选择随机数的参数类型`Random Number`，并设置生成随机数的范围和格式：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171604226.png" alt="image-20230417160404104" style="zoom:33%;" />
+
+- 点击运行，看到生成的随机数：
+
+![image-20230417160446011](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171604083.png)
+
+#### 4.1.8.xml格式参数
+
+​	xml格式参数和表格参数使用相同，只不过生成的格式为xml格式。
+
+- 创建参数`xml`，选择参数类型为`xml`，并设置值：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171614304.png" style="zoom: 33%;" />
+
+- 添加脚本，运行查看结果：
+
+```shell
+lr_log_message("参数 1,迭代编号参数：%s",lr_eval_string("{xml}"));
+```
+
+![image-20230417161549574](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171615649.png)
+
+
+
+#### 4.1.9.用户自定义变量
+
+​	如Jmeter中，用户可以自定义变量。
+
+- 创建变量`custom`，并选择参数类型为`Custom`，并设置值：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171641816.png" style="zoom:50%;" />
+
+- 输入脚本，运行查看：
+
+```shell
+lr_log_message("参数 1,迭代编号参数：%s",lr_eval_string("{custom}"));
+```
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171643375.png)
+
+
+
+### 4.2.规则关联
+
+​	一般在发起请求时有可能用到前面步骤返回的结果，LR关联是把服务器返回的数据以参数来表示，同时作为后续请求的一个变量，规则关联分为手动关联和自动关联。
+
+#### 4.2.1.手动关联
+
+​	手动关联的步骤为：
+
+1. 找到前置请求中返回的业务数据
+2. 将上述数据设置为参数
+3. 将后续条件采用参数化替代
+
+- 创建一个新的脚本，录制这个脚本，录制信息如下：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171650968.png" alt="image-20230417165000856" style="zoom:50%;" />
+
+- 登录页面，登录完成后停止录入脚本：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171705874.png" alt="image-20230417170507744" style="zoom:33%;" />
+
+- 优化脚本，脚本只需要登录和查询菜单的，其他删除：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171707984.png" alt="image-20230417170747869" style="zoom:50%;" />
+
+- 在回放设置中，打开日志，并将数据从服务器返回：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171710177.png" style="zoom:50%;" />
+
+- 点击回放，分析日志：
+

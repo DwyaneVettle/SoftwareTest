@@ -1,0 +1,14 @@
+[API Trapper      ( ac4:3954)] Recording in 32-bit mode: D:\Software\loadrunner\Bin\HP.LR.ProxyRecorderStarter.exe
+[Network Analyzer (3e88:34f4)] ------------------------------------------------------------------------------------------
+[Network Analyzer (3e88:34f4)] Load Network Traffic Analyzers:
+[Network Analyzer (3e88:34f4)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (3e88:34f4)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (3e88:34f4)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (3e88:34f4)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (3e88:34f4)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (3e88:34f4)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (3e88:34f4)]     Analyzer Module: local_server (value=)
+[Network Analyzer (3e88:34f4)] ------------------------------------------------------------------------------------------
+[Proxy Recording.Error (3e88:34f4)] The following exception was received when starting the proxy engine.
+Message=输入字符串的格式不正确。
+This might indicate issues with permissions or the i
