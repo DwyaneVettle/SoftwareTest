@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+server: nginx/1.16.1
+date: Fri, 21 Apr 2023 06:21:08 GMT
+content-type: application/json
+transfer-encoding: chunked
+connection: keep-alive
+vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+access-control-allow-origin: *
+set-cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjZmI2ODhlMy04ODBkLTRlMmItYmQ4ZS05M2RhZjljMzRjNmUiLCJpYXQiOjE2ODIwNTgwNjgsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODIxNDQ0Njh9.BOF0liBuWuVdi6BBbsQwqIjrLWdP5Q9eaKQMld7aUkU; Path=/
+

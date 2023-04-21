@@ -1,0 +1,1 @@
+<html><body><h1>Whitelabel Error Page</h1><p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p><div id='created'>Fri Apr 21 11:44:24 CST 2023</div><div>There was an unexpected error (type=Method Not Allowed, status=405).</div><div>Request method &#39;GET&#39; not supported</div></body></html>

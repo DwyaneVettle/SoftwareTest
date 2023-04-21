@@ -1,7 +1,0 @@
-HTTP/1.1 200 
-Server: nginx/1.16.1
-Date: Mon, 10 Apr 2023 07:30:11 GMT
-Content-Type: image/jpeg
-Connection: keep-alive
-Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
-

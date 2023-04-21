@@ -1,0 +1,13 @@
+[t3]
+FileName1=t3.json
+URL1=http://cfgjt.cn:8981/devt-service/staff/menu.do
+Total=2
+RequestHeaderFile=t3_RequestHeader.txt
+RequestBodyFile=t3_RequestBody.txt
+ResponseHeaderFile=t3_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_3.xml
+FileName2=t3_redo.svg
+URL2=http://cfgjt.cn:8981/devt-web/assets/outline/redo.svg
+[ProtocolInfo]
+ProtocolId=QTWeb

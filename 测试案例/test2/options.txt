@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\笔记\SoftwareTest\测试案例\test2
--ID:\Software\LoadRunner\include
--ed:\笔记\softwaretest\测试案例\test2\\logfile.log
-d:\笔记\softwaretest\测试案例\test2\\combined_test2.c
-d:\笔记\softwaretest\测试案例\test2\\pre_cci.c

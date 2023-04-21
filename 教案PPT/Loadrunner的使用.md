@@ -88,7 +88,8 @@ Loadrunner的官方下载地址为：https://www.microfocus.com/en-us/products/L
 
 
 
-### 2.4.安装压力机
+> ### 2.4.安装压力机
+>
 
 安装压力机需在Linux系统上进行，本示例Linux版本问CentOS7，并且用户具有sudo权限。
 
@@ -120,25 +121,26 @@ sh installer.sh
 
 <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304021055391.png" alt="image-20230402105530315" style="zoom:50%;" />
 
-```shell
-# 备份本地yum源
-mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak  
-
-# 下载yum源配置文件到本地
-wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
-
-# 清空并更新缓存
-yum clean all && yum makecache
-
-# 安装依赖
-yum install glibc.i686 libstdc++.i686 ncurses-libs.i686 keyutils-libs.i686 glib2.i686 libnsl.i686 libidn.i686 -y
-
-# 如出现多库版本问题，可执行如下命令，然后再执行上面的安装
-yum update --setopt=protected_multilib=false 依赖名（如glib2）-y 
-
-# 再次安装
-sh installer.sh
-```
+> ```shell
+> # 备份本地yum源
+> mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak  
+> 
+> # 下载yum源配置文件到本地
+> wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+> 
+> # 清空并更新缓存
+> yum clean all && yum makecache
+> 
+> # 安装依赖
+> yum install glibc.i686 libstdc++.i686 ncurses-libs.i686 keyutils-libs.i686 glib2.i686 libnsl.i686 libidn.i686 -y
+> 
+> # 如出现多库版本问题，可执行如下命令，然后再执行上面的安装
+> yum update --setopt=protected_multilib=false 依赖名（如glib2）-y 
+> 
+> # 再次安装
+> sh installer.sh
+> ```
+>
 
 如出现密钥问题，可以参考：https://blog.csdn.net/qq_41817050/article/details/120135877
 
@@ -577,5 +579,577 @@ lr_log_message("参数 1,迭代编号参数：%s",lr_eval_string("{custom}"));
 
 <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304171710177.png" style="zoom:50%;" />
 
-- 点击回放，分析日志：
+- 点击回放，分析日志（如出现乱码，可按下步骤操作）：
+  - 在录制选项选择 UTF-8
+  -  在回放选项中选择 UTF-8
+  - 在工作项中将转换脚本编码去掉
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211012336.png" style="zoom:33%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211011477.png" style="zoom:33%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211013572.png" style="zoom: 33%;" />
+
+控制台输出信息：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211020129.png" style="zoom:50%;" />
+
+​	那么为什么会返回登录过期呢？是因为我们**没有做规则关联，导致传递信息的时候导致认证token没有传递过去**。我们打开页面，在登录前打开`F12`然后，登录，在`网络`中观察`login.do`和`menu.do`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211126127.png" style="zoom: 50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211135088.png" style="zoom:50%;" />
+
+​	所以我们把`login.do`的动作的token放到`menu.do`中，做一种关联。操作的步骤是在脚本中添加如下脚本：
+
+```shell
+//从服务端返回中取认证数据
+web_reg_save_param("devtToken",
+"LB=\"devt_token\":\"",
+"RB=\"",
+LAST);
+
+lr_log_message("取得结果为:%s",lr_eval_string("{devtToken}"));
+
+//将认证数据放置头部信息中
+web_add_auto_header("Authorization","Bearer {devtToken}");
+```
+
+​	如这些函数不记得，我们可以用关键字来搜索，搜索方式为：`在脚本中鼠标右键---Insert---New Step---搜索关键字（此处搜索save）`，然后在函数`web_reg_save_param`中添加信息：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211152296.png" style="zoom:50%;" />
+
+​	生成脚本后，需要进行优化，否则转义时可能报错，如双引号需要进行转义，优化后的脚本如下：
+
+```shell
+web_reg_save_param("devtToken",
+    "LB=\"devt_token\":\"",
+    "RB=\"",
+    "NotFound=ERROR",
+    "Search=Body",
+    LAST);
+```
+
+​	注意关联的脚本会放在动作之前。生成脚本后需要将该参数放到`menu.do`的头部信息，我们在`menu.do`前还是`Insert---New Step`，添加一个`web_add_auto_header`的函数，添加的函数为`menu.do`中的认证：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211200878.png" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211202289.png" alt="image-20230421120232213" style="zoom:67%;" />
+
+```shell
+web_add_auto_header("Authorization",
+		"Bearer {devtToken}");
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211203751.png" alt="image-20230421120300663" style="zoom: 50%;" />
+
+此时，重新回放，目录信息生成。
+
+#### 4.2.2.自动关联
+
+​	由 loadrunner 内置规则在录制时会自动生成关联，比如 JSESSION，COOKIE 自关动联。另外所有的自动关联均可以用手动关联替代，因此手动关联是我们的学习重点。
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211414074.png" style="zoom:33%;" />
+
+### 4.3.事务的定义
+
+​	事务（Transaction）用于模拟用户的一个相对完整的、有意义的业务操作过程，例如登录、查询、转账，这些都可以作为事务，而一般不会把每次 HTTP 请求作为一个事务。
+
+​	在LoadRunner中，关于事务函数有：
+
+```shell
+lr_start_transaction("devt-query");				// 事务开始
+lr_end_transaction("devt-query",LR_AUTO);		// 事务结束
+lr_end_transaction("devt-query",LR_PASS);		// 事务成功结束
+lr_end_transaction("devt-query",LR_FAIL);		// 事务失败结束
+```
+
+​	示例：
+
+```shell
+//不检查结果,自动结束
+lr_end_transaction("devt-query",LR_AUTO);
+//判断是否成功
+if(atoi(lr_eval_string("{param1}"))>0)
+{
+	lr_end_transaction("devt-query",LR_PASS);
+}
+else
+{
+	lr_end_transaction("devt-query",LR_FAIL);
+}
+```
+
+- 录制一个简单的脚本，登录页面，并做搜索操作：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211419007.png" alt="image-20230421141935857" style="zoom:50%;" />
+
+- 优化脚本，保留`login.do,menu.do.list.do_3`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211424228.png" alt="image-20230421142425115" style="zoom:33%;" />
+
+- 在登录之前和查询之后（即最前面和最后面）添加开始事务和结束事务，添加方式为：`鼠标右键---Insert----Start Transaction/End Transaction`。**注意：事务的名字要相同，否则会报错**。
+
+```shell
+lr_start_transaction("_search");
+lr_end_transaction("_search", LR_AUTO);
+```
+
+- 在`list.do_3`前面添加一个参数规则`web_reg_save_param`，并将双引号进行转义，参数的名字为页面`list.do`中的返回码`repCode`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211443108.png" alt="image-20230421144345004" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211441336.png" style="zoom:50%;" />
+
+添加规则完成后：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211444408.png" alt="image-20230421144435324" style="zoom:50%;" />
+
+- 再修改结束事务的判断，如果大于0为成功，其他为失败：
+
+```shell
+if(atoi(lr_eval_string("{repCode}"))>0)
+{
+	lr_end_transaction("_search",LR_PASS);
+}
+else
+{
+	lr_end_transaction("_search",LR_FAIL);
+}
+```
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211448748.png" alt="image-20230421144830649" style="zoom:50%;" />
+
+- 回放脚本，成功：
+
+![image-20230421144858081](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211448195.png)
+
+
+
+### 4.4.结果检查
+
+​	利用结果检查函数，我们可以判断业务是否正确，类似于Jmeter的断言。检查函数有两个可以选择：
+
+- 第一种：
+
+```shell
+web_reg_find("Text=Welcome",
+	LAST );
+```
+
+- 第二种：
+
+```shell
+web_reg_find("Fail=NotFound",
+    "Search=Body",
+    "SaveCount=Token_Count",
+    "TextPfx=\"devt_token\":\"",
+    "TextSfx=\"",
+    LAST);
+```
+
+​	我们以`4.3`录制的脚本为例，将事务的相关函数删除，我们检查是否登录成功。以第一种方式，添加一个`web_reg_find()`函数：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211515959.png" alt="image-20230421151540831" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211516056.png" alt="image-20230421151604964" style="zoom: 50%;" />
+
+​	回放脚本，匹配成功：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211516437.png" alt="image-20230421151640318" style="zoom:50%;" />
+
+## 5.常用函数
+
+​	针对LR中常用的函数，我们要比较熟悉，一些不清楚的地方，记得查询官网帮助，以下是官网在线文档，非常具有参考价值。
+
+- LR函数参考：https://admhelp.microfocus.com/vugen/en/2021-2021_R1/help/function_reference/Content/FuncRef/FuncRef.htm
+- C语言函数参考：https://admhelp.microfocus.com/vugen/en/2021-2021_R1/help/function_reference/Content/FuncRef/c_language/etc/lrFuncRef_C_Lng_Funcs_cat.htm
+- LR 常用函数参考(C)：https://admhelp.microfocus.com/vugen/en/2021-2021_R1/help/function_reference/Content/FuncRef/c_vuser/etc/lrFuncRef_CV_Utility_Functions.htm
+- LR 常用函数参考(Java)：https://admhelp.microfocus.com/vugen/en/2021-2021_R1/help/function_reference/Content/FuncRef/java_vuser/etc/lrFuncRef_JV_Utility_Functions.htm
+- LR 常用函数参考(JS)：https://admhelp.microfocus.com/vugen/en/2021-2021_R1/help/function_reference/Content/FuncRef/scripting/etc/lrFuncRef_VB_Utility_Funcs.htm
+
+### 5.1.参数类函数
+
+- `lr_eval_string()`：将参数转化为字符串。
+
+```shell
+lr_save_int(0, "searchCount");   	// 将数据存为int类型
+lr_save_string("我是字符串", "str1");  // 将数据存为string
+lr_output_message("Is zero, %s", lr_eval_string("{str1}"));
+if (atoi(lr_eval_string("{searchCount}")) == 0) {
+    lr_output_message("Is zero, %s", lr_eval_string("{searchCount}"));
+}
+lr_save_int(47, "searchCount");
+if (atoi(lr_eval_string("{searchCount}")) != 0) {
+    lr_output_message("Not zero, %s", lr_eval_string("{searchCount}"));
+}
+```
+
+运行结果：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211553439.png" alt="image-20230421155327234" style="zoom:50%;" />
+
+- `lr_eval_json()`：将字符串或者文件转换为 Json 对象。
+
+```shell
+char* json_input = "{"
+    "\"firstName\": \"John\","
+    "\"lastName\": \"Smith\""
+"}";
+lr_save_string(json_input, "JSON_Input_Param");
+// 创建 json 对象
+lr_eval_json("Buffer={JSON_Input_Param}",
+	"JsonObject=json_obj_1", LAST);
+//修改 json 对象值
+lr_json_set_values("JsonObject=json_obj_1",
+    "Value=test111111",
+    "QueryString=$.firstName",
+    "SelectAll=Yes",
+    LAST);
+//取得 json 对象值
+lr_json_get_values("JsonObject=json_obj_1",
+    "ValueParam=test1_result",
+    "QueryString=$.firstName",
+    LAST);
+//json 传字符串
+lr_json_stringify("JsonObject=json_obj_1","Format=compact","OutputParam=Result",LAST );
+//打印结果
+lr_log_message("%s--%s",lr_eval_string("{test1_result}"),lr_eval_string("{Result}"));
+```
+
+运行结果：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304211556210.png" alt="image-20230421155620083" style="zoom:50%;" />
+
+- `lr_json_set_values()`：修改 Json 对象中的值。
+- `lr_json_set_values()`：获取 Json 对象中的值。
+- `lr_json_stringify()`：Json 对象转字符串。
+- `lr_save_string()`：将变量以字符串类型存入参数。
+
+```shell
+char str1[100]="我是测试字符串";
+lr_save_string(str1,"param1");
+lr_log_message("%s",lr_eval_string("{param1}"));
+```
+
+- `lr_save_int()`：将变量以数字类型存入参数
+
+```shell
+int n=1314;
+lr_save_int(n,"param1");
+lr_log_message("%s",lr_eval_string("{param1}"));
+```
+
+- `lr_save_datetime()`：时间格式化，精确到秒，存入参数
+
+```shell
+lr_save_datetime("%Y-%m-%d %H:%M:%S", TIME_NOW, "currDateTime");
+lr_output_message(lr_eval_string("{currDateTime}"));
+```
+
+- `lr_save_timestamp()`：将时间戳存入到参数，可精确到秒，毫秒，微秒
+
+```shell
+//以秒为单位
+lr_save_timestamp("param", "DIGITS=10", LAST );
+lr_output_message(lr_eval_string("{param}"));
+//以毫秒为单位
+lr_save_timestamp("param", LAST );
+lr_output_message(lr_eval_string("{param}"));
+//以微秒为单位
+lr_save_timestamp("param", "DIGITS=16", LAST );
+lr_output_message(lr_eval_string("{param}"));
+```
+
+- `web_save_timestamp_param()`：将时间戳存入到参数，固定为毫秒
+
+```shell
+web_save_timestamp_param("tStamp", LAST );//默认以毫秒为单位，将时间戳存入参数
+lr_output_message(lr_eval_string("Timestamp: {tStamp}"));
+```
+
+- `lr_param_sprintf()`：格式化字符串，类似 sprintf
+
+```shell
+int index = 56;
+char * suffix = "txt";
+//底层采用 C 的 sprintf 函数
+lr_param_sprintf ("LOG_NAME_PARAM", "log_%d.%s", index, suffix,100);
+lr_output_message("The new file name is %s",lr_eval_string("{LOG_NAME_PARAM}"));
+```
+
+- `lr_convert_string_encoding()`：编码转换，可防止中文乱码
+
+```shell
+lr_convert_string_encoding("我是中文",LR_ENC_SYSTEM_LOCALE,LR_ENC_UTF8,"ReplyMessage");
+```
+
+
+
+### 5.2.检查关联类
+
+该类函数一般跟在 web actions 函数前面。
+
+- `web_reg_find()`：在行动函数前面搜索指字符串，默认找不到则失败。
+
+```shell
+//搜索指定字符串
+web_reg_find("Search=Body",
+    "Text=devt_token",
+    LAST);
+//搜索指定字符串(开始+结束)
+web_reg_find("Search=Body",
+    "TextPfx=\"devt_token\":\"",
+    "TextSfx=\"",
+    LAST);
+//通配搜索
+web_reg_find("Text/ALNUMLC=\"devt_toke^\"",
+	LAST);
+web_custom_request("login.do_3",
+    "URL={host}/devt-service/api/login.do",
+    "Method=POST",
+    "Resource=0",
+    "RecContentType=application/json",
+    "Referer={host}/devt-web/",
+    94
+    "Snapshot=t290.inf",
+    "Mode=HTML",
+    "EncType=application/json",
+    "Body={\"acctName\":\"admin\",\"acctPwd\":\"11111111\",\"type\":\"0\"}",
+    LAST);
+```
+
+- `web_reg_save_param()`：将动态数据注册到参数。
+
+```shell
+//从服务端返回中取得数据,支持双右边界
+web_reg_save_param("devtToken",
+    "LB=\"devt_token\":\"",
+    "RB=\"",
+    LAST);
+web_custom_request("login.do_3",
+    "URL={host}/devt-service/api/login.do",
+    "Method=POST",
+    "Resource=0",
+    "RecContentType=application/json",
+    "Referer={host}/devt-web/",
+    "Snapshot=t290.inf",
+    "Mode=HTML",
+    "EncType=application/json",
+    "Body={\"acctName\":\"admin\",\"acctPwd\":\"11111111\",\"type\":\"0\"}",
+    LAST);
+```
+
+- `web_reg_save_param_regexp()`：将动态数据注册到参数，比 web_reg_save_param 功能强大。
+
+```shell
+//从服务端返回中取得数据
+web_reg_save_param_regexp(
+    "ParamName=devtToken",
+    "RegExp=(\"devt_token\":\".*?\")",
+    "Group=0",
+    SEARCH_FILTERS,
+    "Scope=BODY",
+    LAST);
+web_custom_request("login.do_3",
+    "URL={host}/devt-service/api/login.do",
+    "Method=POST",
+    "Resource=0",
+    "RecContentType=application/json",
+    "Referer={host}/devt-web/",
+    "Snapshot=t290.inf",
+    "Mode=HTML",
+    "EncType=application/json",
+    "Body={\"acctName\":\"admin\",\"acctPwd\":\"11111111\",\"type\":\"0\"}",LAST);
+lr_log_message("取得 token 为:%s",lr_eval_string("{devtToken}"));
+```
+
+- `web_reg_save_param_json()`：以 json 方式解析动态数据并注册到参数(要求数据为 json)。
+
+```shell
+//从服务端返回中取得数据
+web_reg_save_param_json(
+    "ParamName=devtToken",
+    "QueryString=$..devt_token",
+    SEARCH_FILTERS,
+    "Scope=BODY",
+    LAST);
+```
+
+- `web_reg_save_param_xpath()`：以 xpath 方式解析动态数据并注册到参数(要求数据为 xml)。
+
+```shell
+web_reg_save_param_xpath( 
+    "ParamName=CorrelationParameter", 	"QueryString=/LR_EXTENSION[1]/object[1]/object[1]/array[1]",
+    "DFEs=JsonXml",
+    "ReturnXML=Yes", 
+    SEARCH_FILTERS, 
+    "Scope=Body",
+    LAST);
+```
+
+- `web_reg_save_param_attrib()`：以 html 文档方式解析动态数据并注册到参数。
+
+```shell
+//<INPUT TYPE="HIDDEN" NAME="field1" VALUE="Usj3xEEneBBTcIi6IXNHBBaz7D7ytfDmmbgOKjVuc59C">
+web_reg_save_param_attrib(
+    "ParamName=param1",
+    "TagName=input",
+    "Extract=value",
+    "Name=field1",
+    "Type=*",
+    SEARCH_FILTERS,
+    "IgnoreRedirections=No",
+    LAST);
+```
+
+### 5.3.日志类函数
+
+- `lr_output_message()`：向日志文件、输出窗口和其他测试报告摘要发送消息。
+
+```shell
+lr_output_message("取得 token 为:%s",lr_eval_string("{devtToken}"));
+```
+
+- `lr_log_message()`：向日志文件发送消息。
+
+```shell
+lr_output_message("取得 token 为:%s",lr_eval_string("{devtToken}"));
+```
+
+- `lr_debug_message()`：向日志文件发送调试消息(需要设置日志级别)。
+
+```shell
+lr_debug_message(LR_MSG_CLASS_RESULT_DATA | LR_MSG_CLASS_PARAMETERS,lr_eval_string("1111{devtToken}"));
+```
+
+- `lr_error_message()`：向日志文件发送错误消息(绝色显示)。
+
+```shell
+lr_error_message("取得 token 为:%s",lr_eval_string("{devtToken}"));
+```
+
+
+
+## 6.LR语言编程
+
+​	LR虽然也支持JS、Java等语言进行编程，但由于C语言在LR的执行效率更高，所以一般建议使用C语言进行编程。
+
+### 6.1.变量的定义
+
+LoadRunner 中的变量即其实就是 C 语言变量，不过有以下约束
+
+1. 变量可以定义在.h 文件中
+
+2. 变量可以定义在 Action 函数外部
+
+3. 变量可以定义在 Action 开始部分
+
+4. Action 体内不可以定义变量
+
+示例：
+
+```c
+int a1=0;
+int a2=0;
+char* p1;
+char str2[]="string111111222";
+Action()
+{
+    lr_log_message("%s",&str2[5]);
+    p1=lr_eval_string("{param1}");
+    lr_log_message("%s",p1);
+    //int a3=0;//此处编译会报错
+    return 0;
+}
+```
+
+
+
+### 6.2.参数的操作
+
+- **字符类参数的操作(未出现的参数可以在Parameters中定义，类型可为Custom)**
+
+```c
+char str1[]="str111";
+//参数的取值
+lr_log_message("%s",lr_eval_string("{param1}"));
+lr_log_message("%s",lr_eval_string("{param2}"));
+//参数的赋值
+lr_save_string(str1,"param1");
+lr_save_string("new param2","param2");
+//参数的取值
+lr_log_message("%s",lr_eval_string("{param1}"));
+lr_log_message("%s",lr_eval_string("{param2}"));
+```
+
+
+
+- **int类型参数的操作**
+
+```c
+//参数的取值
+lr_log_message("%s",lr_eval_string("{param1}"));
+lr_log_message("%s",lr_eval_string("{param2}"));
+//参数的赋值
+lr_save_int(11,"param1");
+lr_save_int(22,"param2");
+//参数的取值
+lr_log_message("%s",lr_eval_string("{param1}"));
+lr_log_message("%s",lr_eval_string("{param2}"));
+```
+
+
+
+- **参数的互转**
+
+```c
+char str1[]="str111";
+char format1[200]="";
+int n1=0;
+//参数转字符串变量
+strcpy(str1, lr_eval_string("{param1}"));
+lr_output_message("%s", str1);
+//参数转数值变量(参数统一为字符，故先转 int)
+n1=atoi(lr_eval_string("{param2}"));
+lr_output_message("%d", n1);
+//格式化参数
+sprintf(format1,"%s---%d",str1,n1);
+lr_log_message("%s",format1);
+//参数转参数
+lr_save_string(lr_eval_string("{param1}"),"param2");
+```
+
+
+
+### 6.3.逻辑控制
+
+​	C 语言中的顺序，分支，循环同样适用于 lr，C 语言中的函数同样可以在 lr 中使用，lr 中的函数可以定义在 Action 外部，也可以定义在.h 文件中
+
+​	示例：
+
+```c
+void say(int flag){
+    if(flag==0){
+        lr_log_message("我是偶数");
+    }else{
+        lr_log_message("我是奇数");
+    }
+}
+Action() {
+	int i=0;
+    for(i=0;i<10;i++){
+    	if(i%2==0){
+    		say(0);
+    	}else{
+    		say(1);
+    	}
+	}
+return 0;
+}
+```
+
+
+
+### 6.4.JS脚本
 

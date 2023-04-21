@@ -1,0 +1,8 @@
+[parameter:param1]
+CurrentValue="11111"
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="param1"
+Prompt="1111"
+Type="Custom"

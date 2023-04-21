@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\笔记\SoftwareTest\测试案例\WebHttpHtml1
--ID:\Software\loadrunner\include
--ed:\笔记\softwaretest\测试案例\webhttphtml1\\logfile.log
-d:\笔记\softwaretest\测试案例\webhttphtml1\\combined_WebHttpHtml1.c
-d:\笔记\softwaretest\测试案例\webhttphtml1\\pre_cci.c

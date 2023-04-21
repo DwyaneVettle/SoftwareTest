@@ -1,9 +1,0 @@
-[StartRecordingGMT]
-StartRecordingGMT_1=2023/04/10 06:52:22
-StartRecordingIsDst_1=0
-StartRecordingGMT_2=2023/04/10 06:54:06
-StartRecordingIsDst_2=0
-[Security]
-UsingPersistForAuthentication=1
-[User-Agent]
-User-Agent=Microsoft NCSI

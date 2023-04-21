@@ -1,6 +1,0 @@
-[t2]
-FileName1=t2_forecast.html
-URL1=https://weather-api.extfans.com/weather/forecast?lang=zh-CN&cid=CN101270101
-Total=1
-ContentType=
-SnapshotXmlFile=snapshot_2.xml
