@@ -1,0 +1,11 @@
+[t8]
+FileName1=t8_eye-invisible.svg
+URL1=http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_8.xml
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t8_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

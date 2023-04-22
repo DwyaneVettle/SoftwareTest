@@ -1,0 +1,49 @@
+Virtual User Script started at: 2023/4/22 15:31:45
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (1ÔÂ 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54  	[MsgId: MMSG-26988]
+Runtime Settings file: "D:\±Ê¼Ç\SoftwareTest\²âÊÔ°¸Àý\µÇÂ¼½Å±¾1\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Transaction "login" started.
+Action.c(5): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(5): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(12): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(12): t=603ms: 510-byte response headers for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(12):     HTTP/1.1 200 \r\n
+Action.c(12):     Server: nginx/1.16.1\r\n
+Action.c(12):     Date: Sat, 22 Apr 2023 07:31:48 GMT\r\n
+Action.c(12):     Content-Type: application/json\r\n
+Action.c(12):     Transfer-Encoding: chunked\r\n
+Action.c(12):     Connection: keep-alive\r\n
+Action.c(12):     Vary: Origin\r\n
+Action.c(12):     Vary: Access-Control-Request-Method\r\n
+Action.c(12):     Vary: Access-Control-Request-Headers\r\n
+Action.c(12):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxY2YzZmYyOS04YzA3LTQ4NjUtOTkxZC1mYzU
+Action.c(12):     zMDU4ZGZhYjMiLCJpYXQiOjE2ODIxNDg3MDgsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cI
+Action.c(12):     n0iLCJleHAiOjE2ODIyMzUxMDh9.qjPhkmkwhjQ3U5RzWFydCb4vJlZAHB3pbR0DuyKhtDE; Path=/\r\n
+Action.c(12):     \r\n
+Action.c(12): t=611ms: 5-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(12):     137\r\n
+Action.c(12): t=612ms: 7-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(12):     \r\n
+Action.c(12):     0\r\n
+Action.c(12):     \r\n
+Action.c(12): t=613ms: 311-byte chunked response body for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(12):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(12):     UzI1NiJ9.eyJqdGkiOiIxY2YzZmYyOS04YzA3LTQ4NjUtOTkxZC1mYzUzMDU4ZGZhYjMiLCJpYXQiOjE2ODIxNDg3M
+Action.c(12):     DgsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODIyMzUxMDh9.qjPhkm
+Action.c(12):     kwhjQ3U5RzWFydCb4vJlZAHB3pbR0DuyKhtDE"}}}
+Action.c(12): web_custom_request("login.do") was successful, 311 body bytes, 510 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(27): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.5254 Wasted Time: 0.3588).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 12008), ended OK."

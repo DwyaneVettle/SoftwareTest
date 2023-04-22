@@ -1,0 +1,13 @@
+[t6]
+FileName1=t6.json
+URL1=http://192.168.128.186:8981/devt-service/devtComp/list.do
+Total=2
+RequestHeaderFile=t6_RequestHeader.txt
+RequestBodyFile=t6_RequestBody.txt
+ResponseHeaderFile=t6_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_6.xml
+FileName2=t6_plus.svg
+URL2=http://192.168.128.186:8981/devt-web/assets/outline/plus.svg
+[ProtocolInfo]
+ProtocolId=QTWeb

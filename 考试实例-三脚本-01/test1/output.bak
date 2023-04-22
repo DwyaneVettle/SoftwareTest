@@ -1,0 +1,223 @@
+Virtual User Script started at: 2022/2/16 22:47:34
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (1月 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.50  	[MsgId: MMSG-26988]
+Runtime Settings file: "E:\lr12\test1\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): Notify: Transaction "login" started.
+Action.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=417ms: 510-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 14:47:34 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI2NjU2ZDE4My1kZTY3LTQ1ZjMtOWVjZi1hZDk
+Action.c(14):     yN2JlNDZmY2MiLCJpYXQiOjE2NDUwMjI4NTQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cI
+Action.c(14):     n0iLCJleHAiOjE2NDUxMDkyNTR9.IB2GmErG2vQKozYOz5J3UzAcMDkkAXLZ_Eg3CTd-xOk; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=424ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     137\r\n
+Action.c(14): t=424ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=425ms: 311-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiI2NjU2ZDE4My1kZTY3LTQ1ZjMtOWVjZi1hZDkyN2JlNDZmY2MiLCJpYXQiOjE2NDUwMjI4N
+Action.c(14):     TQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2NDUxMDkyNTR9.IB2GmE
+Action.c(14):     rG2vQKozYOz5J3UzAcMDkkAXLZ_Eg3CTd-xOk"}}}
+Action.c(14): web_custom_request("login.do") was successful, 311 body bytes, 510 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.2302 Wasted Time: 0.0856).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(4): Notify: Transaction "login" started.
+Action.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=715ms: 513-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 14:47:35 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyN2Y5ZjU5ZS01N2JiLTQyM2ItOGExNi1iY2I
+Action.c(14):     0ZTc4MDAwMzEiLCJpYXQiOjE2NDUwMjI4NTUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlM
+Action.c(14):     VwifSIsImV4cCI6MTY0NTEwOTI1NX0.67hSFK_QnCojFvqBoCDDZ1L_Ls5Onhhvq3hKEVftZ5s; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=717ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     13a\r\n
+Action.c(14): t=717ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=717ms: 314-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiIyN2Y5ZjU5ZS01N2JiLTQyM2ItOGExNi1iY2I0ZTc4MDAwMzEiLCJpYXQiOjE2NDUwMjI4N
+Action.c(14):     TUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlMVwifSIsImV4cCI6MTY0NTEwOTI1NX0.67h
+Action.c(14):     SFK_QnCojFvqBoCDDZ1L_Ls5Onhhvq3hKEVftZ5s"}}}
+Action.c(14): web_custom_request("login.do") was successful, 314 body bytes, 513 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.2020 Wasted Time: 0.0096).
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(4): Notify: Transaction "login" started.
+Action.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=892ms: 513-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=3)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 14:47:35 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzZTYxN2U0OS1mMWY5LTRjYzgtYTVmMS1lZmQ
+Action.c(14):     1NzJhNmU2YWQiLCJpYXQiOjE2NDUwMjI4NTUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlM
+Action.c(14):     lwifSIsImV4cCI6MTY0NTEwOTI1NX0.RdiActo7BsGsYTAM2HUmaXKvBusCqDbuLov6l1NZits; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=893ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=3)
+Action.c(14):     13a\r\n
+Action.c(14): t=894ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=3)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=894ms: 314-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=3)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiIzZTYxN2U0OS1mMWY5LTRjYzgtYTVmMS1lZmQ1NzJhNmU2YWQiLCJpYXQiOjE2NDUwMjI4N
+Action.c(14):     TUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlMlwifSIsImV4cCI6MTY0NTEwOTI1NX0.Rdi
+Action.c(14):     Acto7BsGsYTAM2HUmaXKvBusCqDbuLov6l1NZits"}}}
+Action.c(14): web_custom_request("login.do") was successful, 314 body bytes, 513 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.1553 Wasted Time: 0.0119).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(4): Notify: Transaction "login" started.
+Action.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=1124ms: 513-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=4)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 14:47:35 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODViZmQxMS0xODM2LTRjYjItYTUxZS04ODc
+Action.c(14):     wODYyZTg2ODEiLCJpYXQiOjE2NDUwMjI4NTUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlM
+Action.c(14):     1wifSIsImV4cCI6MTY0NTEwOTI1NX0.e8W7oKOKkpKVhhoz9JmfFBkwm4MepAMF2DaICY1okOk; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1126ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=4)
+Action.c(14):     13a\r\n
+Action.c(14): t=1126ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=4)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1127ms: 314-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=4)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiIyODViZmQxMS0xODM2LTRjYjItYTUxZS04ODcwODYyZTg2ODEiLCJpYXQiOjE2NDUwMjI4N
+Action.c(14):     TUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlM1wifSIsImV4cCI6MTY0NTEwOTI1NX0.e8W
+Action.c(14):     7oKOKkpKVhhoz9JmfFBkwm4MepAMF2DaICY1okOk"}}}
+Action.c(14): web_custom_request("login.do") was successful, 314 body bytes, 513 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.1995 Wasted Time: 0.0150).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(4): Notify: Transaction "login" started.
+Action.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=1305ms: 513-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=5)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 14:47:35 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjODdkYmNjZS0yMjMwLTRlYTQtYjVmYi1iZjk
+Action.c(14):     zNDEzMTBjMWQiLCJpYXQiOjE2NDUwMjI4NTUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlN
+Action.c(14):     FwifSIsImV4cCI6MTY0NTEwOTI1NX0.mGn1tJ1_VGSZu6RQmw5puqyv9IR2wKHsQJP59JfgzsU; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1307ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=5)
+Action.c(14):     13a\r\n
+Action.c(14): t=1307ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=5)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1308ms: 314-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=5)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiJjODdkYmNjZS0yMjMwLTRlYTQtYjVmYi1iZjkzNDEzMTBjMWQiLCJpYXQiOjE2NDUwMjI4N
+Action.c(14):     TUsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwibG9uZ2dlNFwifSIsImV4cCI6MTY0NTEwOTI1NX0.mGn
+Action.c(14):     1tJ1_VGSZu6RQmw5puqyv9IR2wKHsQJP59JfgzsU"}}}
+Action.c(14): web_custom_request("login.do") was successful, 314 body bytes, 513 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.1550 Wasted Time: 0.0162).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(4): Notify: Transaction "login" started.
+Action.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=1510ms: 510-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=6)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 14:47:36 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyYWJhYzAzYi1mYTAwLTQyYTQtOTMxMi05MGE
+Action.c(14):     1NGUxOWU5OGYiLCJpYXQiOjE2NDUwMjI4NTYsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cI
+Action.c(14):     n0iLCJleHAiOjE2NDUxMDkyNTZ9._rRyH4hIJzJjNyg7orH4h4gOuyALT3vs_zqtdSHDKRk; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1512ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=6)
+Action.c(14):     137\r\n
+Action.c(14): t=1512ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=6)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=1513ms: 311-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=6)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiIyYWJhYzAzYi1mYTAwLTQyYTQtOTMxMi05MGE1NGUxOWU5OGYiLCJpYXQiOjE2NDUwMjI4N
+Action.c(14):     TYsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2NDUxMDkyNTZ9._rRyH4
+Action.c(14):     hIJzJjNyg7orH4h4gOuyALT3vs_zqtdSHDKRk"}}}
+Action.c(14): web_custom_request("login.do") was successful, 311 body bytes, 510 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.1716 Wasted Time: 0.0193).
+Ending action Action.
+Ending iteration 6.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

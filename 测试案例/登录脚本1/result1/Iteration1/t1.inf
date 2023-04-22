@@ -1,0 +1,13 @@
+[t1]
+SnapshotXmlFile=snapshot_1.xml
+ContentType=application/json
+StepName=Custom Request: login.do
+Total=1
+FileName1=t1.json
+RequestHeaderFile=t1_RequestHeader.txt
+ResponseHeaderFile=t1_ResponseHeader.txt
+RawStepEndTime=1682148705746
+RawStepName=login.do
+RequestBodyFile=t1_RequestBody.txt
+RawStepStartTime=1682148705279
+URL1=http://cfgjt.cn:8981/devt-service/api/login.do

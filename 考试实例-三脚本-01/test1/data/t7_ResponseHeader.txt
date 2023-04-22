@@ -1,0 +1,8 @@
+HTTP/1.1 200 
+Server: nginx/1.16.1
+Date: Wed, 16 Feb 2022 14:38:47 GMT
+Content-Type: application/json
+Connection: keep-alive
+Vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+Access-Control-Allow-Origin: *
+

@@ -1,0 +1,1 @@
+{"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":3,"list":[{"id":120,"codeId":"1","codeName":"紧急","tableName":"devt_msg","codeType":"type","codeDesc":"紧急"},{"id":121,"codeId":"2","codeName":"重要","tableName":"devt_msg","codeType":"type","codeDesc":"重要"},{"id":122,"codeId":"3","codeName":"一般","tableName":"devt_msg","codeType":"type","codeDesc":"一般"}]}}}

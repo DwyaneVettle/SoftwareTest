@@ -1,0 +1,11 @@
+[t18]
+FileName1=t18_httpCompImg.jfif
+URL1=http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1645024496211
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_18.xml
+RequestHeaderFile=t18_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t18_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,13 @@
+POST http://192.168.128.186:8981/devt-service/staff/menu.do HTTP/1.1
+Accept: application/json, text/plain, */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMGJkZjY5Zi02OGRkLTQyOTAtOTFlMi1hZGUwN2I5Zjg1ZDYiLCJpYXQiOjE2NDUwMjMwOTQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2NDUxMDk0OTR9.hAR_S0vIzkxnjZHdQYeDidTzaLO76DZ-bmoFoZVTGDA
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.50
+Content-Type: application/json
+Origin: http://192.168.128.186:8981
+Referer: http://192.168.128.186:8981/devt-web/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhMGJkZjY5Zi02OGRkLTQyOTAtOTFlMi1hZGUwN2I5Zjg1ZDYiLCJpYXQiOjE2NDUwMjMwOTQsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2NDUxMDk0OTR9.hAR_S0vIzkxnjZHdQYeDidTzaLO76DZ-bmoFoZVTGDA
+Host: 192.168.128.186:8981
+Content-Length: 26
+

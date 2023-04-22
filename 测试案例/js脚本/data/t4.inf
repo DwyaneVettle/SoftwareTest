@@ -1,0 +1,17 @@
+[t4]
+FileName1=t4.json
+URL1=http://cfgjt.cn:8981/devt-service/colorplan/planinfo.do
+Total=4
+RequestHeaderFile=t4_RequestHeader.txt
+RequestBodyFile=t4_RequestBody.txt
+ResponseHeaderFile=t4_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_4.xml
+FileName2=t4_eye-invisible.svg
+URL2=http://cfgjt.cn:8981/devt-web/assets/outline/eye-invisible.svg
+FileName3=t4_setting.svg
+URL3=http://cfgjt.cn:8981/devt-web/assets/outline/setting.svg
+FileName4=t4_redo.svg
+URL4=http://cfgjt.cn:8981/devt-web/assets/outline/redo.svg
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t20]
+FileName1=t20_httpCompImg.jfif
+URL1=http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1645024496212
+Total=1
+ContentType=image/jpeg
+SnapshotXmlFile=snapshot_20.xml
+RequestHeaderFile=t20_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t20_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

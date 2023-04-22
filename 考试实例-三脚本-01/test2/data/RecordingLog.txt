@@ -1,0 +1,438 @@
+[API Trapper      (20c2c:2451c)] Recording in 32-bit mode: D:\Program Files (x86)\Micro Focus\LoadRunner\Bin\HP.LR.ProxyRecorderStarter.exe
+[Network Analyzer (221bc:25254)] ------------------------------------------------------------------------------------------
+[Network Analyzer (221bc:25254)] Load Network Traffic Analyzers:
+[Network Analyzer (221bc:25254)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (221bc:25254)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (221bc:25254)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (221bc:25254)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (221bc:25254)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (221bc:25254)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (221bc:25254)]     Analyzer Module: local_server (value=)
+[Network Analyzer (221bc:25254)] ------------------------------------------------------------------------------------------
+[Proxy Recording  (221bc:25254)] Started proxy on port 8888 listening IP 10.0.0.23, 127.0.0.1, in synchronous mode
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6645
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6647
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6648
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/ ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/ ...
+[Proxy Recording  (221bc:24584)] Received response of 222 header and 2710 body bytes from http://192.168.128.186:8981/devt-web/
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-web/"   
+[Network Analyzer (221bc:24584)]   (Sid:  1) Client -> Server @ : 480 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid:  1) Server -> Client : 239 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid:  1) Server -> Client : 2710 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 2710 bytes to client @ 10.0.0.23:6647
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6651
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6652
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/styles.2ea3cb3a29598ff3a901.css ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/runtime.7b63b9fd40098a2e8207.js ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/styles.2ea3cb3a29598ff3a901.css ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/runtime.7b63b9fd40098a2e8207.js ...
+[Proxy Recording  (221bc:25540)] Received response of 235 header and 1485 body bytes from http://192.168.128.186:8981/devt-web/runtime.7b63b9fd40098a2e8207.js
+[Proxy Recording  (221bc:24420)] Trying to connect to https://nav.smartscreen.microsoft.com:443/api/browser/edge/actions ...
+[Web Request      (221bc:25540)] "GET http://192.168.128.186:8981/devt-web/runtime.7b63b9fd40098a2e8207.js"   
+[Network Analyzer (221bc:25540)]   (Sid:  2) Client -> Server @ : 384 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid:  2) Server -> Client : 252 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid:  2) Server -> Client : 1485 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 1485 bytes to client @ 10.0.0.23:6652
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6654
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/polyfills.1111712f963ef64beaec.js ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/polyfills.1111712f963ef64beaec.js ...
+[Proxy Recording  (221bc:24420)] Trying to connect to https://nav.smartscreen.microsoft.com:443/api/browser/edge/actions ...
+[Proxy Recording  (221bc:25540)] Received response of 237 header and 36586 body bytes from http://192.168.128.186:8981/devt-web/polyfills.1111712f963ef64beaec.js
+[Web Request      (221bc:25540)] "GET http://192.168.128.186:8981/devt-web/polyfills.1111712f963ef64beaec.js"   
+[Network Analyzer (221bc:25540)]   (Sid:  3) Client -> Server @ : 386 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid:  3) Server -> Client : 254 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid:  3) Server -> Client : 36586 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 36586 bytes to client @ 10.0.0.23:6654
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6656
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/scripts.521e2067e75cd94ae49c.js ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/scripts.521e2067e75cd94ae49c.js ...
+[Proxy Recording  (221bc:24420)] Received response of 477 header and 188 body bytes from https://nav.smartscreen.microsoft.com:443/api/browser/edge/actions
+[Network Analyzer (221bc:24420)]   (Sid:  4) Client -> Server @ : 409 bytes (SSL)(Service=HTTP)
+[Web Request      (221bc:24420)] "POST https://nav.smartscreen.microsoft.com/api/browser/edge/actions"   
+[Network Analyzer (221bc:24420)]   (Sid:  4) Client -> Server @ : 1308 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid:  4) Server -> Client : 494 bytes (SSL) (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid:  4) Server -> Client : 188 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 188 bytes to client @ 10.0.0.23:6645
+[Proxy Recording  (221bc:2553c)] Trying to connect to https://config.edge.skype.com:443/config/v1/Edge/98.0.1108.50?clientId=-927814357224234672&osname=win&client=edge&channel=stable&scpfull=0&scpguard=0&scpfre=0&scpver=&osarch=x86_64&osver=10.0.19043&osedition=professional&wu=1&devicefamily=desktop&uma=0&mngd=0&installdate=1618511794 ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to https://config.edge.skype.com:443/config/v1/Edge/98.0.1108.50?clientId=-927814357224234672&osname=win&client=edge&channel=stable&scpfull=0&scpguard=0&scpfre=0&scpver=&osarch=x86_64&osver=10.0.19043&osedition=professional&wu=1&devicefamily=desktop&uma=0&mngd=0&installdate=1618511794 ...
+[Proxy Recording  (221bc:2553c)] Received response of 452 header and 0 body bytes from https://config.edge.skype.com:443/config/v1/Edge/98.0.1108.50?clientId=-927814357224234672&osname=win&client=edge&channel=stable&scpfull=0&scpguard=0&scpfre=0&scpver=&osarch=x86_64&osver=10.0.19043&osedition=professional&wu=1&devicefamily=desktop&uma=0&mngd=0&installdate=1618511794
+[Web Request      (221bc:2553c)] "GET https://config.edge.skype.com/config/v1/Edge/98.0.1108.50?clientId=-927814357224234672&osname=win&client=edge&channel=stable&scpfull=0&scpguard=0&scpfre=0&scpver=&osarch=x86_64&osver=10.0.19043&osedition=professional&wu=1&devicefamily=desktop&uma=0&mngd=0&installdate=1618511794"   
+[Network Analyzer (221bc:2553c)]   (Sid:  5) Client -> Server @ : 649 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid:  5) Server -> Client : 479 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:2553c)] Sent 0 bytes to client @ 10.0.0.23:6648
+[Proxy Recording  (221bc:24584)] Received response of 225 header and 667710 body bytes from http://192.168.128.186:8981/devt-web/styles.2ea3cb3a29598ff3a901.css
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-web/styles.2ea3cb3a29598ff3a901.css"   
+[Network Analyzer (221bc:24584)]   (Sid:  6) Client -> Server @ : 399 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid:  6) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid:  6) Server -> Client : 667710 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 667710 bytes to client @ 10.0.0.23:6651
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6659
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-web/main.2e3b714f083eb6eadafc.js ...
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-web/main.2e3b714f083eb6eadafc.js ...
+[Proxy Recording  (221bc:24420)] Received response of 241 header and 1636430 body bytes from http://192.168.128.186:8981/devt-web/main.2e3b714f083eb6eadafc.js
+[Web Request      (221bc:24420)] "GET http://192.168.128.186:8981/devt-web/main.2e3b714f083eb6eadafc.js"   
+[Network Analyzer (221bc:24420)]   (Sid:  7) Client -> Server @ : 381 bytes (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid:  7) Server -> Client : 258 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid:  7) Server -> Client : 1636430 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 1636430 bytes to client @ 10.0.0.23:6659
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6664
+[Proxy Recording  (221bc:25620)] Trying to connect to https://clientservices.googleapis.com:443/chrome-variations/seed?osname=win&channel=stable&milestone=98 ...
+[Proxy Recording  (221bc:25620)] Trying to connect to https://clientservices.googleapis.com:443/chrome-variations/seed?osname=win&channel=stable&milestone=98 ...
+[Proxy Recording  (221bc:25620)] Received response of 295 header and 0 body bytes from https://clientservices.googleapis.com:443/chrome-variations/seed?osname=win&channel=stable&milestone=98
+[Web Request      (221bc:25620)] "GET https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=98"   
+[Network Analyzer (221bc:25620)]   (Sid:  8) Client -> Server @ : 491 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:25620)]   (Sid:  8) Server -> Client : 322 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:25620)] Sent 0 bytes to client @ 10.0.0.23:6664
+[Proxy Recording  (221bc:25540)] Received response of 241 header and 3312384 body bytes from http://192.168.128.186:8981/devt-web/scripts.521e2067e75cd94ae49c.js
+[Web Request      (221bc:25540)] "GET http://192.168.128.186:8981/devt-web/scripts.521e2067e75cd94ae49c.js"   
+[Network Analyzer (221bc:25540)]   (Sid:  9) Client -> Server @ : 384 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid:  9) Server -> Client : 258 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid:  9) Server -> Client : 3312384 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 3312384 bytes to client @ 10.0.0.23:6656
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6667
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/vs/editor/editor.main.css ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/vs/editor/editor.main.css ...
+[Proxy Recording  (221bc:2553c)] Received response of 224 header and 68822 body bytes from http://192.168.128.186:8981/devt-web/assets/vs/editor/editor.main.css
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6669
+[Proxy Recording  (221bc:25620)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/user.svg ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6670
+[Proxy Recording  (221bc:25620)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/user.svg ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/lock.svg ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/lock.svg ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6671
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6672
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-web/bg.46df42f1ef4c91e3508f.png ...
+[Web Request      (221bc:2553c)] "GET http://192.168.128.186:8981/devt-web/assets/vs/editor/editor.main.css"   
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-web/bg.46df42f1ef4c91e3508f.png ...
+[Network Analyzer (221bc:2553c)]   (Sid: 10) Client -> Server @ : 400 bytes (Service=HTTP)
+[Proxy Recording  (221bc:25620)] Received response of 225 header and 744 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/user.svg
+[Network Analyzer (221bc:2553c)]   (Sid: 10) Server -> Client : 241 bytes  (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 10) Server -> Client : 68822 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:2553c)] Sent 68822 bytes to client @ 10.0.0.23:6667
+[Proxy Recording  (221bc:24584)] Received response of 225 header and 406 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/lock.svg
+[Web Request      (221bc:25620)] "GET http://192.168.128.186:8981/devt-web/assets/outline/user.svg"   
+[Network Analyzer (221bc:25620)]   (Sid: 11) Client -> Server @ : 406 bytes (Service=HTTP)
+[Network Analyzer (221bc:25620)]   (Sid: 11) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25620)]   (Sid: 11) Server -> Client : 744 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25620)] Sent 744 bytes to client @ 10.0.0.23:6669
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-web/assets/outline/lock.svg"   
+[Network Analyzer (221bc:24584)]   (Sid: 12) Client -> Server @ : 406 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 12) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 12) Server -> Client : 406 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 406 bytes to client @ 10.0.0.23:6670
+[Proxy Recording  (221bc:24420)] Received response of 226 header and 226510 body bytes from http://192.168.128.186:8981/devt-web/bg.46df42f1ef4c91e3508f.png
+[Web Request      (221bc:24420)] "GET http://192.168.128.186:8981/devt-web/bg.46df42f1ef4c91e3508f.png"   
+[Network Analyzer (221bc:24420)]   (Sid: 13) Client -> Server @ : 430 bytes (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 13) Server -> Client : 243 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 13) Server -> Client : 226510 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 226510 bytes to client @ 10.0.0.23:6672
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6673
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/favicon.ico ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/favicon.ico ...
+[Proxy Recording  (221bc:2553c)] Received response of 226 header and 4286 body bytes from http://192.168.128.186:8981/devt-web/favicon.ico
+[Web Request      (221bc:2553c)] "GET http://192.168.128.186:8981/devt-web/favicon.ico"   
+[Network Analyzer (221bc:2553c)]   (Sid: 14) Client -> Server @ : 414 bytes (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 14) Server -> Client : 243 bytes  (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 14) Server -> Client : 4286 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:2553c)] Sent 4286 bytes to client @ 10.0.0.23:6673
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6677
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6678
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6679
+[Proxy Recording  (221bc:25540)] Trying to connect to https://edge.microsoft.com:443/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEhcJayxIidrrv7cSBQ2RYZVOEgUNNYZUHA==?alt=proto ...
+[Proxy Recording  (221bc:25540)] Trying to connect to https://edge.microsoft.com:443/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEhcJayxIidrrv7cSBQ2RYZVOEgUNNYZUHA==?alt=proto ...
+[Proxy Recording  (221bc:24584)] Trying to connect to https://edge.microsoft.com:443/abusiveadblocking/api/v1/blocklist ...
+[Proxy Recording  (221bc:24584)] Trying to connect to https://edge.microsoft.com:443/abusiveadblocking/api/v1/blocklist ...
+[Proxy Recording  (221bc:24420)] Trying to connect to https://edge.microsoft.com:443/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=98.0.1108.50&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.0.0%26installedby%3Dinternal%26uc ...
+[Proxy Recording  (221bc:24420)] Trying to connect to https://edge.microsoft.com:443/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=98.0.1108.50&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.0.0%26installedby%3Dinternal%26uc ...
+[Proxy Recording  (221bc:25540)] Received response of 270 header and 40 body bytes from https://edge.microsoft.com:443/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEhcJayxIidrrv7cSBQ2RYZVOEgUNNYZUHA==?alt=proto
+[Web Request      (221bc:25540)] "GET https://edge.microsoft.com/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEhcJayxIidrrv7cSBQ2RYZVOEgUNNYZUHA==?alt=proto"   
+[Network Analyzer (221bc:25540)]   (Sid: 15) Client -> Server @ : 682 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 15) Server -> Client : 287 bytes (SSL) (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 15) Server -> Client : 40 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 40 bytes to client @ 10.0.0.23:6671
+[Proxy Recording  (221bc:24584)] Received response of 397 header and 0 body bytes from https://edge.microsoft.com:443/abusiveadblocking/api/v1/blocklist
+[Proxy Recording  (221bc:24420)] Received response of 291 header and 413 body bytes from https://edge.microsoft.com:443/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=98.0.1108.50&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.0.0%26installedby%3Dinternal%26uc
+[Web Request      (221bc:24584)] "GET https://edge.microsoft.com/abusiveadblocking/api/v1/blocklist"   
+[Network Analyzer (221bc:24584)]   (Sid: 16) Client -> Server @ : 613 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 16) Server -> Client : 424 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 0 bytes to client @ 10.0.0.23:6678
+[Web Request      (221bc:24420)] "GET https://edge.microsoft.com/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=98.0.1108.50&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.0.0%26installedby%3Dinternal%26uc"   
+[Network Analyzer (221bc:24420)]   (Sid: 17) Client -> Server @ : 758 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 17) Server -> Client : 308 bytes (SSL) (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 17) Server -> Client : 413 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 413 bytes to client @ 10.0.0.23:6677
+[Proxy Recording  (221bc:256a4)] Trying to connect to https://update.googleapis.com:443/service/update2/json?cup2key=11:hzga50rA4WXNTjflf4dGuGnrKtlX8C8GIsMpIrXFJ40&cup2hreq=560ea44f8a1c055c0c70e510b1951110921f9c49623f4b774aff3800b4d5644c ...
+[Proxy Recording  (221bc:256a4)] Trying to connect to https://update.googleapis.com:443/service/update2/json?cup2key=11:hzga50rA4WXNTjflf4dGuGnrKtlX8C8GIsMpIrXFJ40&cup2hreq=560ea44f8a1c055c0c70e510b1951110921f9c49623f4b774aff3800b4d5644c ...
+[Proxy Recording  (221bc:256a4)] Received response of 1244 header and 237 body bytes from https://update.googleapis.com:443/service/update2/json?cup2key=11:hzga50rA4WXNTjflf4dGuGnrKtlX8C8GIsMpIrXFJ40&cup2hreq=560ea44f8a1c055c0c70e510b1951110921f9c49623f4b774aff3800b4d5644c
+[Network Analyzer (221bc:256a4)]   (Sid: 18) Client -> Server @ : 963 bytes (SSL)(Service=HTTP)
+[Web Request      (221bc:256a4)] "POST https://update.googleapis.com/service/update2/json?cup2key=11:hzga50rA4WXNTjflf4dGuGnrKtlX8C8GIsMpIrXFJ40&cup2hreq=560ea44f8a1c055c0c70e510b1951110921f9c49623f4b774aff3800b4d5644c"   
+[Network Analyzer (221bc:256a4)]   (Sid: 18) Client -> Server @ : 1215 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 18) Server -> Client : 1233 bytes (SSL) (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 18) Server -> Client : 237 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Sent 237 bytes to client @ 10.0.0.23:6679
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6692
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/api/login.do ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/api/login.do ...
+[Proxy Recording  (221bc:24584)] Received response of 513 header and 311 body bytes from http://192.168.128.186:8981/devt-service/api/login.do
+[Network Analyzer (221bc:24584)]   (Sid: 19) Client -> Server @ : 489 bytes (Service=HTTP)
+[Web Request      (221bc:24584)] "POST http://192.168.128.186:8981/devt-service/api/login.do"   
+[Network Analyzer (221bc:24584)]   (Sid: 19) Client -> Server @ : 52 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 19) Server -> Client : 500 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 19) Server -> Client : 311 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 311 bytes to client @ 10.0.0.23:6692
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6693
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/staff/menu.do ...
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/staff/menu.do ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6695
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/colorplan/planinfo.do ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6696
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/logout.svg ...
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/colorplan/planinfo.do ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/logout.svg ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6697
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6698
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/fill/backward.svg ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6699
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/fill/forward.svg ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/fill/backward.svg ...
+[Proxy Recording  (221bc:25620)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/redo.svg ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/fill/forward.svg ...
+[Proxy Recording  (221bc:25620)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/redo.svg ...
+[Proxy Recording  (221bc:24420)] Received response of 145 header and 9409 body bytes from http://192.168.128.186:8981/devt-service/staff/menu.do
+[Network Analyzer (221bc:24420)]   (Sid: 20) Client -> Server @ : 992 bytes (Service=HTTP)
+[Web Request      (221bc:24420)] "POST http://192.168.128.186:8981/devt-service/staff/menu.do"   
+[Network Analyzer (221bc:24420)]   (Sid: 20) Client -> Server @ : 26 bytes (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 20) Server -> Client : 132 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 20) Server -> Client : 9409 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 9409 bytes to client @ 10.0.0.23:6693
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6700
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/comm/getWsPath.do ...
+[Proxy Recording  (221bc:24584)] Received response of 225 header and 824 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/logout.svg
+[Proxy Recording  (221bc:256a4)] Received response of 266 header and 11057 body bytes from http://192.168.128.186:8981/devt-service/colorplan/planinfo.do
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-web/assets/outline/logout.svg"   
+[Network Analyzer (221bc:24584)]   (Sid: 21) Client -> Server @ : 657 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 21) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 21) Server -> Client : 824 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 824 bytes to client @ 10.0.0.23:6696
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6701
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/setting.svg ...
+[Proxy Recording  (221bc:25540)] Received response of 225 header and 310 body bytes from http://192.168.128.186:8981/devt-web/assets/fill/forward.svg
+[Proxy Recording  (221bc:2553c)] Received response of 225 header and 313 body bytes from http://192.168.128.186:8981/devt-web/assets/fill/backward.svg
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/comm/getWsPath.do ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/setting.svg ...
+[Network Analyzer (221bc:256a4)]   (Sid: 22) Client -> Server @ : 1000 bytes (Service=HTTP)
+[Web Request      (221bc:256a4)] "POST http://192.168.128.186:8981/devt-service/colorplan/planinfo.do"   
+[Network Analyzer (221bc:256a4)]   (Sid: 22) Client -> Server @ : 14 bytes (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 22) Server -> Client : 253 bytes  (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 22) Server -> Client : 11057 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Sent 11057 bytes to client @ 10.0.0.23:6695
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6702
+[Proxy Recording  (221bc:255c8)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg ...
+[Proxy Recording  (221bc:255c8)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg ...
+[Proxy Recording  (221bc:25620)] Received response of 225 header and 756 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/redo.svg
+[Web Request      (221bc:25540)] "GET http://192.168.128.186:8981/devt-web/assets/fill/forward.svg"   
+[Network Analyzer (221bc:25540)]   (Sid: 23) Client -> Server @ : 655 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 23) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 23) Server -> Client : 310 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 310 bytes to client @ 10.0.0.23:6698
+[Web Request      (221bc:2553c)] "GET http://192.168.128.186:8981/devt-web/assets/fill/backward.svg"   
+[Network Analyzer (221bc:2553c)]   (Sid: 24) Client -> Server @ : 656 bytes (Service=HTTP)
+[Proxy Recording  (221bc:255c8)] Received response of 225 header and 895 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg
+[Network Analyzer (221bc:2553c)]   (Sid: 24) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 24) Server -> Client : 313 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:2553c)] Sent 313 bytes to client @ 10.0.0.23:6697
+[Web Request      (221bc:25620)] "GET http://192.168.128.186:8981/devt-web/assets/outline/redo.svg"   
+[Network Analyzer (221bc:25620)]   (Sid: 25) Client -> Server @ : 655 bytes (Service=HTTP)
+[Network Analyzer (221bc:25620)]   (Sid: 25) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25620)]   (Sid: 25) Server -> Client : 756 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25620)] Sent 756 bytes to client @ 10.0.0.23:6699
+[Proxy Recording  (221bc:24420)] Received response of 145 header and 114 body bytes from http://192.168.128.186:8981/devt-service/comm/getWsPath.do
+[Web Request      (221bc:255c8)] "GET http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg"   
+[Network Analyzer (221bc:255c8)]   (Sid: 26) Client -> Server @ : 664 bytes (Service=HTTP)
+[Network Analyzer (221bc:255c8)]   (Sid: 26) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:255c8)]   (Sid: 26) Server -> Client : 895 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:255c8)] Sent 895 bytes to client @ 10.0.0.23:6702
+[Proxy Recording  (221bc:24584)] Received response of 226 header and 1873 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/setting.svg
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6703
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-service/devtCompBl/list.do ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6704
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-service/devtCompBl/list.do ...
+[Network Analyzer (221bc:24420)]   (Sid: 27) Client -> Server @ : 995 bytes (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/devtComp/list.do ...
+[Web Request      (221bc:24420)] "POST http://192.168.128.186:8981/devt-service/comm/getWsPath.do"   
+[Network Analyzer (221bc:24420)]   (Sid: 27) Client -> Server @ : 2 bytes (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/devtComp/list.do ...
+[Network Analyzer (221bc:24420)]   (Sid: 27) Server -> Client : 132 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6705
+[Proxy Recording  (221bc:255c8)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/plus.svg ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6706
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/shrink.svg ...
+[Network Analyzer (221bc:24420)]   (Sid: 27) Server -> Client : 114 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:255c8)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/plus.svg ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-web/assets/outline/shrink.svg ...
+[Proxy Recording  (221bc:24420)] Sent 114 bytes to client @ 10.0.0.23:6700
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6707
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-web/assets/outline/setting.svg"   
+[Network Analyzer (221bc:24584)]   (Sid: 28) Client -> Server @ : 658 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 28) Server -> Client : 243 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 28) Server -> Client : 1873 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 1873 bytes to client @ 10.0.0.23:6701
+[Proxy Recording  (221bc:256a4)] Received response of 252 header and 5757 body bytes from http://192.168.128.186:8981/devt-service/devtComp/list.do
+[Network Analyzer (221bc:256a4)]   (Sid: 29) Client -> Server @ : 995 bytes (Service=HTTP)
+[Web Request      (221bc:256a4)] "POST http://192.168.128.186:8981/devt-service/devtComp/list.do"   
+[Network Analyzer (221bc:256a4)]   (Sid: 29) Client -> Server @ : 55 bytes (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Received response of 252 header and 2917 body bytes from http://192.168.128.186:8981/devt-service/devtCompBl/list.do
+[Network Analyzer (221bc:256a4)]   (Sid: 29) Server -> Client : 239 bytes  (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 29) Server -> Client : 5757 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Sent 5757 bytes to client @ 10.0.0.23:6704
+[Proxy Recording  (221bc:2553c)] Received response of 225 header and 468 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/shrink.svg
+[Network Analyzer (221bc:25540)]   (Sid: 30) Client -> Server @ : 997 bytes (Service=HTTP)
+[Web Request      (221bc:25540)] "POST http://192.168.128.186:8981/devt-service/devtCompBl/list.do"   
+[Network Analyzer (221bc:25540)]   (Sid: 30) Client -> Server @ : 32 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 30) Server -> Client : 239 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:255c8)] Received response of 224 header and 215 body bytes from http://192.168.128.186:8981/devt-web/assets/outline/plus.svg
+[Network Analyzer (221bc:25540)]   (Sid: 30) Server -> Client : 2917 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 2917 bytes to client @ 10.0.0.23:6703
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6708
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6709
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023095222 ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=input&fileName=1631125196214.png&timestamp=1645023095225 ...
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023095222 ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=input&fileName=1631125196214.png&timestamp=1645023095225 ...
+[Web Request      (221bc:2553c)] "GET http://192.168.128.186:8981/devt-web/assets/outline/shrink.svg"   
+[Network Analyzer (221bc:2553c)]   (Sid: 31) Client -> Server @ : 657 bytes (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 31) Server -> Client : 242 bytes  (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 31) Server -> Client : 468 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:2553c)] Sent 468 bytes to client @ 10.0.0.23:6706
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6710
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6711
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1645023095225 ...
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6712
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1645023095225 ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=avatar0&fileName=1635500337608.png&timestamp=1645023095225 ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1645023095225 ...
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1645023095225 ...
+[Proxy Recording  (221bc:2553c)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=avatar0&fileName=1635500337608.png&timestamp=1645023095225 ...
+[Web Request      (221bc:255c8)] "GET http://192.168.128.186:8981/devt-web/assets/outline/plus.svg"   
+[Network Analyzer (221bc:255c8)]   (Sid: 32) Client -> Server @ : 655 bytes (Service=HTTP)
+[Network Analyzer (221bc:255c8)]   (Sid: 32) Server -> Client : 241 bytes  (Service=HTTP)
+[Network Analyzer (221bc:255c8)]   (Sid: 32) Server -> Client : 215 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:255c8)] Sent 215 bytes to client @ 10.0.0.23:6705
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6713
+[Proxy Recording  (221bc:25614)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1645023095226 ...
+[Proxy Recording  (221bc:25614)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1645023095226 ...
+[Proxy Recording  (221bc:24420)] Received response of 214 header and 8297 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023095222
+[Proxy Recording  (221bc:24584)] Received response of 214 header and 7924 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=input&fileName=1631125196214.png&timestamp=1645023095225
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6714
+[Web Request      (221bc:24420)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023095222"   
+[Network Analyzer (221bc:24420)]   (Sid: 33) Client -> Server @ : 750 bytes (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 33) Server -> Client : 201 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Received response of 214 header and 9106 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1645023095225
+[Network Analyzer (221bc:24420)]   (Sid: 33) Server -> Client : 8297 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 8297 bytes to client @ 10.0.0.23:6708
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6715
+[Proxy Recording  (221bc:25610)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1645023095226 ...
+[Proxy Recording  (221bc:25610)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1645023095226 ...
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=input&fileName=1631125196214.png&timestamp=1645023095225"   
+[Network Analyzer (221bc:24584)]   (Sid: 34) Client -> Server @ : 750 bytes (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Received response of 214 header and 17742 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1645023095225
+[Network Analyzer (221bc:24584)]   (Sid: 34) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 34) Server -> Client : 7924 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 7924 bytes to client @ 10.0.0.23:6709
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6716
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span1&fileName=1634888248760.png&timestamp=1645023095226 ...
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span1&fileName=1634888248760.png&timestamp=1645023095226 ...
+[Web Request      (221bc:25540)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1645023095225"   
+[Proxy Recording  (221bc:25614)] Received response of 214 header and 12403 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1645023095226
+[Network Analyzer (221bc:25540)]   (Sid: 35) Client -> Server @ : 756 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 35) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 35) Server -> Client : 9106 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 9106 bytes to client @ 10.0.0.23:6710
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6717
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=page1&fileName=1635691548643.png&timestamp=1645023095227 ...
+[Proxy Recording  (221bc:25540)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=page1&fileName=1635691548643.png&timestamp=1645023095227 ...
+[Web Request      (221bc:256a4)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1645023095225"   
+[Network Analyzer (221bc:256a4)]   (Sid: 36) Client -> Server @ : 751 bytes (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 36) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 36) Server -> Client : 17742 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Sent 17742 bytes to client @ 10.0.0.23:6711
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6718
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=password1&fileName=1635185972471.png&timestamp=1645023095227 ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=password1&fileName=1635185972471.png&timestamp=1645023095227 ...
+[Proxy Recording  (221bc:24420)] Received response of 214 header and 4537 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span1&fileName=1634888248760.png&timestamp=1645023095226
+[Web Request      (221bc:25614)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1645023095226"   
+[Network Analyzer (221bc:25614)]   (Sid: 37) Client -> Server @ : 754 bytes (Service=HTTP)
+[Network Analyzer (221bc:25614)]   (Sid: 37) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25614)]   (Sid: 37) Server -> Client : 12403 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25614)] Sent 12403 bytes to client @ 10.0.0.23:6713
+[Web Request      (221bc:24420)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span1&fileName=1634888248760.png&timestamp=1645023095226"   
+[Network Analyzer (221bc:24420)]   (Sid: 38) Client -> Server @ : 750 bytes (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 38) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 38) Server -> Client : 4537 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 4537 bytes to client @ 10.0.0.23:6716
+[Proxy Recording  (221bc:25540)] Received response of 214 header and 5577 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=page1&fileName=1635691548643.png&timestamp=1645023095227
+[Web Request      (221bc:25540)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=page1&fileName=1635691548643.png&timestamp=1645023095227"   
+[Network Analyzer (221bc:25540)]   (Sid: 39) Client -> Server @ : 750 bytes (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 39) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25540)]   (Sid: 39) Server -> Client : 5577 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25540)] Sent 5577 bytes to client @ 10.0.0.23:6717
+[Proxy Recording  (221bc:2553c)] Received response of 214 header and 130816 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=avatar0&fileName=1635500337608.png&timestamp=1645023095225
+[Web Request      (221bc:2553c)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=avatar0&fileName=1635500337608.png&timestamp=1645023095225"   
+[Network Analyzer (221bc:2553c)]   (Sid: 40) Client -> Server @ : 752 bytes (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 40) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:2553c)]   (Sid: 40) Server -> Client : 130816 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:2553c)] Sent 130816 bytes to client @ 10.0.0.23:6712
+[Proxy Recording  (221bc:25610)] Received response of 214 header and 16426 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1645023095226
+[Proxy Recording  (221bc:24584)] Received response of 214 header and 4813 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=password1&fileName=1635185972471.png&timestamp=1645023095227
+[Web Request      (221bc:25610)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1645023095226"   
+[Network Analyzer (221bc:25610)]   (Sid: 41) Client -> Server @ : 755 bytes (Service=HTTP)
+[Network Analyzer (221bc:25610)]   (Sid: 41) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:25610)]   (Sid: 41) Server -> Client : 16426 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:25610)] Sent 16426 bytes to client @ 10.0.0.23:6715
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=password1&fileName=1635185972471.png&timestamp=1645023095227"   
+[Network Analyzer (221bc:24584)]   (Sid: 42) Client -> Server @ : 754 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 42) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 42) Server -> Client : 4813 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 4813 bytes to client @ 10.0.0.23:6718
+[Proxy Recording.Error (221bc:25620)] Exception is caught while trying to connect to https://192.168.128.186:8780, message=ÓÉÓÚÒâÍâµÄÊý¾Ý°ü
+[Proxy Recording.Error (221bc:25620)] Exception is caught while connecting to , message=Á÷²»¿
+[Proxy Recording  (221bc:255c8)] Trying to connect to https://edge.microsoft.com:443/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEh4JAtGatwd_rcYSBQ2RYZVOEgUNkWGVThIFDZFhlU4=?alt=proto ...
+[Proxy Recording  (221bc:255c8)] Trying to connect to https://edge.microsoft.com:443/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEh4JAtGatwd_rcYSBQ2RYZVOEgUNkWGVThIFDZFhlU4=?alt=proto ...
+[Proxy Recording  (221bc:255c8)] Received response of 270 header and 20 body bytes from https://edge.microsoft.com:443/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEh4JAtGatwd_rcYSBQ2RYZVOEgUNkWGVThIFDZFhlU4=?alt=proto
+[Web Request      (221bc:255c8)] "GET https://edge.microsoft.com/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEh4JAtGatwd_rcYSBQ2RYZVOEgUNkWGVThIFDZFhlU4=?alt=proto"   
+[Network Analyzer (221bc:255c8)]   (Sid: 43) Client -> Server @ : 666 bytes (SSL)(Service=HTTP)
+[Network Analyzer (221bc:255c8)]   (Sid: 43) Server -> Client : 287 bytes (SSL) (Service=HTTP)
+[Network Analyzer (221bc:255c8)]   (Sid: 43) Server -> Client : 20 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (221bc:255c8)] Sent 20 bytes to client @ 10.0.0.23:6714
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6720
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/devtComp/list.do ...
+[Proxy Recording  (221bc:24420)] Trying to connect to http://192.168.128.186:8981/devt-service/devtComp/list.do ...
+[Proxy Recording  (221bc:24420)] Received response of 252 header and 1222 body bytes from http://192.168.128.186:8981/devt-service/devtComp/list.do
+[Network Analyzer (221bc:24420)]   (Sid: 44) Client -> Server @ : 995 bytes (Service=HTTP)
+[Web Request      (221bc:24420)] "POST http://192.168.128.186:8981/devt-service/devtComp/list.do"   
+[Network Analyzer (221bc:24420)]   (Sid: 44) Client -> Server @ : 61 bytes (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 44) Server -> Client : 239 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24420)]   (Sid: 44) Server -> Client : 1222 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24420)] Sent 1222 bytes to client @ 10.0.0.23:6720
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6721
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6722
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023100011 ...
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1645023100011 ...
+[Proxy Recording  (221bc:24584)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023100011 ...
+[Proxy Recording  (221bc:256a4)] Trying to connect to http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1645023100011 ...
+[Proxy Recording  (221bc:24584)] Received response of 214 header and 8297 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023100011
+[Web Request      (221bc:24584)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023100011"   
+[Network Analyzer (221bc:24584)]   (Sid: 45) Client -> Server @ : 750 bytes (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 45) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:24584)]   (Sid: 45) Server -> Client : 8297 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:24584)] Sent 8297 bytes to client @ 10.0.0.23:6721
+[Proxy Recording  (221bc:256a4)] Received response of 214 header and 11574 body bytes from http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1645023100011
+[Web Request      (221bc:256a4)] "GET http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1645023100011"   
+[Network Analyzer (221bc:256a4)]   (Sid: 46) Client -> Server @ : 754 bytes (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 46) Server -> Client : 201 bytes  (Service=HTTP)
+[Network Analyzer (221bc:256a4)]   (Sid: 46) Server -> Client : 11574 bytes  (Service=HTTP)
+[Proxy Recording  (221bc:256a4)] Sent 11574 bytes to client @ 10.0.0.23:6722
+[Proxy Recording  (221bc:210dc)] Client request from @ 10.0.0.23:6727
+[Proxy Recording.Error (221bc:25614)] Exception is caught while trying to connect to https://192.168.128.186:8780, message=ÓÉÓÚÒâÍâµÄÊý¾Ý°ü
+[Proxy Recording.Error (221bc:25614)] Exception is caught while connecting to , message=Á÷²»¿

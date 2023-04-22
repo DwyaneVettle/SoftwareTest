@@ -1,0 +1,22 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Custom Request: login.do",
+                "infFile": "t1.inf",
+                "time": 1682148705752
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1682148705247,
+                "rawEndTime": 1682148705772,
+                "thinkTime": 0.0,
+                "wastedTime": 0.3588435649871826
+            }
+        ]
+    }
+]

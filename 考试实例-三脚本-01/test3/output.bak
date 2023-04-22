@@ -1,0 +1,80 @@
+Virtual User Script started at: 2022/2/16 23:25:19
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (1月 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.50  	[MsgId: MMSG-26988]
+Runtime Settings file: "E:\lr12\test3\\default.cfg"  	[MsgId: MMSG-27141]
+vuser_init.c(4): Notify: Transaction "login" started.
+vuser_init.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+vuser_init.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+vuser_init.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+vuser_init.c(14): t=479ms: 510-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     HTTP/1.1 200 \r\n
+vuser_init.c(14):     Server: nginx/1.16.1\r\n
+vuser_init.c(14):     Date: Wed, 16 Feb 2022 15:25:19 GMT\r\n
+vuser_init.c(14):     Content-Type: application/json\r\n
+vuser_init.c(14):     Transfer-Encoding: chunked\r\n
+vuser_init.c(14):     Connection: keep-alive\r\n
+vuser_init.c(14):     Vary: Origin\r\n
+vuser_init.c(14):     Vary: Access-Control-Request-Method\r\n
+vuser_init.c(14):     Vary: Access-Control-Request-Headers\r\n
+vuser_init.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkOWJiMzcyYi05NDdmLTQ4ZDktODVhMi01Mjl
+vuser_init.c(14):     hOTg2OTZiMTEiLCJpYXQiOjE2NDUwMjUxMTksImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cI
+vuser_init.c(14):     n0iLCJleHAiOjE2NDUxMTE1MTl9.laXXQ1DsIy4b9VLbDuDpG3pMNqSp1hu7RLdqXCCnpT0; Path=/\r\n
+vuser_init.c(14):     \r\n
+vuser_init.c(14): t=487ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     137\r\n
+vuser_init.c(14): t=488ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     \r\n
+vuser_init.c(14):     0\r\n
+vuser_init.c(14):     \r\n
+vuser_init.c(14): t=489ms: 311-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+vuser_init.c(14):     UzI1NiJ9.eyJqdGkiOiJkOWJiMzcyYi05NDdmLTQ4ZDktODVhMi01MjlhOTg2OTZiMTEiLCJpYXQiOjE2NDUwMjUxM
+vuser_init.c(14):     TksImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2NDUxMTE1MTl9.laXXQ1
+vuser_init.c(14):     DsIy4b9VLbDuDpG3pMNqSp1hu7RLdqXCCnpT0"}}}
+vuser_init.c(14): web_custom_request("login.do") was successful, 311 body bytes, 510 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.2705 Wasted Time: 0.1514).
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Runtime Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(8): Notify: Transaction "save" started.
+Action.c(9): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(9): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(9): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(2): web_save_timestamp_param("web_save_timestamp_param") started  	[MsgId: MMSG-26355]
+Action.c(2): web_save_timestamp_param("web_save_timestamp_param") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(12): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(14): web_custom_request("save.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=834ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtMsg/save.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Wed, 16 Feb 2022 15:25:19 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     \r\n
+Action.c(14): t=837ms: 4-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtMsg/save.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     43\r\n
+Action.c(14): t=837ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtMsg/save.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=838ms: 67-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtMsg/save.do" (RelFrameId=1, Internal ID=2)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{}}}
+Action.c(14): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(14): web_custom_request("save.do") was successful, 67 body bytes, 249 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(25): Notify: Transaction "save" ended with a "Pass" status (Duration: 0.2473 Wasted Time: 0.0099).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

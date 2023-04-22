@@ -1153,3 +1153,389 @@ return 0;
 
 ### 6.4.JS脚本
 
+​	JS脚本在LR中使用可以通过两种方式：1.在C语言脚本中通过`web_js_run()`函数来运行；2.在脚本录制时，选用js为主体的脚本，效果和C语言一样。
+
+​	在执行JS脚本前，需要让LR允许执行JS脚本。设置方式为：`Runtime Settings---Internet Protocol---Perferences`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221238340.png" style="zoom:50%;" />
+
+- `web_js_run()`函数运行：
+
+  - 创建一个脚本，取名为`js脚本`。
+  - 准本`js1.js`文件，放置在工作目录下：
+
+  ```javascript
+  function test1(){
+  	return new Date().getTime();
+  }
+  function test2(a,b){
+  	return a+b;
+  }
+  ```
+
+  - 准备` js2.js`文件放置到工作目录下：
+
+  ```javascript
+  function test3() {
+      var user = '{ "id": 1, "name": "longge1" }';
+      var tuser = JSON.parse(user);
+      return tuser.name;
+  }
+  ```
+
+  ![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221227616.png)
+
+  - LR主脚本：
+
+  ```c
+  web_js_run("Code=test3()",
+      "ResultParam=jsVal",
+      SOURCES,"File=js1.js",
+      ENDITEM,"File=js2.js",
+      ENDITEM,
+      LAST);
+  lr_log_message("%s",lr_eval_string("{jsVal}"));
+  ```
+
+  正常运行：
+
+  <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221239733.png" alt="image-20230422123947582" style="zoom:50%;" />
+
+- 直接使用JS录制脚本：
+
+  - 录制一个简单脚本，在录制设置中将脚本语言更改为js：
+
+  <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221245114.png" style="zoom:33%;" />
+  - 录制完成，生成js脚本：
+
+  <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221309824.png" alt="image-20230422130913666" style="zoom:50%;" />
+
+
+
+### 6.5.Java over HTTP脚本
+
+​	LR也可以使用Java作为脚本语言进行录制。但需要注意的是：`Java over HTTP`在Linux系统中不支持，所以必须采用压力机。
+
+- 创建一个脚本，脚本类型选择`Java over HTTP`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221316892.png" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221317065.png" alt="image-20230422131735899" style="zoom:33%;" />
+
+### 6.6.唯一序列
+
+​	在一些场景压测时，需要唯一序列号，我们可以采用如下思路实现，我们可以让每一个 Vuser 的序列统一采用 VuserID+时间戳(时间戳不重复)。
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221357664.png" alt="image-20230422135743428" style="zoom:50%;" />
+
+```c
+char seq[20];
+/**
+* 取唯一序列
+*/
+char* GetSeq(){
+    //先取第一个 Vuser 唯一前缀，保证不同线程之间不冲突
+    char* start=lr_eval_string("{start}");
+    web_save_timestamp_param("tamp",LAST);
+    //保证线程内部不冲突
+    sleep(1);
+    sprintf(seq,"%s%s",lr_eval_string("{start}"),lr_eval_string("{tamp}"));
+    return seq;
+}
+Action()
+{
+    int i=0;
+    for(i=0;i<100;i=i+1)
+    {
+        lr_log_message("%s",GetSeq());
+    }
+    return 0;
+}
+```
+
+
+
+### 6.7.实例考试-登录脚本
+
+实战考试，录制一套完整的脚本，内容包括登录动作：
+
+1、登陆逻辑放置在 actions 里面
+
+2、易变的常量实现参数化(主机、用户名、密码、端口……)
+
+3、登录实现规则关联
+
+4、登陆采用 5 个以上账号
+
+- 创建脚本，录制脚本，登录`管理平台`，优化脚本，只剩`login.do`的脚本：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221510875.png" alt="image-20230422151038579" style="zoom:50%;" />
+
+- 将URL中`http://cfgjt.cn:8981`参数化，选中后右键---`Replace with Parameter---Create new Param`，参数类型为`custom`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221513678.png" alt="image-20230422151327532" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221514299.png" alt="image-20230422151411194" style="zoom:50%;" />
+
+- 将脚本中的账号和密码参数化：`选中admin/11111111---右键Replace with Parameter---Create new Param`，参数类型为`File`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221518081.png" alt="image-20230422151855936" style="zoom:50%;" />
+
+- 打开左边`Parameters`，设置5个账户，密码都是11111111：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221520879.png" alt="image-20230422152040763" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221521216.png" alt="image-20230422152116091" style="zoom:50%;" />
+
+- 在登录脚本上方插入函数：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221523736.png" style="zoom:50%;" />
+
+- 并开启/关闭事务，判断账户是否过期，全篇脚本如下：
+
+```shell
+Action()
+{
+	lr_start_transaction("login");
+
+	web_reg_save_param_ex(
+		"ParamName=devtToken",
+		"LB=\"devt_token\":\"",
+		"RB=\"",
+		SEARCH_FILTERS,
+		LAST);
+
+	web_custom_request("login.do", 
+		"URL={hostPort}/devt-service/api/login.do", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=application/json", 
+		"Referer={hostPort}/devt-web/", 
+		"Snapshot=t2.inf", 
+		"Mode=HTML", 
+		"EncType=application/json", 
+		"Body={\"acctName\":\"{account}\",\"acctPwd\":\"{ped}\",\"type\":\"0\"}", 
+		LAST);
+
+	if(strcmp(lr_eval_string("{devtToken}"),"{devtToken}")==0) {
+		lr_end_transaction("login",LR_FAIL);
+	} else {
+		lr_end_transaction("login", LR_AUTO);
+	}
+
+	return 0;
+}
+```
+
+- 回放脚本，成功：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304221532429.png" alt="image-20230422153224244" style="zoom:50%;" />
+
+
+
+### 6.8.实例考试-单查询脚本
+
+实战考试，录制一套完整的脚本，内容包括至少一个单查询：
+
+1、登陆放置在 init 里面，退出放置在 end，核心逻辑放置在 actions 里面
+
+2、易变的常量实现参数化(主机、用户名、密码、端口……)
+
+3、登录实现规则关联
+
+4、选取一个查询条件设计为 20 种以上组合
+
+5、查询设置为一个事务，并采用业务判断成功与否
+
+- `vuser_init`脚本参考：
+
+```shell
+vuser_init()
+{
+	//注释
+	lr_start_transaction("login");
+	
+	web_reg_save_param_ex(
+		"ParamName=devtToken",
+		"LB=\"devt_token\":\"",
+		"RB=\"",
+		SEARCH_FILTERS,
+		"Scope=BODY",
+		LAST);
+
+	web_custom_request("login.do", 
+		"URL={hostPort}/devt-service/api/login.do", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=application/json", 
+		"Referer={hostPort}/devt-web/", 
+		"Snapshot=t2.inf", 
+		"Mode=HTML", 
+		"EncType=application/json", 
+		"Body={\"acctName\":\"{acctName}\",\"acctPwd\":\"{acctPwd}\",\"type\":\"0\"}", 
+		LAST);
+	if(strcmp(lr_eval_string("{devtToken}"),"{devtToken}")==0){
+		lr_end_transaction("login",LR_FAIL);
+	}else{
+		lr_end_transaction("login",LR_PASS);		
+	}
+	return 0;
+}
+```
+
+- `action`脚本参考：
+
+```shell
+Action()
+{
+	
+	lr_start_transaction("query1");
+	web_add_auto_header("Authorization",
+	                    lr_eval_string("Bearer {devtToken}"));
+
+	web_reg_find("Text=rspCode",
+		LAST);
+
+	web_custom_request("list.do_3", 
+		"URL={hostPort}/devt-service/devtComp/list.do", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=application/json", 
+		"Referer={hostPort}/devt-web/", 
+		"Snapshot=t8.inf", 
+		"Mode=HTML", 
+		"EncType=application/json", 
+		"Body={\"currentPage\":1,\"pageSize\":10,\"name\":\"{qryText}\",\"treeId\":null}", 
+		LAST);
+	lr_end_transaction("query1",LR_AUTO);
+	return 0;
+}
+```
+
+
+
+### 6.9.实例考试-入库脚本
+
+实战考试，录制一套完整的脚本，内容包括一次提交动作
+
+1、登陆放置在 init 里面，退出放置在 end，核心逻辑放置在 actions 里面
+
+2、易变的常量实现参数化(主机、用户名、密码、端口……)
+
+3、登录实现规则关联
+
+4、入库内容采用自定义函数模拟生成
+
+5、入库设置为一个事务，并采用业务判断成功与否
+
+- `vuser_init`脚本参考：
+
+```shell
+vuser_init()
+{
+	//ע��
+	lr_start_transaction("login");
+	
+	web_reg_save_param_ex(
+		"ParamName=devtToken",
+		"LB=\"devt_token\":\"",
+		"RB=\"",
+		SEARCH_FILTERS,
+		"Scope=BODY",
+		LAST);
+
+	web_custom_request("login.do", 
+		"URL={hostPort}/devt-service/api/login.do", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=application/json", 
+		"Referer={hostPort}/devt-web/", 
+		"Snapshot=t2.inf", 
+		"Mode=HTML", 
+		"EncType=application/json", 
+		"Body={\"acctName\":\"{acctName}\",\"acctPwd\":\"{acctPwd}\",\"type\":\"0\"}", 
+		LAST);
+	if(strcmp(lr_eval_string("{devtToken}"),"{devtToken}")==0){
+		lr_end_transaction("login",LR_FAIL);
+	}else{
+		lr_end_transaction("login",LR_PASS);		
+	}
+	return 0;
+}
+```
+
+- `action`脚本参考：
+
+```shell
+GetTitle(){
+	web_save_timestamp_param("timestamp", 
+		LAST);
+	lr_save_string(lr_eval_string("标题{timestamp}"),"title");
+}
+Action()
+{
+	lr_start_transaction("save");
+	web_add_auto_header("Authorization",
+	                    lr_eval_string("Bearer {devtToken}"));
+	GetTitle();
+	web_reg_find("Text=rspCode",
+		LAST);
+	web_custom_request("save.do", 
+		"URL={hostPort}/devt-service/devtMsg/save.do", 
+		"Method=POST", 
+		"Resource=0", 
+		"RecContentType=application/json", 
+		"Referer={hostPort}/devt-web/", 
+		"Snapshot=t29.inf", 
+		"Mode=HTML", 
+		"EncType=application/json", 
+		"Body={\"name\":\"{title}\",\"type\":\"1\",\"msg\":\"内容\"}", 
+		LAST);
+	lr_end_transaction("save",LR_AUTO);
+	return 0;
+}
+```
+
+
+
+## 7.场景压测
+
+​	LoadRunner 中场景(Scenario)是一种用来模拟大量用户操作的技术手段,通过配置和执行场景向服务器产生负载,验证系统各项性能指标是否达到。
+
+用户要求；场景通过一系列的脚本组合，并通过 1 到多个压力机来产生负载
+
+1. 了解一下 Controller 界面，大体熟悉一下各项菜单
+
+2. 场景分两种，一种是计划场景，一种是目标场景
+
+3. 场景先进行设计，然后再运行，运行时可查看各项性能指标，运行完成后可分析性能结果
+
+场景压测分为计划场景和目标场景。
+
+### 7.1.计划场景设计和压测
+
+​	计划场景有成手动场景，是指按照测试人员的计划进行设计测试。
+
+- 在已有的脚本中点击导航栏`Integrations---Create Controller Scenario`：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222102950.png" style="zoom:50%;" />
+
+- 当创建好场景后，虚拟用户生成器会自动打开调度器`Controller`，此时我们就需要取按照测试人员的计划取设计计划表：
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222113919.png)
+
+- 设计好场景后就可以点击下方的菜单`run`运行：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222121494.png" style="zoom:33%;" />
+
+
+
+### 7.2.目标场景设计和压测
+
+- 在`虚拟用户生成器`中按`7.1`的步骤创建目标场景压测：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222123276.png" alt="image-20230422212305135" style="zoom:50%;" />
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222130699.png)
+
+- 设计好后可以点击`Run`进行运行。

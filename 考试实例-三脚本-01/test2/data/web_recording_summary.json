@@ -1,0 +1,592 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "authorization",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": true
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/x-icon"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/svg+xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/jpeg"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 38,
+    "RecordedBrowser": "Chrome",
+    "RecordingDate": "2��-16-2022",
+    "RecordingDuration": 24031,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1645023070,
+    "RecordingType": "Proxy",
+    "TotalBytesReceived": 6232026,
+    "TotalBytesSent": 25458,
+    "TotalRequests": 38,
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.50"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "skype.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "13.107.42.16",
+          "IncludeInScript": false,
+          "Name": "config.edge.skype.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 20,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://config.edge.skype.com/config/v1/Edge/98.0.1108.50?clientId=-927814357224234672&osname=win&client=edge&channel=stable&scpfull=0&scpguard=0&scpfre=0&scpver=&osarch=x86_64&osver=10.0.19043&osedition=professional&wu=1&devicefamily=desktop&uma=0&mngd=0&installdate=1618511794"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "microsoft.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "20.212.96.199",
+          "IncludeInScript": false,
+          "Name": "nav.smartscreen.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 15,
+              "HttpStatus": 200,
+              "Size": 188,
+              "URL": "https://nav.smartscreen.microsoft.com/api/browser/edge/actions"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "204.79.197.219",
+          "IncludeInScript": false,
+          "Name": "edge.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 16,
+              "EventId": 175,
+              "HttpStatus": 200,
+              "Size": 20,
+              "URL": "https://edge.microsoft.com/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEh4JAtGatwd_rcYSBQ2RYZVOEgUNkWGVThIFDZFhlU4=?alt=proto"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/xml",
+              "DownloadTime": 0,
+              "EventId": 69,
+              "HttpStatus": 200,
+              "Size": 413,
+              "URL": "https://edge.microsoft.com/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=98.0.1108.50&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.0.0%26installedby%3Dinternal%26uc"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 65,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://edge.microsoft.com/abusiveadblocking/api/v1/blocklist"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 0,
+              "EventId": 60,
+              "HttpStatus": 200,
+              "Size": 40,
+              "URL": "https://edge.microsoft.com/autofillservice/v1/pages/ChNDaHJvbWUvOTguMC40NzU4LjgwEhcJayxIidrrv7cSBQ2RYZVOEgUNNYZUHA==?alt=proto"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "203.208.40.98",
+          "IncludeInScript": false,
+          "Name": "update.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 16,
+              "EventId": 74,
+              "HttpStatus": 200,
+              "Size": 237,
+              "URL": "https://update.googleapis.com/service/update2/json?cup2key=11:hzga50rA4WXNTjflf4dGuGnrKtlX8C8GIsMpIrXFJ40&cup2hreq=560ea44f8a1c055c0c70e510b1951110921f9c49623f4b774aff3800b4d5644c"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": "TLS1.2"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "203.208.41.66",
+          "IncludeInScript": false,
+          "Name": "clientservices.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 0,
+              "EventId": 32,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=98"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "192.168.128.186",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "192.168.128.186",
+          "IncludeInScript": true,
+          "Name": "192.168.128.186",
+          "Port": 8981,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 187,
+              "HttpStatus": 200,
+              "Size": 11574,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1645023100011"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 183,
+              "HttpStatus": 200,
+              "Size": 8297,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023100011"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 179,
+              "HttpStatus": 200,
+              "Size": 1222,
+              "URL": "http://192.168.128.186:8981/devt-service/devtComp/list.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 16,
+              "EventId": 170,
+              "HttpStatus": 200,
+              "Size": 4813,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=password1&fileName=1635185972471.png&timestamp=1645023095227"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 166,
+              "HttpStatus": 200,
+              "Size": 16426,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1645023095226"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 162,
+              "HttpStatus": 200,
+              "Size": 130816,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=avatar0&fileName=1635500337608.png&timestamp=1645023095225"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 158,
+              "HttpStatus": 200,
+              "Size": 5577,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=page1&fileName=1635691548643.png&timestamp=1645023095227"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 154,
+              "HttpStatus": 200,
+              "Size": 4537,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span1&fileName=1634888248760.png&timestamp=1645023095226"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 150,
+              "HttpStatus": 200,
+              "Size": 12403,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1645023095226"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 146,
+              "HttpStatus": 200,
+              "Size": 17742,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1645023095225"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 142,
+              "HttpStatus": 200,
+              "Size": 9106,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1645023095225"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 138,
+              "HttpStatus": 200,
+              "Size": 7924,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=input&fileName=1631125196214.png&timestamp=1645023095225"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 0,
+              "EventId": 134,
+              "HttpStatus": 200,
+              "Size": 8297,
+              "URL": "http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023095222"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 130,
+              "HttpStatus": 200,
+              "Size": 215,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/plus.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 126,
+              "HttpStatus": 200,
+              "Size": 468,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/shrink.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 122,
+              "HttpStatus": 200,
+              "Size": 2917,
+              "URL": "http://192.168.128.186:8981/devt-service/devtCompBl/list.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 118,
+              "HttpStatus": 200,
+              "Size": 5757,
+              "URL": "http://192.168.128.186:8981/devt-service/devtComp/list.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 114,
+              "HttpStatus": 200,
+              "Size": 1873,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/setting.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 110,
+              "HttpStatus": 200,
+              "Size": 114,
+              "URL": "http://192.168.128.186:8981/devt-service/comm/getWsPath.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 106,
+              "HttpStatus": 200,
+              "Size": 895,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 102,
+              "HttpStatus": 200,
+              "Size": 756,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/redo.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 98,
+              "HttpStatus": 200,
+              "Size": 313,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/fill/backward.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 94,
+              "HttpStatus": 200,
+              "Size": 310,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/fill/forward.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 16,
+              "EventId": 90,
+              "HttpStatus": 200,
+              "Size": 11057,
+              "URL": "http://192.168.128.186:8981/devt-service/colorplan/planinfo.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 86,
+              "HttpStatus": 200,
+              "Size": 824,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/logout.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 82,
+              "HttpStatus": 200,
+              "Size": 9409,
+              "URL": "http://192.168.128.186:8981/devt-service/staff/menu.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 0,
+              "EventId": 78,
+              "HttpStatus": 200,
+              "Size": 311,
+              "URL": "http://192.168.128.186:8981/devt-service/api/login.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 0,
+              "EventId": 55,
+              "HttpStatus": 200,
+              "Size": 4286,
+              "URL": "http://192.168.128.186:8981/devt-web/favicon.ico"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 0,
+              "EventId": 51,
+              "HttpStatus": 200,
+              "Size": 226510,
+              "URL": "http://192.168.128.186:8981/devt-web/bg.46df42f1ef4c91e3508f.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 0,
+              "EventId": 47,
+              "HttpStatus": 200,
+              "Size": 406,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/lock.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 15,
+              "EventId": 43,
+              "HttpStatus": 200,
+              "Size": 744,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/outline/user.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 0,
+              "EventId": 39,
+              "HttpStatus": 200,
+              "Size": 68822,
+              "URL": "http://192.168.128.186:8981/devt-web/assets/vs/editor/editor.main.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 0,
+              "EventId": 35,
+              "HttpStatus": 200,
+              "Size": 3312384,
+              "URL": "http://192.168.128.186:8981/devt-web/scripts.521e2067e75cd94ae49c.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 0,
+              "EventId": 27,
+              "HttpStatus": 200,
+              "Size": 1636430,
+              "URL": "http://192.168.128.186:8981/devt-web/main.2e3b714f083eb6eadafc.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 0,
+              "EventId": 23,
+              "HttpStatus": 200,
+              "Size": 667710,
+              "URL": "http://192.168.128.186:8981/devt-web/styles.2ea3cb3a29598ff3a901.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 0,
+              "EventId": 10,
+              "HttpStatus": 200,
+              "Size": 36586,
+              "URL": "http://192.168.128.186:8981/devt-web/polyfills.1111712f963ef64beaec.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 0,
+              "EventId": 6,
+              "HttpStatus": 200,
+              "Size": 1485,
+              "URL": "http://192.168.128.186:8981/devt-web/runtime.7b63b9fd40098a2e8207.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 2,
+              "HttpStatus": 200,
+              "Size": 2710,
+              "URL": "http://192.168.128.186:8981/devt-web/"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": false
+  },
+  "NumberOfCorrelations": 0
+}

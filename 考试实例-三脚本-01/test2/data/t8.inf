@@ -1,0 +1,15 @@
+[t8]
+FileName1=t8.json
+URL1=http://192.168.128.186:8981/devt-service/devtComp/list.do
+Total=3
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=t8_RequestBody.txt
+ResponseHeaderFile=t8_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_8.xml
+FileName2=t8_httpCompImg.jfif
+URL2=http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645023100011
+FileName3=t8_httpCompImg.jfif
+URL3=http://192.168.128.186:8981/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896.png&timestamp=1645023100011
+[ProtocolInfo]
+ProtocolId=QTWeb

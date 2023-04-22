@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IE:\lr12\test3
+-ID:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ee:\lr12\test3\\logfile.log
+e:\lr12\test3\\combined_test3.c
+e:\lr12\test3\\pre_cci.c

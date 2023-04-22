@@ -1,0 +1,11 @@
+[t27]
+FileName1=t27_delete.svg
+URL1=http://192.168.128.186:8981/devt-web/assets/outline/delete.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_27.xml
+RequestHeaderFile=t27_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t27_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

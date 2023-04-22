@@ -1,0 +1,342 @@
+Virtual User Script started at: 2022/2/17 22:18:22
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (1月 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.50  	[MsgId: MMSG-26988]
+Runtime Settings file: "E:\lr12\test2\\default.cfg"  	[MsgId: MMSG-27141]
+vuser_init.c(4): Notify: Transaction "login" started.
+vuser_init.c(6): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+vuser_init.c(6): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+vuser_init.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+vuser_init.c(14): t=390ms: 510-byte response headers for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     HTTP/1.1 200 \r\n
+vuser_init.c(14):     Server: nginx/1.16.1\r\n
+vuser_init.c(14):     Date: Thu, 17 Feb 2022 14:18:22 GMT\r\n
+vuser_init.c(14):     Content-Type: application/json\r\n
+vuser_init.c(14):     Transfer-Encoding: chunked\r\n
+vuser_init.c(14):     Connection: keep-alive\r\n
+vuser_init.c(14):     Vary: Origin\r\n
+vuser_init.c(14):     Vary: Access-Control-Request-Method\r\n
+vuser_init.c(14):     Vary: Access-Control-Request-Headers\r\n
+vuser_init.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhZGNkMTY4My05NzMwLTRkZTgtODRiYi0yM2Y
+vuser_init.c(14):     4ZGIxN2I2NGMiLCJpYXQiOjE2NDUxMDc1MDIsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cI
+vuser_init.c(14):     n0iLCJleHAiOjE2NDUxOTM5MDJ9.trwxTD4m9nXAiFdWvTxMM6ZWhuAjQoad1zZcUIfARJk; Path=/\r\n
+vuser_init.c(14):     \r\n
+vuser_init.c(14): t=395ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     137\r\n
+vuser_init.c(14): t=395ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     \r\n
+vuser_init.c(14):     0\r\n
+vuser_init.c(14):     \r\n
+vuser_init.c(14): t=396ms: 311-byte chunked response body for "http://192.168.128.186:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+vuser_init.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+vuser_init.c(14):     UzI1NiJ9.eyJqdGkiOiJhZGNkMTY4My05NzMwLTRkZTgtODRiYi0yM2Y4ZGIxN2I2NGMiLCJpYXQiOjE2NDUxMDc1M
+vuser_init.c(14):     DIsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2NDUxOTM5MDJ9.trwxTD
+vuser_init.c(14):     4m9nXAiFdWvTxMM6ZWhuAjQoad1zZcUIfARJk"}}}
+vuser_init.c(14): web_custom_request("login.do") was successful, 311 body bytes, 510 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+vuser_init.c(28): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.1911 Wasted Time: 0.0925).
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Runtime Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): Notify: Transaction "query1" started.
+Action.c(5): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(5): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(5): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_custom_request("list.do_3") started  	[MsgId: MMSG-26355]
+Action.c(11): t=606ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=2)
+Action.c(11):     HTTP/1.1 200 \r\n
+Action.c(11):     Server: nginx/1.16.1\r\n
+Action.c(11):     Date: Thu, 17 Feb 2022 14:18:22 GMT\r\n
+Action.c(11):     Content-Type: application/json\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Connection: keep-alive\r\n
+Action.c(11):     Vary: Origin\r\n
+Action.c(11):     Vary: Access-Control-Request-Method\r\n
+Action.c(11):     Vary: Access-Control-Request-Headers\r\n
+Action.c(11):     \r\n
+Action.c(11): t=608ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=2)
+Action.c(11):     4c6\r\n
+Action.c(11): t=608ms: 2-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=2)
+Action.c(11):     \r\n
+Action.c(11): t=608ms: 1222-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=2)
+Action.c(11):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":2,"list":[{"id":"1
+Action.c(11):     634020364206","name":"普通文本","code":"span0","path":"element-plus","subPath":"common
+Action.c(11):     ","rpath":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/spa
+Action.c(11):     n0/master","version":"1.2.13","img":"1634020364206.png","imgPath":"/devt-service/httpCompI
+Action.c(11):     mg.do?path=element-plus&code=span0&fileName=1634020364206.png&timestamp=1645107502881","tr
+Action.c(11):     eeId":"1631000148795","treeName":"通用类","desc":"普通文本","status":"1","createDat
+Action.c(11):     e":"2021-10-12 14:32:44","modifyDate":"2022-02-09 16:13:43","creater":"admin","seq":"1","i
+Action.c(11):     fNew":"0","num":0},{"id":"1635186324896","name":"文本域","code":"textarea1","path":"ele
+Action.c(11):     ment-plus","subPath":"form","rpath":"/home/xiangsl/project/admin/devt/devt/devt-service/fi
+Action.c(11):     les/comp//element-plus/textarea1/master","version":"1.0.0","img":"1635186324896.png","imgP
+Action.c(11):     ath":"/devt-service/httpCompImg.do?path=element-plus&code=textarea1&fileName=1635186324896
+Action.c(11):     .png&timestamp=1645107502881","treeId":"1634883894294","treeName":"表单类","desc":"文本
+Action.c(11):     域","status":"1","createDate":"2021-10-26 02:25:24","modifyDate":"2021-11-03 22:45:41","c
+Action.c(11):     reater":"admin","seq":"3","ifNew":"0","num":0}]}}}
+Action.c(11): t=637ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=2)
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_custom_request("list.do_3") was successful, 1222 body bytes, 249 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): Notify: Transaction "query1" ended with a "Pass" status (Duration: 0.1854 Wasted Time: 0.0060).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(4): Notify: Transaction "query1" started.
+Action.c(5): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(5): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(5): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_custom_request("list.do_3") started  	[MsgId: MMSG-26355]
+Action.c(11): t=820ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     HTTP/1.1 200 \r\n
+Action.c(11):     Server: nginx/1.16.1\r\n
+Action.c(11):     Date: Thu, 17 Feb 2022 14:18:23 GMT\r\n
+Action.c(11):     Content-Type: application/json\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Connection: keep-alive\r\n
+Action.c(11):     Vary: Origin\r\n
+Action.c(11):     Vary: Access-Control-Request-Method\r\n
+Action.c(11):     Vary: Access-Control-Request-Headers\r\n
+Action.c(11):     \r\n
+Action.c(11): t=822ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     f3e\r\n
+Action.c(11): t=823ms: 1060-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":7,"list":[{"id":"1
+Action.c(11):     631125196214","name":"输入框","code":"input","path":"element-plus","subPath":"form","rp
+Action.c(11):     ath":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/input/ma
+Action.c(11):     ster","version":"1.2.3","img":"1631125196214.png","imgPath":"/devt-service/httpCompImg.do?
+Action.c(11):     path=element-plus&code=input&fileName=1631125196214.png&timestamp=1645107503109","treeId":
+Action.c(11):     "1634883894294","treeName":"表单类","desc":"输入框","status":"1","createDate":"2021-
+Action.c(11):     09-09 02:20:52","modifyDate":"2021-11-03 22:45:40","creater":"admin","seq":"1","ifNew":"0"
+Action.c(11):     ,"num":0},{"id":"1635188111140","name":"图标输入框","code":"input1","path":"element-p
+Action.c(11):     lus","subPath":"form","rpath":"/home/xiangsl/project/admin/devt/devt/devt-service/files/co
+Action.c(11):     mp//element-plus/input1/master","version":"1.0.1","img":"1635188111140.png","imgPath":"/de
+Action.c(11):     vt-service/httpCompImg.do?path=element-plus&code=input1&fileName=1635188111140.png&timesta
+Action.c(11):     mp=1645107503109","treeId":"1634883894294","treeName":"表单类","des
+Action.c(11): t=824ms: 2628-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     c":"图标输入框","status":"1","createDate":"2021-10-26 02:55:11","modifyDate":"2021-11
+Action.c(11):     -03 22:45:42","creater":"admin","seq":"4","ifNew":"0","num":0},{"id":"1635231790267","name
+Action.c(11):     ":"图标输入框","code":"input2","path":"element-plus","subPath":"form","rpath":"/home/
+Action.c(11):     xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/input2/master","vers
+Action.c(11):     ion":"1.0.0","img":"1635231790267.png","imgPath":"/devt-service/httpCompImg.do?path=elemen
+Action.c(11):     t-plus&code=input2&fileName=1635231790267.png&timestamp=1645107503109","treeId":"163488389
+Action.c(11):     4294","treeName":"表单类","desc":"图标输入框","status":"1","createDate":"2021-10-2
+Action.c(11):     6 15:03:10","modifyDate":"2021-11-03 22:45:43","creater":"admin","seq":"5","ifNew":"0","nu
+Action.c(11):     m":0},{"id":"1635233887415","name":"图标输入框","code":"input3","path":"element-plus"
+Action.c(11):     ,"subPath":"form","rpath":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//
+Action.c(11):     element-plus/input3/master","version":"1.0.0","img":"1635233887415.png","imgPath":"/devt-s
+Action.c(11):     ervice/httpCompImg.do?path=element-plus&code=input3&fileName=1635233887415.png&timestamp=1
+Action.c(11):     645107503109","treeId":"1634883894294","treeName":"表单类","desc":"图标输入框","st
+Action.c(11):     atus":"1","createDate":"2021-10-26 15:38:07","modifyDate":"2021-11-03 22:45:43","creater":
+Action.c(11):     "admin","seq":"6","ifNew":"0","num":0},{"id":"1635234366476","name":"前置输入框","cod
+Action.c(11):     e":"input4","path":"element-plus","subPath":"form","rpath":"/home/xiangsl/project/admin/de
+Action.c(11):     vt/devt/devt-service/files/comp//element-plus/input4/master","version":"1.0.0","img":"1635
+Action.c(11):     234366476.png","imgPath":"/devt-service/httpCompImg.do?path=element-plus&code=input4&fileN
+Action.c(11):     ame=1635234366476.png&timestamp=1645107503110","treeId":"1634883894294","treeName":"表单
+Action.c(11):     类","desc":"前置输入框","status":"1","createDate":"2021-10-26 15:46:06","modifyDate"
+Action.c(11):     :"2021-11-03 22:45:44","creater":"admin","seq":"7","ifNew":"0","num":0},{"id":"16352346114
+Action.c(11):     73","name":"后置输入框","code":"input5","path":"element-plus","subPath":"form","rpath
+Action.c(11):     ":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/input5/mast
+Action.c(11):     er","version":"1.0.0","img":"1635234611473.png","imgPath":"/devt-service/httpCompImg.do?pa
+Action.c(11):     th=element-plus&code=input5&fileName=1635234611473.png&timestamp=1645107503110","treeId":"
+Action.c(11):     1634883894294","treeName":"表单类","desc":"后置输入框","status":"1","createDate":"
+Action.c(11):     2021-10-26 15:50:11","modifyDate":"2021-11-03 22:45:44","creater":"admin","seq":"8","ifNew
+Action.c(11):     ":"0","num":0},{"id":"1635234896779","name":"数字输入框","code":"number1","path":"ele
+Action.c(11):     ment-plus","subPath":"form","rpath":"/home/xiangsl/project/admin/devt/devt/devt-service/fi
+Action.c(11):     les/comp//element-
+Action.c(11): t=852ms: 6-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     \r\n
+Action.c(11):     b6\r\n
+Action.c(11): t=853ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     \r\n
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): t=853ms: 396-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=3)
+Action.c(11):     plus/number1/master","version":"1.1.1","img":"1635234896779.png","imgPath":"/devt-service/
+Action.c(11):     httpCompImg.do?path=element-plus&code=number1&fileName=1635234896779.png&timestamp=1645107
+Action.c(11):     503110","treeId":"1634883894294","treeName":"表单类","desc":"数字输入框","status":
+Action.c(11):     "1","createDate":"2021-10-26 15:54:56","modifyDate":"2021-11-03 22:45:45","creater":"admin
+Action.c(11):     ","seq":"9","ifNew":"0","num":0}]}}}
+Action.c(11): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_custom_request("list.do_3") was successful, 4084 body bytes, 249 header bytes, 18 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): Notify: Transaction "query1" ended with a "Pass" status (Duration: 0.1860 Wasted Time: 0.0088).
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(4): Notify: Transaction "query1" started.
+Action.c(5): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(5): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(5): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_custom_request("list.do_3") started  	[MsgId: MMSG-26355]
+Action.c(11): t=1044ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=4)
+Action.c(11):     HTTP/1.1 200 \r\n
+Action.c(11):     Server: nginx/1.16.1\r\n
+Action.c(11):     Date: Thu, 17 Feb 2022 14:18:23 GMT\r\n
+Action.c(11):     Content-Type: application/json\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Connection: keep-alive\r\n
+Action.c(11):     Vary: Origin\r\n
+Action.c(11):     Vary: Access-Control-Request-Method\r\n
+Action.c(11):     Vary: Access-Control-Request-Headers\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1046ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=4)
+Action.c(11):     286\r\n
+Action.c(11): t=1046ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=4)
+Action.c(11):     \r\n
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1046ms: 646-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=4)
+Action.c(11):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":1,"list":[{"id":"1
+Action.c(11):     632897923040","name":"表格","code":"table0","path":"element-plus","subPath":"data","rpat
+Action.c(11):     h":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/table0/mas
+Action.c(11):     ter","version":"1.0.3","img":"1632897923040.png","imgPath":"/devt-service/httpCompImg.do?p
+Action.c(11):     ath=element-plus&code=table0&fileName=1632897923040.png&timestamp=1645107503326","treeId":
+Action.c(11):     "1634883903575","treeName":"数据类","desc":"表格组件","status":"1","createDate":"20
+Action.c(11):     21-09-29 14:45:24","modifyDate":"2021-11-01 13:54:49","creater":"admin","seq":"1","ifNew":
+Action.c(11):     "0","num":0}]}}}
+Action.c(11): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_custom_request("list.do_3") was successful, 646 body bytes, 249 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): Notify: Transaction "query1" ended with a "Pass" status (Duration: 0.1570 Wasted Time: 0.0117).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(4): Notify: Transaction "query1" started.
+Action.c(5): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(5): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(5): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_custom_request("list.do_3") started  	[MsgId: MMSG-26355]
+Action.c(11): t=1223ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=5)
+Action.c(11):     HTTP/1.1 200 \r\n
+Action.c(11):     Server: nginx/1.16.1\r\n
+Action.c(11):     Date: Thu, 17 Feb 2022 14:18:23 GMT\r\n
+Action.c(11):     Content-Type: application/json\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Connection: keep-alive\r\n
+Action.c(11):     Vary: Origin\r\n
+Action.c(11):     Vary: Access-Control-Request-Method\r\n
+Action.c(11):     Vary: Access-Control-Request-Headers\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1225ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=5)
+Action.c(11):     718\r\n
+Action.c(11): t=1225ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=5)
+Action.c(11):     \r\n
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1226ms: 1816-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=5)
+Action.c(11):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":3,"list":[{"id":"1
+Action.c(11):     631004434416","name":"单容器","code":"container","path":"element-plus","subPath":"conta
+Action.c(11):     iner","rpath":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus
+Action.c(11):     /container/master","version":"1.4.7","img":"1631004434416.png","imgPath":"/devt-service/ht
+Action.c(11):     tpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1645107
+Action.c(11):     503513","treeId":"1634883773328","treeName":"布局类","desc":"单容器","status":"1","c
+Action.c(11):     reateDate":"2021-09-07 16:48:10","modifyDate":"2021-12-03 17:01:53","creater":"admin","seq
+Action.c(11):     ":"1","ifNew":"0","num":0},{"id":"1634998089813","name":"双容器","code":"h5contain1","p
+Action.c(11):     ath":"element-plus","subPath":"container","rpath":"/home/xiangsl/project/admin/devt/devt/d
+Action.c(11):     evt-service/files/comp//element-plus/h5contain1/master","version":"1.0.7","img":"163499808
+Action.c(11):     9813.png","imgPath":"/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileNa
+Action.c(11):     me=1634998089813.png&timestamp=1645107503514","treeId":"1634883773328","treeName":"布局类
+Action.c(11):     ","desc":"双容器","status":"1","createDate":"2021-10-23 22:08:09","modifyDate":"2021-11
+Action.c(11):     -03 22:44:19","creater":"admin","seq":"2","ifNew":"0","num":0},{"id":"1635001714069","name
+Action.c(11):     ":"三容器","code":"h5contain2","path":"element-plus","subPath":"container","rpath":"/ho
+Action.c(11):     me/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/h5contain2/master
+Action.c(11):     ","version":"1.0.2","img":"1635001714069.png","imgPath":"/devt-service/httpCompImg.do?path
+Action.c(11):     =element-plus&code=h5contain2&fileName=1635001714069.png&timestamp=1645107503514","treeId"
+Action.c(11):     :"1634883773328","treeName":"布局类","desc":"三容器","status":"1","createDate":"2021
+Action.c(11):     -10-23 23:08:33","modifyDate":"2021-11-03 22:44:19","creater":"admin","seq":"3","ifNew":"0
+Action.c(11):     ","num":0}]}}}
+Action.c(11): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_custom_request("list.do_3") was successful, 1816 body bytes, 249 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): Notify: Transaction "query1" ended with a "Pass" status (Duration: 0.1572 Wasted Time: 0.0146).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(4): Notify: Transaction "query1" started.
+Action.c(5): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(5): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(5): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_custom_request("list.do_3") started  	[MsgId: MMSG-26355]
+Action.c(11): t=1416ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=6)
+Action.c(11):     HTTP/1.1 200 \r\n
+Action.c(11):     Server: nginx/1.16.1\r\n
+Action.c(11):     Date: Thu, 17 Feb 2022 14:18:23 GMT\r\n
+Action.c(11):     Content-Type: application/json\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Connection: keep-alive\r\n
+Action.c(11):     Vary: Origin\r\n
+Action.c(11):     Vary: Access-Control-Request-Method\r\n
+Action.c(11):     Vary: Access-Control-Request-Headers\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1418ms: 5-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=6)
+Action.c(11):     27d\r\n
+Action.c(11): t=1419ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=6)
+Action.c(11):     \r\n
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1419ms: 637-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=6)
+Action.c(11):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":1,"list":[{"id":"1
+Action.c(11):     635691548643","name":"分页","code":"page1","path":"element-plus","subPath":"data","rpath
+Action.c(11):     ":"/home/xiangsl/project/admin/devt/devt/devt-service/files/comp//element-plus/page1/maste
+Action.c(11):     r","version":"1.0.0","img":"1635691548643.png","imgPath":"/devt-service/httpCompImg.do?pat
+Action.c(11):     h=element-plus&code=page1&fileName=1635691548643.png&timestamp=1645107503707","treeId":"16
+Action.c(11):     34883903575","treeName":"数据类","desc":"分页","status":"1","createDate":"2021-10-31 
+Action.c(11):     22:45:48","modifyDate":"2021-11-01 14:28:32","creater":"admin","seq":"2","ifNew":"0","num"
+Action.c(11):     :0}]}}}
+Action.c(11): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_custom_request("list.do_3") was successful, 637 body bytes, 249 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): Notify: Transaction "query1" ended with a "Pass" status (Duration: 0.1682 Wasted Time: 0.0180).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(4): Notify: Transaction "query1" started.
+Action.c(5): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(5): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(5): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_custom_request("list.do_3") started  	[MsgId: MMSG-26355]
+Action.c(11): t=1610ms: 249-byte response headers for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=7)
+Action.c(11):     HTTP/1.1 200 \r\n
+Action.c(11):     Server: nginx/1.16.1\r\n
+Action.c(11):     Date: Thu, 17 Feb 2022 14:18:23 GMT\r\n
+Action.c(11):     Content-Type: application/json\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Connection: keep-alive\r\n
+Action.c(11):     Vary: Origin\r\n
+Action.c(11):     Vary: Access-Control-Request-Method\r\n
+Action.c(11):     Vary: Access-Control-Request-Headers\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1612ms: 4-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=7)
+Action.c(11):     56\r\n
+Action.c(11): t=1612ms: 7-byte chunked response overhead for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=7)
+Action.c(11):     \r\n
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): t=1613ms: 86-byte chunked response body for "http://192.168.128.186:8981/devt-service/devtComp/list.do" (RelFrameId=1, Internal ID=7)
+Action.c(11):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"total":0,"list":[]}}}
+Action.c(11): Registered web_reg_find successful for "Text=rspCode" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_custom_request("list.do_3") was successful, 86 body bytes, 249 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(22): Notify: Transaction "query1" ended with a "Pass" status (Duration: 0.1554 Wasted Time: 0.0210).
+Ending action Action.
+Ending iteration 6.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

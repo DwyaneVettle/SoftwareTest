@@ -1,0 +1,17 @@
+[t5]
+FileName1=t5.json
+URL1=http://192.168.128.186:8981/devt-service/comm/getWsPath.do
+Total=4
+RequestHeaderFile=t5_RequestHeader.txt
+RequestBodyFile=t5_RequestBody.txt
+ResponseHeaderFile=t5_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_5.xml
+FileName2=t5_setting.svg
+URL2=http://192.168.128.186:8981/devt-web/assets/outline/setting.svg
+FileName3=t5_eye-invisible.svg
+URL3=http://192.168.128.186:8981/devt-web/assets/outline/eye-invisible.svg
+FileName4=t5_shrink.svg
+URL4=http://192.168.128.186:8981/devt-web/assets/outline/shrink.svg
+[ProtocolInfo]
+ProtocolId=QTWeb

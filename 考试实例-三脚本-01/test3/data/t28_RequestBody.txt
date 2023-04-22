@@ -1,0 +1,1 @@
+"{\"tableName\":\"devt_msg\",\"codeType\":\"type\",\"currentPage\":1,\"pageSize\":10}"
