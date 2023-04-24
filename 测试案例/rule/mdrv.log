@@ -1,0 +1,177 @@
+Virtual User Script started at: 2023/4/23 10:22:15
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (1�� 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54  	[MsgId: MMSG-26988]
+Runtime Settings file: "D:\�ʼ�\SoftwareTest\���԰���\rule\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(5): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(5): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+ȡ�ý��Ϊ:{devtToken}
+Action.c(14): web_custom_request("login.do") started  	[MsgId: MMSG-26355]
+Action.c(14): t=657ms: 510-byte response headers for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     HTTP/1.1 200 \r\n
+Action.c(14):     Server: nginx/1.16.1\r\n
+Action.c(14):     Date: Sun, 23 Apr 2023 02:22:16 GMT\r\n
+Action.c(14):     Content-Type: application/json\r\n
+Action.c(14):     Transfer-Encoding: chunked\r\n
+Action.c(14):     Connection: keep-alive\r\n
+Action.c(14):     Vary: Origin\r\n
+Action.c(14):     Vary: Access-Control-Request-Method\r\n
+Action.c(14):     Vary: Access-Control-Request-Headers\r\n
+Action.c(14):     Set-Cookie: devt_user=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJjYjFhMzdkYi02ODQxLTQ4YjItOWZmMi1mNTc
+Action.c(14):     5ZGRiODI3ZTQiLCJpYXQiOjE2ODIyMTY1MzYsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cI
+Action.c(14):     n0iLCJleHAiOjE2ODIzMDI5MzZ9.Cvh_C_HgRh-lSt0oKd6RlR6cK92EDStJq5jtMu38HEQ; Path=/\r\n
+Action.c(14):     \r\n
+Action.c(14): t=666ms: 5-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     137\r\n
+Action.c(14): t=666ms: 7-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     \r\n
+Action.c(14):     0\r\n
+Action.c(14):     \r\n
+Action.c(14): t=668ms: 311-byte chunked response body for "http://cfgjt.cn:8981/devt-service/api/login.do" (RelFrameId=1, Internal ID=1)
+Action.c(14):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"devt_token":"eyJhbGciOiJI
+Action.c(14):     UzI1NiJ9.eyJqdGkiOiJjYjFhMzdkYi02ODQxLTQ4YjItOWZmMi1mNTc5ZGRiODI3ZTQiLCJpYXQiOjE2ODIyMTY1M
+Action.c(14):     zYsImlzcyI6InR5ZGljIiwic3ViIjoie1wibmFtZVwiOlwiYWRtaW5cIn0iLCJleHAiOjE2ODIzMDI5MzZ9.Cvh_C_
+Action.c(14):     HgRh-lSt0oKd6RlR6cK92EDStJq5jtMu38HEQ"}}}
+Action.c(14): web_custom_request("login.do") was successful, 311 body bytes, 510 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(30): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(30): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(30): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(33): web_custom_request("menu.do") started  	[MsgId: MMSG-26355]
+Action.c(33): t=1058ms: 160-byte response headers for "http://cfgjt.cn:8981/devt-service/staff/menu.do" (RelFrameId=1, Internal ID=2)
+Action.c(33):     HTTP/1.1 200 \r\n
+Action.c(33):     Server: nginx/1.16.1\r\n
+Action.c(33):     Date: Sun, 23 Apr 2023 02:22:16 GMT\r\n
+Action.c(33):     Content-Type: application/json\r\n
+Action.c(33):     Transfer-Encoding: chunked\r\n
+Action.c(33):     Connection: keep-alive\r\n
+Action.c(33):     \r\n
+Action.c(33): t=1061ms: 6-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/staff/menu.do" (RelFrameId=1, Internal ID=2)
+Action.c(33):     1f97\r\n
+Action.c(33): t=1062ms: 3944-byte chunked response body for "http://cfgjt.cn:8981/devt-service/staff/menu.do" (RelFrameId=1, Internal ID=2)
+Action.c(33):     {"response":{"header":{"rspCode":1,"rspDesc":"success"},"body":{"list":[{"menuId":1,"menuN
+Action.c(33):     ame":"编码管理","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"m
+Action.c(33):     enuUrl":"-","children":null,"parentId":15,"menuOrder":1,"iconType":"host","menuType":1,"is
+Action.c(33):     Leaf":0},{"menuId":7,"menuName":"用户权限","menuDesc":null,"statusCd":null,"createDate
+Action.c(33):     ":null,"modifyDate":null,"menuUrl":"","children":null,"parentId":15,"menuOrder":7,"iconTyp
+Action.c(33):     e":"privilege","menuType":1,"isLeaf":0},{"menuId":8,"menuName":"用户列表","menuDesc":n
+Action.c(33):     ull,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"/staff-list","children"
+Action.c(33):     :null,"parentId":7,"menuOrder":8,"iconType":"list","menuType":1,"isLeaf":1},{"menuId":9,"m
+Action.c(33):     enuName":"角色列表","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":nul
+Action.c(33):     l,"menuUrl":"/role-list","children":null,"parentId":7,"menuOrder":9,"iconType":"list","men
+Action.c(33):     uType":1,"isLeaf":1},{"menuId":10,"menuName":"菜单列表","menuDesc":null,"statusCd":nul
+Action.c(33):     l,"createDate":null,"modifyDate":null,"menuUrl":"/menu-list","children":null,"parentId":7,
+Action.c(33):     "menuOrder":10,"iconType":"list","menuType":1,"isLeaf":1},{"menuId":15,"menuName":"基础�
+Action.c(33):     �理","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"","ch
+Action.c(33):     ildren":null,"parentId":0,"menuOrder":15,"iconType":"basic","menuType":1,"isLeaf":0},{"men
+Action.c(33):     uId":43,"menuName":"编码管理","menuDesc":null,"statusCd":null,"createDate":null,"modif
+Action.c(33):     yDate":null,"menuUrl":"/code-list","children":null,"parentId":1,"menuOrder":3,"iconType":"
+Action.c(33):     list","menuType":1,"isLeaf":1},{"menuId":55,"menuName":"�\x80发管�\x86","menuDesc":nul
+Action.c(33):     l,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"-","children":null,"paren
+Action.c(33):     tId":0,"menuOrder":3,"iconType":"cluster","menuType":1,"isLeaf":0},{"menuId":75,"menuName"
+Action.c(33):     :"基础信息","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuU
+Action.c(33):     rl":"-","children":null,"parentId":55,"menuOrder":3,"iconType":"basic","menuType":1,"isLea
+Action.c(33):     f":0},{"menuId":77,"menuName":"代码管理","menuDesc":null,"statusCd":null,"createDate":
+Action.c(33):     null,"modifyDate":null,"menuUrl":"-","children":null,"parentId":55,"menuOrder":3,"iconType
+Action.c(33):     ":"code","menuType":1,"isLeaf":0},{"menuId":79,"menuName":"环境管理","menuDesc":null,"
+Action.c(33):     statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"/env-list","children":null,"
+Action.c(33):     parentId":75,"menuOrder":3,"iconType":"list","menuType":1,"isLeaf":1},{"menuId":81,"menuNa
+Action.c(33):     me":"模板管理","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"me
+Action.c(33):     nuUrl":"/tmpt-list","children":null,"parentId":75,"menuOrder":3,"iconType":"list","menuTyp
+Action.c(33):     e":1,"isLeaf":1},{"menuId":83,"menuName":"归属管理","menuDesc":null,"statusCd":null,"c
+Action.c(33):     reateDate":null,"modifyDate":null,"menuUrl":"/comp-bl-tree","children":null,"parentId":75,
+Action.c(33):     "menuOrder":3,"iconType":"list","menuType":1,"isLeaf":1},{"menuId":85,"menuName":"消息�
+Action.c(33):     �表","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"/msg-
+Action.c(33):     list","children":null,"parentId":75,"menuOrder":3,"iconType":"list","menuType":1,"isLeaf":
+Action.c(33):     1},{"menuId":87,"menuName":"工程列表","menuDesc":null,"statusCd":null,"createDate":nul
+Action.c(33):     l,"modifyDate":null,"menuUrl":"/project-list","children":null,"parentId":77,"menuOrder":3,
+Action.c(33):     "iconType":"list","menuType":1,"isLeaf":1},{"menuId":91,"menuName":"组件视图","menuDes
+Action.c(33):     c":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"/comp-bl-view","chi
+Action.c(33):     ldren":null,"parentId":77,"menuOrder":3,"iconType":"list","menuType":1,"isLeaf":1},{"menuI
+Action.c(33):     d":95,"menuName":"风格管理","menuDesc":null,"statusCd":null,"createDate":null,"modifyD
+Action.c(33):     ate":null,"menuUrl":"-","children":null,"parentId":55,"menuOrder":3,"iconType":"skin","men
+Action.c(33):     uType":1,"isLeaf":0},{"menuId":97,"menuName":"皮肤管理","menuDesc":null,"statusCd":nul
+Action.c(33):     l,"createDate":null,"modifyDate":null,"menuUrl":"/plan-list","children":null,"parentId":95
+Action.c(33):     ,"menuOrder":3,"iconType":"list","menuType":1,"isLeaf":1},{"menuId":101,"menuNa
+Action.c(33): t=1065ms: 7-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/staff/menu.do" (RelFrameId=1, Internal ID=2)
+Action.c(33):     \r\n
+Action.c(33):     52a\r\n
+Action.c(33): t=1065ms: 7-byte chunked response overhead for "http://cfgjt.cn:8981/devt-service/staff/menu.do" (RelFrameId=1, Internal ID=2)
+Action.c(33):     \r\n
+Action.c(33):     0\r\n
+Action.c(33):     \r\n
+Action.c(33): t=1066ms: 5465-byte chunked response body for "http://cfgjt.cn:8981/devt-service/staff/menu.do" (RelFrameId=1, Internal ID=2)
+Action.c(33):     me":"样式管理","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"me
+Action.c(33):     nuUrl":"/style-list","children":null,"parentId":95,"menuOrder":3,"iconType":"list","menuTy
+Action.c(33):     pe":1,"isLeaf":1},{"menuId":108,"menuName":"编码管理-修改","menuDesc":null,"statusCd
+Action.c(33):     ":null,"createDate":null,"modifyDate":null,"menuUrl":"bmglxg","children":null,"parentId":4
+Action.c(33):     3,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":50,"menuName":"菜单列�
+Action.c(33):     ��-新建","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"
+Action.c(33):     cdlbxj","children":null,"parentId":10,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0}
+Action.c(33):     ,{"menuId":51,"menuName":"菜单列表-修改","menuDesc":null,"statusCd":null,"createDate
+Action.c(33):     ":null,"modifyDate":null,"menuUrl":"cdlbxg","children":null,"parentId":10,"menuOrder":0,"i
+Action.c(33):     conType":"","menuType":4,"isLeaf":0},{"menuId":52,"menuName":"菜单列表-禁用","menuDe
+Action.c(33):     sc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"cdlbjy","children"
+Action.c(33):     :null,"parentId":10,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":53,"men
+Action.c(33):     uName":"菜单列表-删除","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate
+Action.c(33):     ":null,"menuUrl":"cdlbsc","children":null,"parentId":10,"menuOrder":0,"iconType":"","menuT
+Action.c(33):     ype":4,"isLeaf":0},{"menuId":98,"menuName":"菜单列表-定义操作","menuDesc":null,"st
+Action.c(33):     atusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"cdlbdycz","children":null,"par
+Action.c(33):     entId":10,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":99,"menuName":"�
+Action.c(33):     �单列表-操作删除","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":nu
+Action.c(33):     ll,"menuUrl":"cdlbczsc","children":null,"parentId":10,"menuOrder":0,"iconType":"","menuTyp
+Action.c(33):     e":4,"isLeaf":0},{"menuId":42,"menuName":"角色列表-新建","menuDesc":null,"statusCd":
+Action.c(33):     null,"createDate":null,"modifyDate":null,"menuUrl":"jslbxj","children":null,"parentId":9,"
+Action.c(33):     menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":43,"menuName":"角色列表-
+Action.c(33):     批量启用","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl
+Action.c(33):     ":"jslbplqy","children":null,"parentId":9,"menuOrder":0,"iconType":"","menuType":4,"isLeaf
+Action.c(33):     ":0},{"menuId":44,"menuName":"角色列表-批量禁用","menuDesc":null,"statusCd":null,"
+Action.c(33):     createDate":null,"modifyDate":null,"menuUrl":"jslbpljy","children":null,"parentId":9,"menu
+Action.c(33):     Order":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":45,"menuName":"角色列表-分�
+Action.c(33):     ��菜单权限","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuU
+Action.c(33):     rl":"jslbfpcdqx","children":null,"parentId":9,"menuOrder":0,"iconType":"","menuType":4,"is
+Action.c(33):     Leaf":0},{"menuId":46,"menuName":"角色列表-分配操作权限","menuDesc":null,"status
+Action.c(33):     Cd":null,"createDate":null,"modifyDate":null,"menuUrl":"jslbfpczqx","children":null,"paren
+Action.c(33):     tId":9,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":47,"menuName":"角色
+Action.c(33):     列表-修改","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUr
+Action.c(33):     l":"jslbxg","children":null,"parentId":9,"menuOrder":0,"iconType":"","menuType":4,"isLeaf"
+Action.c(33):     :0},{"menuId":48,"menuName":"角色列表-禁用","menuDesc":null,"statusCd":null,"createD
+Action.c(33):     ate":null,"modifyDate":null,"menuUrl":"jslbjy","children":null,"parentId":9,"menuOrder":0,
+Action.c(33):     "iconType":"","menuType":4,"isLeaf":0},{"menuId":49,"menuName":"角色列表-删除","menu
+Action.c(33):     Desc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"jslbsc","childre
+Action.c(33):     n":null,"parentId":9,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":33,"me
+Action.c(33):     nuName":"用户列表-新增账户","menuDesc":null,"statusCd":null,"createDate":null,"mod
+Action.c(33):     ifyDate":null,"menuUrl":"yhlbxzzh","children":null,"parentId":8,"menuOrder":0,"iconType":"
+Action.c(33):     ","menuType":4,"isLeaf":0},{"menuId":34,"menuName":"用户列表-批量启用","menuDesc":
+Action.c(33):     null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"yhlbplqy","children":n
+Action.c(33):     ull,"parentId":8,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":36,"menuNa
+Action.c(33):     me":"用户列表-查看","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":n
+Action.c(33):     ull,"menuUrl":"yhlbck","children":null,"parentId":8,"menuOrder":0,"iconType":"","menuType"
+Action.c(33):     :4,"isLeaf":0},{"menuId":37,"menuName":"用户列表-分配角色","menuDesc":null,"status
+Action.c(33):     Cd":null,"createDate":null,"modifyDate":null,"menuUrl":"yhlbfpjs","children":null,"parentI
+Action.c(33):     d":8,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":38,"menuName":"用户�
+Action.c(33):     �表-改密","menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl"
+Action.c(33):     :"yhlbgm","children":null,"parentId":8,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0
+Action.c(33):     },{"menuId":39,"menuName":"用户列表-重置密码","menuDesc":null,"statusCd":null,"cre
+Action.c(33):     ateDate":null,"modifyDate":null,"menuUrl":"yhlbzzmm","children":null,"parentId":8,"menuOrd
+Action.c(33):     er":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":40,"menuName":"用户列表-禁用"
+Action.c(33):     ,"menuDesc":null,"statusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"yhlbjy","c
+Action.c(33):     hildren":null,"parentId":8,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0},{"menuId":
+Action.c(33):     41,"menuName":"用户列表-删除","menuDesc":null,"statusCd":null,"createDate":null,"mod
+Action.c(33):     ifyDate":null,"menuUrl":"yhlbsc","children":null,"parentId":8,"menuOrder":0,"iconType":"",
+Action.c(33):     "menuType":4,"isLeaf":0},{"menuId":94,"menuName":"用户列表-选择","menuDesc":null,"st
+Action.c(33):     atusCd":null,"createDate":null,"modifyDate":null,"menuUrl":"yhlbxz","children":null,"paren
+Action.c(33):     tId":8,"menuOrder":0,"iconType":"","menuType":4,"isLeaf":0}]}}}
+Action.c(33): web_custom_request("menu.do") was successful, 9409 body bytes, 160 header bytes, 20 chunking overhead bytes  	[MsgId: MMSG-26385]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 12536), ended OK."

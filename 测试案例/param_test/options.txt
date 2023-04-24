@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\笔记\SoftwareTest\测试案例\param_test
+-ID:\Software\LoadRunner2021\include
+-ed:\笔记\softwaretest\测试案例\param_test\\logfile.log
+d:\笔记\softwaretest\测试案例\param_test\\combined_param_test.c
+d:\笔记\softwaretest\测试案例\param_test\\pre_cci.c

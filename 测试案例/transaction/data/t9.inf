@@ -1,0 +1,17 @@
+[t9]
+FileName1=t9.json
+URL1=http://cfgjt.cn:8981/devt-service/devtComp/list.do
+Total=4
+RequestHeaderFile=t9_RequestHeader.txt
+RequestBodyFile=t9_RequestBody.txt
+ResponseHeaderFile=t9_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_9.xml
+FileName2=t9_httpCompImg.jfif
+URL2=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=624400&fileName=no.png&timestamp=1682218291536
+FileName3=t9_httpCompImg.jfif
+URL3=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=aq&fileName=no.png&timestamp=1682218291536
+FileName4=t9_httpCompImg.jfif
+URL4=http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1682218291536
+[ProtocolInfo]
+ProtocolId=QTWeb

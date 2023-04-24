@@ -603,7 +603,7 @@ lr_log_message("参数 1,迭代编号参数：%s",lr_eval_string("{custom}"));
 ​	所以我们把`login.do`的动作的token放到`menu.do`中，做一种关联。操作的步骤是在脚本中添加如下脚本：
 
 ```shell
-//从服务端返回中取认证数据
+//从服务端返回中取认证数据--放login.do前
 web_reg_save_param("devtToken",
 "LB=\"devt_token\":\"",
 "RB=\"",
@@ -611,7 +611,7 @@ LAST);
 
 lr_log_message("取得结果为:%s",lr_eval_string("{devtToken}"));
 
-//将认证数据放置头部信息中
+//将认证数据放置头部信息中--放menu.do前
 web_add_auto_header("Authorization","Bearer {devtToken}");
 ```
 
@@ -1539,3 +1539,67 @@ Action()
 ![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222130699.png)
 
 - 设计好后可以点击`Run`进行运行。
+
+
+
+
+
+
+
+### 7.3.组合场景压测
+
+​	组合场景压测的方式和单个脚本大抵相同，只不过是将多个脚本进行组合后进行压测。
+
+- 在打开`Controller`时，添加脚本，选择多个脚本，此处选择考试实例中的`test1,test2,test3`三个脚本：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304240959835.png" style="zoom:33%;" />
+
+- 其他设置和单个脚本压测的方式一样：用户数、启动时间等。
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304241024391.png" alt="image-20230424102449190" style="zoom:33%;" />
+
+### 7.4.分布式压测
+
+​	在生产过程中，基本上选择的都是远程压测，即使用压力机压测Linux上的服务，这种方式即为分布式压测。
+
+- 点击添加主机：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304241025859.png" style="zoom:33%;" />
+
+- 名字为IP地址，系统为Linux，压力机路径为安装路径：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304241032069.png" style="zoom:50%;" />
+
+- 其他压测步骤和之前一样。
+
+## 8.结果分析
+
+### 9.1.分析需求
+
+1. TPS 越高，响应时间越小，性能越好，反之性能越差
+
+2. 同一场景中，可以采用前后对比测试，来确定前后性能的好坏(一般伴随着程序有优化处理)
+
+3. 同一场景中，可以采用横对比，来确定不同事务中性能好坏
+
+*性能根源的分析和调优比较复杂，牵涉到操作系统以及各方面的知识*
+
+*操作系统性能分析**&**调优**(CPU**，磁盘，**IO**，网络，中断，进程**&**文件数**)*
+
+*JVM* *性能分析**&**调优**(JVM* *模型，**JAVA* *内存分析，**JAVA* *线程诊断**)*
+
+*HTTP&TCP* *性能分析**&**调优**(**连接数，长连接，短连接**)*
+
+
+
+### 9.2.输出报告
+
+当测试场景测试完毕后，就可以分析结果了。这个结果通常交给第三方查看，步骤如下：
+
+- 测试场景测试结束，点击菜单栏`Result---Analyze Result`，此时就会跳转到分析器：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304241039306.png" alt="image-20230424103927127" style="zoom:50%;" />
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304241041503.png)
+
+![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304241042053.png)

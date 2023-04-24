@@ -1,0 +1,660 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "upgrade",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "sec-websocket-version",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-key",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-websocket-extensions",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "pragma",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "authorization",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/x-icon"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/svg+xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/jpeg"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 10,
+    "RecordedBrowser": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "RecordingDate": "4月-23-2023",
+    "RecordingDuration": 24187,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1682213741,
+    "RecordingType": "Application",
+    "TotalBytesReceived": 6076414,
+    "TotalBytesSent": 24926,
+    "TotalRequests": 38,
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "skype.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "[2620:1ec:21::16]",
+          "IncludeInScript": false,
+          "Name": "config.edge.skype.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 375,
+              "EventId": 738,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://config.edge.skype.com/config/v1/Edge/108.0.1462.54?clientId=7458841061940207623&agents=Edge%2CEdgeConfig%2CEdgeServices%2CEdgeFirstRun%2CEdgeFirstRunConfig%2CEdgeDomainActions&osname=win&client=edge&channel=stable&scpfull=0&scpguard=0&scpfre=0&scpver=0&osarch=x86_64&osver=10.0.19044&wu=1&devicefamily=desktop&uma=0&mngd=0&installdate=1605403715&edu=0&bphint=2&soobedate=1590207611"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "microsoft.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "[2620:1ec:12::239]",
+          "IncludeInScript": false,
+          "Name": "edge.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 422,
+              "EventId": 825,
+              "HttpStatus": 200,
+              "Size": 20,
+              "URL": "https://edge.microsoft.com/autofillservice/v1/pages/ChVDaHJvbWUvMTA4LjAuNTM1OS4xMjUSHgmZLqNFdgwFyBIFDZFhlU4SBQ2RYZVOEgUNkWGVTg==?alt=proto"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 297,
+              "EventId": 729,
+              "HttpStatus": 200,
+              "Size": 32,
+              "URL": "https://edge.microsoft.com/autofillservice/v1/pages/ChVDaHJvbWUvMTA4LjAuNTM1OS4xMjUSFwlMAq5umkr9rRIFDZFhlU4SBQ01hlQc?alt=proto"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 203,
+              "EventId": 719,
+              "HttpStatus": 200,
+              "Size": 1865,
+              "URL": "https://edge.microsoft.com/identity/api/v3/msa"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/xml",
+              "DownloadTime": 125,
+              "EventId": 714,
+              "HttpStatus": 200,
+              "Size": 412,
+              "URL": "https://edge.microsoft.com/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=108.0.1462.54&lang=zh-CN&acceptformat=crx3&x=id%3Djmjbbdidibgpihajabjhcpmodanjgbji%26v%3D2.1.0%26installedby%3Dinternal%26uc%26ping%3Dr%253D1%2526e%253D1"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 125,
+              "EventId": 712,
+              "HttpStatus": 200,
+              "Size": 27089,
+              "URL": "https://edge.microsoft.com/abusiveadblocking/api/v1/blocklist"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "180.163.150.34",
+          "IncludeInScript": false,
+          "Name": "update.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 313,
+              "EventId": 731,
+              "HttpStatus": 200,
+              "Size": 226,
+              "URL": "https://update.googleapis.com/service/update2/json?cup2key=12:Wwy4YqsTFEWUq3IiMsQYtnArwtNxVbnuzyWAjxLVL6w&cup2hreq=fac512adca0bbaaae38d1b878f8e30a095a1d075db17fc3825275913a823a216"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "cfgjt.cn",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "117.64.149.19",
+          "IncludeInScript": true,
+          "Name": "cfgjt.cn",
+          "Port": 8981,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 125,
+              "EventId": 819,
+              "HttpStatus": 200,
+              "Size": 4593,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=aq&fileName=no.png&timestamp=1682213766363"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 125,
+              "EventId": 817,
+              "HttpStatus": 200,
+              "Size": 4593,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=624400&fileName=no.png&timestamp=1682213766363"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 79,
+              "EventId": 814,
+              "HttpStatus": 200,
+              "Size": 16426,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=h5contain1&fileName=1634998089813.png&timestamp=1682213766363"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 94,
+              "EventId": 811,
+              "HttpStatus": 200,
+              "Size": 12403,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=container&fileName=1631004434416.png&timestamp=1682213766363"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 125,
+              "EventId": 806,
+              "HttpStatus": 200,
+              "Size": 17742,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=table0&fileName=1632897923040.png&timestamp=1682213766363"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 140,
+              "EventId": 804,
+              "HttpStatus": 200,
+              "Size": 4593,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=munb&fileName=no.png&timestamp=1682213766362"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 110,
+              "EventId": 802,
+              "HttpStatus": 200,
+              "Size": 9106,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=breadcrumb1&fileName=1635753774297.png&timestamp=1682213766362"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 125,
+              "EventId": 800,
+              "HttpStatus": 200,
+              "Size": 4593,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=element-plus&code=1&fileName=no.png&timestamp=1682213766362"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 94,
+              "EventId": 798,
+              "HttpStatus": 200,
+              "Size": 4593,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=72881&fileName=no.png&timestamp=1682213766362"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 93,
+              "EventId": 796,
+              "HttpStatus": 200,
+              "Size": 4593,
+              "URL": "http://cfgjt.cn:8981/devt-service/httpCompImg.do?path=others&code=183&fileName=no.png&timestamp=1682213766362"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 110,
+              "EventId": 792,
+              "HttpStatus": 200,
+              "Size": 196,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/exclamation.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 297,
+              "EventId": 784,
+              "HttpStatus": 200,
+              "Size": 2917,
+              "URL": "http://cfgjt.cn:8981/devt-service/devtCompBl/list.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 141,
+              "EventId": 777,
+              "HttpStatus": 200,
+              "Size": 5263,
+              "URL": "http://cfgjt.cn:8981/devt-service/devtComp/list.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 93,
+              "EventId": 774,
+              "HttpStatus": 200,
+              "Size": 468,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/shrink.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 94,
+              "EventId": 772,
+              "HttpStatus": 200,
+              "Size": 215,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/plus.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 266,
+              "EventId": 765,
+              "HttpStatus": 200,
+              "Size": 756,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/redo.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 235,
+              "EventId": 763,
+              "HttpStatus": 200,
+              "Size": 107,
+              "URL": "http://cfgjt.cn:8981/devt-service/comm/getWsPath.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 312,
+              "EventId": 760,
+              "HttpStatus": 200,
+              "Size": 11057,
+              "URL": "http://cfgjt.cn:8981/devt-service/colorplan/planinfo.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 94,
+              "EventId": 758,
+              "HttpStatus": 200,
+              "Size": 1873,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/setting.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 110,
+              "EventId": 756,
+              "HttpStatus": 200,
+              "Size": 895,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/eye-invisible.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 109,
+              "EventId": 754,
+              "HttpStatus": 200,
+              "Size": 310,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/fill/forward.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 125,
+              "EventId": 752,
+              "HttpStatus": 200,
+              "Size": 313,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/fill/backward.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 78,
+              "EventId": 750,
+              "HttpStatus": 200,
+              "Size": 824,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/logout.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 110,
+              "EventId": 741,
+              "HttpStatus": 200,
+              "Size": 9409,
+              "URL": "http://cfgjt.cn:8981/devt-service/staff/menu.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 188,
+              "EventId": 717,
+              "HttpStatus": 200,
+              "Size": 311,
+              "URL": "http://cfgjt.cn:8981/devt-service/api/login.do"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 110,
+              "EventId": 669,
+              "HttpStatus": 200,
+              "Size": 4286,
+              "URL": "http://cfgjt.cn:8981/devt-web/favicon.ico"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 313,
+              "EventId": 634,
+              "HttpStatus": 200,
+              "Size": 226510,
+              "URL": "http://cfgjt.cn:8981/devt-web/bg.46df42f1ef4c91e3508f.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 125,
+              "EventId": 626,
+              "HttpStatus": 200,
+              "Size": 406,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/lock.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/svg+xml",
+              "DownloadTime": 125,
+              "EventId": 624,
+              "HttpStatus": 200,
+              "Size": 744,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/outline/user.svg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 140,
+              "EventId": 609,
+              "HttpStatus": 200,
+              "Size": 68822,
+              "URL": "http://cfgjt.cn:8981/devt-web/assets/vs/editor/editor.main.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 157,
+              "EventId": 125,
+              "HttpStatus": 200,
+              "Size": 1636429,
+              "URL": "http://cfgjt.cn:8981/devt-web/main.2e3b714f083eb6eadafc.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 94,
+              "EventId": 120,
+              "HttpStatus": 200,
+              "Size": 3312384,
+              "URL": "http://cfgjt.cn:8981/devt-web/scripts.521e2067e75cd94ae49c.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 109,
+              "EventId": 91,
+              "HttpStatus": 200,
+              "Size": 36586,
+              "URL": "http://cfgjt.cn:8981/devt-web/polyfills.1111712f963ef64beaec.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 266,
+              "EventId": 73,
+              "HttpStatus": 200,
+              "Size": 1485,
+              "URL": "http://cfgjt.cn:8981/devt-web/runtime.7b63b9fd40098a2e8207.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 94,
+              "EventId": 48,
+              "HttpStatus": 200,
+              "Size": 667710,
+              "URL": "http://cfgjt.cn:8981/devt-web/styles.2ea3cb3a29598ff3a901.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 125,
+              "EventId": 44,
+              "HttpStatus": 200,
+              "Size": 2710,
+              "URL": "http://cfgjt.cn:8981/devt-web/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 391,
+              "EventId": 30,
+              "HttpStatus": 301,
+              "Size": 169,
+              "URL": "http://cfgjt.cn:8981/devt-web"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "117.64.149.19",
+          "IncludeInScript": true,
+          "Name": "cfgjt.cn",
+          "Port": 8780,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 94,
+              "EventId": 794,
+              "HttpStatus": 101,
+              "Size": 24,
+              "URL": "http://cfgjt.cn:8780/devt-service/websocket.ws?id=mEJ8yj5w6D5c6as3"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "bing.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "202.89.233.100",
+          "IncludeInScript": false,
+          "Name": "www.bing.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 141,
+              "EventId": 769,
+              "HttpStatus": 302,
+              "Size": 147,
+              "URL": "https://www.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 281,
+              "EventId": 727,
+              "HttpStatus": 200,
+              "Size": 81,
+              "URL": "https://www.bing.com/api/shopping/v1/savings/rewards/rewardsUserInfo"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "application/json",
+              "DownloadTime": 203,
+              "EventId": 721,
+              "HttpStatus": 200,
+              "Size": 1779,
+              "URL": "https://www.bing.com/api/shopping/v1/getsupporteddomains?appid=67220BD2169C2EA709984467C21494086DF8CA85"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "202.89.233.100",
+          "IncludeInScript": false,
+          "Name": "cn.bing.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 172,
+              "EventId": 823,
+              "HttpStatus": 400,
+              "Size": 1,
+              "URL": "https://cn.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": true
+  },
+  "NumberOfCorrelations": 0
+}
