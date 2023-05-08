@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\笔记\SoftwareTest\测试案例\rule
--ID:\Software\LoadRunner2021\include
--ed:\笔记\softwaretest\测试案例\rule\\logfile.log
-d:\笔记\softwaretest\测试案例\rule\\combined_rule.c
-d:\笔记\softwaretest\测试案例\rule\\pre_cci.c

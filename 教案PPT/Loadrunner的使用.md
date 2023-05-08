@@ -999,7 +999,7 @@ web_reg_save_param_attrib(
     "Name=field1",
     "Type=*",
     SEARCH_FILTERS,
-    "IgnoreRedirections=No",
+    "IgnoreRedirections=No", 
     LAST);
 ```
 
@@ -1023,7 +1023,7 @@ lr_output_message("取得 token 为:%s",lr_eval_string("{devtToken}"));
 lr_debug_message(LR_MSG_CLASS_RESULT_DATA | LR_MSG_CLASS_PARAMETERS,lr_eval_string("1111{devtToken}"));
 ```
 
-- `lr_error_message()`：向日志文件发送错误消息(绝色显示)。
+- `lr_error_message()`：向日志文件发送错误消息(红色显示)。
 
 ```shell
 lr_error_message("取得 token 为:%s",lr_eval_string("{devtToken}"));
@@ -1068,7 +1068,7 @@ Action()
 
 ### 6.2.参数的操作
 
-- **字符类参数的操作(未出现的参数可以在Parameters中定义，类型可为Custom)**
+- **字符类参数的操作(未出现的参数可以在Parameters中定义，类型可为Custom**
 
 ```c
 char str1[]="str111";
@@ -1076,8 +1076,8 @@ char str1[]="str111";
 lr_log_message("%s",lr_eval_string("{param1}"));
 lr_log_message("%s",lr_eval_string("{param2}"));
 //参数的赋值
-lr_save_string(str1,"param1");
-lr_save_string("new param2","param2");
+lr_save_string(str1,"{param1}");
+lr_save_string("new param2","{param2}");
 //参数的取值
 lr_log_message("%s",lr_eval_string("{param1}"));
 lr_log_message("%s",lr_eval_string("{param2}"));

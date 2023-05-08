@@ -1,1 +1,0 @@
-"{"acctName":"admin","acctPwd":"11111111","type":"0"}"

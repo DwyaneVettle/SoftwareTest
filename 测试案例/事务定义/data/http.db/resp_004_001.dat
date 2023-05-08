@@ -1,1 +1,0 @@
-{"actions":[{"$type":"ping","uri":"https://ping-edge.smartscreen.microsoft.com/api/browser/edge/actions/3?pushCert=false&os=10.0.19044.2846.vb_release","timeout":36000000000,"verb":"POST"}]}

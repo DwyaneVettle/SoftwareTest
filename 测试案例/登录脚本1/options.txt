@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\笔记\SoftwareTest\测试案例\登录脚本1
--ID:\Software\LoadRunner2021\include
--ed:\笔记\softwaretest\测试案例\登录脚本1\\logfile.log
-d:\笔记\softwaretest\测试案例\登录脚本1\\combined_登录脚本1.c
-d:\笔记\softwaretest\测试案例\登录脚本1\\pre_cci.c
