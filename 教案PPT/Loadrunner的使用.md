@@ -1296,13 +1296,15 @@ Action()
 ```shell
 Action()
 {
+	//注释1
 	lr_start_transaction("login");
-
+	
 	web_reg_save_param_ex(
 		"ParamName=devtToken",
 		"LB=\"devt_token\":\"",
 		"RB=\"",
 		SEARCH_FILTERS,
+		"Scope=BODY",
 		LAST);
 
 	web_custom_request("login.do", 
@@ -1314,15 +1316,13 @@ Action()
 		"Snapshot=t2.inf", 
 		"Mode=HTML", 
 		"EncType=application/json", 
-		"Body={\"acctName\":\"{account}\",\"acctPwd\":\"{ped}\",\"type\":\"0\"}", 
+		"Body={\"acctName\":\"{acctName}\",\"acctPwd\":\"{acctPwd}\",\"type\":\"0\"}", 
 		LAST);
-
-	if(strcmp(lr_eval_string("{devtToken}"),"{devtToken}")==0) {
+	if(strcmp(lr_eval_string("{devtToken}"),"{devtToken}")==0){
 		lr_end_transaction("login",LR_FAIL);
-	} else {
-		lr_end_transaction("login", LR_AUTO);
+	}else{
+		lr_end_transaction("login",LR_PASS);		
 	}
-
 	return 0;
 }
 ```
