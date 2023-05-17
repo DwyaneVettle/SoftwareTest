@@ -18,6 +18,11 @@ week07：
 安装一个CentOS的Linux环境，使用MobXterm远程连接
 
 
+week13:
+使用katalon完成https://abc.oracleoaec.com/(用户名：手机号，密码123456)
+抓取登录所需的元素，自定义脚本完成登录
+
+
 
 
 

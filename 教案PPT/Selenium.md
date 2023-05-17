@@ -41,7 +41,7 @@ driver.find_element(By.ID, "kw").send_keys("test")
 sleep(2)
 # 页面按钮点击交互
 driver.find_element(By.ID, "su").click()
-sleep(2)
+sleep(20)
 driver.quit()
 ```
 
