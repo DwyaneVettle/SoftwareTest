@@ -98,3 +98,117 @@ Ztr940407!
 **此外，Katalon也支持脚本的编写，在下方菜单中点击`Script`即可编写脚本：**
 
 <img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305152056017.png" style="zoom:50%;" />
+
+
+
+
+
+
+
+## 6.APP测试
+
+环境准备
+
+想要用Katalon做APP的UI自动化，需要准备：
+
+1、jdk用1.8
+
+2、nodejs
+
+3、安装Appium
+
+```shell
+npm install -g appium@1.18.3
+```
+
+- 检查是否安装成功：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221450603.png" alt="image-20230522145050482" style="zoom:50%;" />
+
+- 配置sdk环境（下载地址：https://www.androiddevtools.cn/）
+
+  - 把 Android Sdk的build-tools和platform-tools拷贝到Katalon安装目录下：
+
+  ![image-20230522145153277](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221451355.png)
+
+- 指定Appium安装路径：
+
+  ![image-20230522145306592](C:/Users/HP/AppData/Roaming/Typora/typora-user-images/image-20230522145306592.png)
+
+- 真机调试/
+
+- 测试机准备
+
+  1.用 usb 线连接到电脑
+
+  2.进入手机设置- 系统-开发人员选项
+
+  3.打开 开发者选项
+
+  4.打开 USB 调试
+
+  5.在电脑上执行 adb 命令：adb devices -l
+
+  **备注**：打开开发者选项还有一个方法是：
+
+  ·进入手机设置- 系统-关于手机
+
+  ·连续（不断）点击版本号（7 次以上），进入开发者模式
+
+  ·退出到上级菜单，开发者模式中，打开 usb 调试
+
+  6.检查设备是否连接成功。
+
+- Spy Mobile：点击 Spy Mobile，选择已连接的设备
+
+![image-20230522145522040](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221455146.png)
+
+- 选择 apk，点击 Start，开始录制：
+
+![image-20230522145543668](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221455761.png)
+
+
+
+- 点击 Capture Object：
+
+![image-20230522145604668](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221456842.png)
+
+
+
+- 点击 Stop，停止录制：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221456722.png" alt="image-20230522145629619" style="zoom:50%;" />
+
+
+
+- 编写用例：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221457392.png" alt="image-20230522145741200" style="zoom:50%;" />
+
+
+
+- 定位元素：手机连接在电脑上，点击 Spy Mobile
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221458703.png" alt="image-20230522145804626" style="zoom: 50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221458724.png" alt="image-20230522145819626" style="zoom:50%;" />
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221458127.png" alt="image-20230522145844018" style="zoom:50%;" />
+
+- 点击 Capture Object，使 katalon 加载的界面和手机显示的界面同步：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221459412.png" alt="image-20230522145908268" style="zoom:50%;" />
+
+- 同理可得，如果 katalon 加载的界面和手机显示的界面不同步，就点击 Capture Object。因为有时候你会手动去点击手机显示的界面，假如我现在将手机界面点击到了个人中心，此时我需要去点击 Capture Object，katalon 加载的界面才会到个人中心：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221459311.png" alt="image-20230522145938187" style="zoom:50%;" />
+
+- 选中 “同意”，勾选方框，点击 Capture Object，定位到元素：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221459143.png" alt="image-20230522145958992" style="zoom:50%;" />
+
+
+
+- 添加到对象库：
+
+<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202305221500086.png" alt="image-20230522150025945" style="zoom:50%;" />
