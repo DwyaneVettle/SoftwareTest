@@ -19,7 +19,7 @@ week07：
 
 
 week13:
-使用katalon完成https://abc.oracleoaec.com/(用户名：手机号，密码123456)
+使用katalon完成https://abc.oracleoaec.com/(用户名：手机号，密码手机号)
 抓取登录所需的元素，自定义脚本完成登录
 
 
