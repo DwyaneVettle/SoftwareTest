@@ -10,7 +10,7 @@
 
 ​	LoadRunner可适用于各种体系架构的自动[负载测试](https://baike.baidu.com/item/负载测试/10921210?fromModule=lemma_inlink)，能预测系统行为并评估系统性能。它支持高并发、多协议。
 
-![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304010957429.gif)
+![](C:%5CUsers%5CHP%5CDesktop%5C202304010957429.gif)
 
 ### 1.1.功能模块
 
@@ -23,7 +23,7 @@
 
 ### 1.2.运行视图
 
-<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304011015975.png" alt="image-20230401101502670" style="zoom:50%;" />
+<img src="C:%5CUsers%5CHP%5CDesktop%5C202304011015975.png" alt="image-20230401101502670" style="zoom:50%;" />
 
 1. 采用虚拟用户生成器录制脚本、编写脚本、调试脚本，完成脚本的准备工作
 2. 通过脚本组合设计压测场景
@@ -185,7 +185,7 @@ ls
 
 - 创建脚本解决方案的方式为：**File---Create a new Script---选择方案类型---命名---create**
 
-<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031433867.png" style="zoom:50%;" />
+<img src="C:%5CUsers%5CHP%5CDesktop%5C202304031433867.png" style="zoom:50%;" />
 
 
 
@@ -212,11 +212,11 @@ ls
 
 最终内容，点击Start Recording直接录制：
 
-<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031519233.png" alt="image-20230403151933137" style="zoom:50%;" />
+<img src="C:%5CUsers%5CHP%5CDesktop%5C202304031519233.png" alt="image-20230403151933137" style="zoom:50%;" />
 
 打开浏览器后，生成了脚本，进行了收集：
 
-<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304031533934.png" alt="image-20230403153333784" style="zoom:50%;" />
+<img src="C:%5CUsers%5CHP%5CDesktop%5C202304031533934.png" alt="image-20230403153333784" style="zoom:50%;" />
 
 **注意：**有大部分可能进入Edge没法登录，此次脚本录制不成功。
 
@@ -1518,15 +1518,15 @@ Action()
 
 - 在已有的脚本中点击导航栏`Integrations---Create Controller Scenario`：
 
-<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222102950.png" style="zoom:50%;" />
+<img src="C:%5CUsers%5CHP%5CDesktop%5C202304222102950.png" style="zoom:50%;" />
 
 - 当创建好场景后，虚拟用户生成器会自动打开调度器`Controller`，此时我们就需要取按照测试人员的计划取设计计划表：
 
-![](https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222113919.png)
+![](C:%5CUsers%5CHP%5CDesktop%5C202304222113919.png)
 
 - 设计好场景后就可以点击下方的菜单`run`运行：
 
-<img src="https://gitee.com/zou_tangrui/note-pic/raw/master/img/202304222121494.png" style="zoom:33%;" />
+<img src="C:%5CUsers%5CHP%5CDesktop%5C202304222121494.png" style="zoom:33%;" />
 
 
 

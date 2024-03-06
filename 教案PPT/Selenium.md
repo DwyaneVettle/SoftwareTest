@@ -20,9 +20,13 @@ pip install selenium
 
 - WebDriver 安装
 
-  https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers，选择相应浏览器，下载最接近的 webDriver，下载完之后，我们将驱动放在$PATH 目录下面，或者直接放在 Python 目录下面，如：D:/Software/Python310\Scripts，IE 也是支持的， 不过现在不建议大家学习，毕竟 IE 已经退出历史舞台
+  https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers，选择相应浏览器，下载最接近的 webDriver，下载完之后，我们将驱动放在$PATH 目录下面，或者直接放在 Python 目录下面，如：D:/Software/Python310/Scripts，IE 也是支持的， 不过现在不建议大家学习，毕竟 IE 已经退出历史舞台。
 
-  谷歌浏览器驱动：https://chromedriver.storage.googleapis.com/index.html  安装对应浏览器版本。
+  谷歌浏览器驱动：https://registry.npmmirror.com/binary.html?path=chromedriver/  安装对应浏览器版本。
+  
+  淘宝镜像：https://npm.taobao.org/mirrors/
+  
+  其他：https://googlechromelabs.github.io/chrome-for-testing/#canary
 
 测试脚本：
 
